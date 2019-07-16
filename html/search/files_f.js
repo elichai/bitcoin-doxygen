@@ -29,7 +29,7 @@ var searchData=
   ['prevector_2ecpp',['prevector.cpp',['../d6/d8d/prevector_8cpp.html',1,'']]],
   ['prevector_2eh',['prevector.h',['../de/d05/prevector_8h.html',1,'']]],
   ['productivity_2emd',['productivity.md',['../dc/d73/productivity_8md.html',1,'']]],
-  ['protocol_2ecpp',['protocol.cpp',['../d4/d25/protocol_8cpp.html',1,'(Global Namespace)'],['../d7/d6d/rpc_2protocol_8cpp.html',1,'(Global Namespace)']]],
+  ['protocol_2ecpp',['protocol.cpp',['../d4/d25/protocol_8cpp.html',1,'']]],
   ['protocol_2eh',['protocol.h',['../d2/d5e/protocol_8h.html',1,'(Global Namespace)'],['../de/dd4/rpc_2protocol_8h.html',1,'(Global Namespace)']]],
   ['psbt_2ecpp',['psbt.cpp',['../d6/dd5/node_2psbt_8cpp.html',1,'(Global Namespace)'],['../dd/d14/psbt_8cpp.html',1,'(Global Namespace)']]],
   ['psbt_2eh',['psbt.h',['../d2/d07/node_2psbt_8h.html',1,'(Global Namespace)'],['../d3/de6/psbt_8h.html',1,'(Global Namespace)']]],

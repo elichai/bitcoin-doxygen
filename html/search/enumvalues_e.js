@@ -45,7 +45,6 @@ var searchData=
   ['op_5fcheckmultisigverify',['OP_CHECKMULTISIGVERIFY',['../de/d7f/script_8h.html#a63e349a6089a54da9fe09a3d858648bda96bc5bb47b2abe30558c259aaefed75f',1,'script.h']]],
   ['op_5fchecksequenceverify',['OP_CHECKSEQUENCEVERIFY',['../de/d7f/script_8h.html#a63e349a6089a54da9fe09a3d858648bdaff2d931584100152c5a1af8c875c3cb6',1,'script.h']]],
   ['op_5fchecksig',['OP_CHECKSIG',['../de/d7f/script_8h.html#a63e349a6089a54da9fe09a3d858648bda2c190c5caf052f92d3d9ac31a0d96151',1,'script.h']]],
-  ['op_5fchecksigadd',['OP_CHECKSIGADD',['../de/d7f/script_8h.html#a63e349a6089a54da9fe09a3d858648bdaa5f97f93af67adb3b68619690b4a7601',1,'script.h']]],
   ['op_5fchecksigverify',['OP_CHECKSIGVERIFY',['../de/d7f/script_8h.html#a63e349a6089a54da9fe09a3d858648bdaad934d053cc56be9612b2faa9f396eeb',1,'script.h']]],
   ['op_5fcodeseparator',['OP_CODESEPARATOR',['../de/d7f/script_8h.html#a63e349a6089a54da9fe09a3d858648bda57d43cf2c1d702fa2eae9c97f00dd0d9',1,'script.h']]],
   ['op_5fdepth',['OP_DEPTH',['../de/d7f/script_8h.html#a63e349a6089a54da9fe09a3d858648bda820368a9f795a99eaf033b7c4a56e979',1,'script.h']]],

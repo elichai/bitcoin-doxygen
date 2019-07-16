@@ -5,7 +5,7 @@ var searchData=
   ['nativesecp256k1util',['NativeSecp256k1Util',['../d6/deb/classorg_1_1bitcoin_1_1NativeSecp256k1Util.html',1,'org::bitcoin']]],
   ['neteventsinterface',['NetEventsInterface',['../d0/d70/classNetEventsInterface.html',1,'']]],
   ['networkstyle',['NetworkStyle',['../dc/d9c/classNetworkStyle.html',1,'']]],
-  ['node',['Node',['../d5/df4/classinterfaces_1_1Node.html',1,'interfaces::Node'],['../d9/d77/structleveldb_1_1SkipList_1_1Node.html',1,'leveldb::SkipList&lt; Key, Comparator &gt;::Node']]],
+  ['node',['Node',['../d9/d77/structleveldb_1_1SkipList_1_1Node.html',1,'leveldb::SkipList&lt; Key, Comparator &gt;::Node'],['../d5/df4/classinterfaces_1_1Node.html',1,'interfaces::Node']]],
   ['nodeevictioncandidate',['NodeEvictionCandidate',['../dd/d5b/structNodeEvictionCandidate.html',1,'']]],
   ['nodeimpl',['NodeImpl',['../da/d61/classinterfaces_1_1anonymous__namespace_02node_8cpp_03_1_1NodeImpl.html',1,'interfaces::anonymous_namespace{node.cpp}']]],
   ['nodelessthan',['NodeLessThan',['../d2/d76/classNodeLessThan.html',1,'']]],

@@ -125,14 +125,14 @@ Variables</h2></td></tr>
 <tr class="separator:ac79356a89c909ccb0674c1577e2ec81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc3f70c72854e43426e097b125693cc5"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d30/policy_8h.html#adc3f70c72854e43426e097b125693cc5">DEFAULT_BYTES_PER_SIGOP</a> = 20</td></tr>
 <tr class="separator:adc3f70c72854e43426e097b125693cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67048333ec334072dd90e9d6531bdb2d"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d30/policy_8h.html#a67048333ec334072dd90e9d6531bdb2d">MAX_STANDARD_WITNESS_INPUT_STACK_ITEMS</a> = 210</td></tr>
-<tr class="separator:a67048333ec334072dd90e9d6531bdb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75cd8c737204713f57069a652dad1cf2"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d30/policy_8h.html#a75cd8c737204713f57069a652dad1cf2">MAX_STANDARD_WITNESS_INPUT_STACK_ITEM_SIZE</a> = 80</td></tr>
-<tr class="separator:a75cd8c737204713f57069a652dad1cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1aee6ca8946adf73aea46e2fbd44fee"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d30/policy_8h.html#aa1aee6ca8946adf73aea46e2fbd44fee">MAX_STANDARD_WITNESS_SCRIPT_SIZE</a> = 7100</td></tr>
-<tr class="separator:aa1aee6ca8946adf73aea46e2fbd44fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac909f3ad4a4e10849acaa2e41a9f769b"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d30/policy_8h.html#ac909f3ad4a4e10849acaa2e41a9f769b">DEFAULT_PERMIT_BAREMULTISIG</a> = true</td></tr>
 <tr class="separator:ac909f3ad4a4e10849acaa2e41a9f769b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b95fda6501861a5a19644e656187c4"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d30/policy_8h.html#a45b95fda6501861a5a19644e656187c4">MAX_STANDARD_P2WSH_STACK_ITEMS</a> = 100</td></tr>
+<tr class="separator:a45b95fda6501861a5a19644e656187c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d5a47ecda2405cda530eaf4786d5c3"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d30/policy_8h.html#a34d5a47ecda2405cda530eaf4786d5c3">MAX_STANDARD_P2WSH_STACK_ITEM_SIZE</a> = 80</td></tr>
+<tr class="separator:a34d5a47ecda2405cda530eaf4786d5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc4446957381273dd331e813ac6b11c0"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d30/policy_8h.html#afc4446957381273dd331e813ac6b11c0">MAX_STANDARD_P2WSH_SCRIPT_SIZE</a> = 3600</td></tr>
+<tr class="separator:afc4446957381273dd331e813ac6b11c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a883efe228a0d95b48f312a87c944e8ab"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d30/policy_8h.html#a883efe228a0d95b48f312a87c944e8ab">DUST_RELAY_TX_FEE</a> = 3000</td></tr>
 <tr class="separator:a883efe228a0d95b48f312a87c944e8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab28027bf27efcdd6535a13175a89ca5a"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d30/policy_8h.html#ab28027bf27efcdd6535a13175a89ca5a">STANDARD_SCRIPT_VERIFY_FLAGS</a></td></tr>
@@ -678,6 +678,75 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="afc4446957381273dd331e813ac6b11c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc4446957381273dd331e813ac6b11c0">&#9670;&nbsp;</a></span>MAX_STANDARD_P2WSH_SCRIPT_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_STANDARD_P2WSH_SCRIPT_SIZE = 3600</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The maximum size of a standard witnessScript </p>
+
+</div>
+</div>
+<a id="a34d5a47ecda2405cda530eaf4786d5c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d5a47ecda2405cda530eaf4786d5c3">&#9670;&nbsp;</a></span>MAX_STANDARD_P2WSH_STACK_ITEM_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_STANDARD_P2WSH_STACK_ITEM_SIZE = 80</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The maximum size of each witness stack item in a standard P2WSH script </p>
+
+</div>
+</div>
+<a id="a45b95fda6501861a5a19644e656187c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b95fda6501861a5a19644e656187c4">&#9670;&nbsp;</a></span>MAX_STANDARD_P2WSH_STACK_ITEMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_STANDARD_P2WSH_STACK_ITEMS = 100</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The maximum number of witness stack items in a standard P2WSH script </p>
+
+</div>
+</div>
 <a id="a496171c6b480c84dbb6a6f186418a002"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a496171c6b480c84dbb6a6f186418a002">&#9670;&nbsp;</a></span>MAX_STANDARD_TX_SIGOPS_COST</h2>
 
@@ -721,75 +790,6 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The maximum weight for transactions we're willing to relay/mine </p>
-
-</div>
-</div>
-<a id="a75cd8c737204713f57069a652dad1cf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75cd8c737204713f57069a652dad1cf2">&#9670;&nbsp;</a></span>MAX_STANDARD_WITNESS_INPUT_STACK_ITEM_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const unsigned int MAX_STANDARD_WITNESS_INPUT_STACK_ITEM_SIZE = 80</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The maximum size of each witness stack item in a standard witness script </p>
-
-</div>
-</div>
-<a id="a67048333ec334072dd90e9d6531bdb2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67048333ec334072dd90e9d6531bdb2d">&#9670;&nbsp;</a></span>MAX_STANDARD_WITNESS_INPUT_STACK_ITEMS</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const unsigned int MAX_STANDARD_WITNESS_INPUT_STACK_ITEMS = 210</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The maximum number of witness input stack items in a standard witness script </p>
-
-</div>
-</div>
-<a id="aa1aee6ca8946adf73aea46e2fbd44fee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1aee6ca8946adf73aea46e2fbd44fee">&#9670;&nbsp;</a></span>MAX_STANDARD_WITNESS_SCRIPT_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const unsigned int MAX_STANDARD_WITNESS_SCRIPT_SIZE = 7100</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The maximum size of a standard witness script </p>
 
 </div>
 </div>
@@ -883,27 +883,22 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="../../df/d9b/standard_8h.html#a0701d4aba51c8615fcea8756d0a6f9ea">MANDATORY_SCRIPT_VERIFY_FLAGS</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a926cd06017eab0afa1c5c09560c43e94">SCRIPT_VERIFY_DERSIG</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a7cae377bd68b4e2da8f33283cec5dda8">SCRIPT_VERIFY_STRICTENC</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409aca0e18480ac3e97d9ac848dda81759ce">SCRIPT_VERIFY_MINIMALDATA</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a02e26973bd44ecd8dfcf135f799bf693">SCRIPT_VERIFY_NULLDUMMY</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409ad91a5d333bbe401f86369179547fefe1">SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_NOPS</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409abd6b3168136c35f6e3a378839f70ce15">SCRIPT_VERIFY_CLEANSTACK</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a5458d9c468a75a9108deb8f1fd70f1b7">SCRIPT_VERIFY_MINIMALIF</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a8b0a4415024860f87f29652a83b7b8f4">SCRIPT_VERIFY_NULLFAIL</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a5fd9da5fae3b94c839682742c8edf49e">SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409addf7dd85ffe0653f478d6888bcbe4021">SCRIPT_VERIFY_CHECKSEQUENCEVERIFY</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a57ab7ff929bcb247049ba42e52861ba7">SCRIPT_VERIFY_LOW_S</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a40bf3e13bc60c4bef725907b7d39e227">SCRIPT_VERIFY_WITNESS</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409af1eb00affa65f849bf6e37f35d8b66a3">SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_WITNESS_PROGRAM</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a652479a49081835e92ea3e6b96c16b47">SCRIPT_VERIFY_WITNESS_PUBKEYTYPE</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a4e18fbfa14b7bb431d36f1af5e3e6ba3">SCRIPT_VERIFY_CONST_SCRIPTCODE</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a798def447bb877507f1f10a42457881c">SCRIPT_VERIFY_TAPROOT</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a75d407635cc10885454af651459da57d">SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_TAPROOT_VERSION</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a224c69c180ccf70fa9208c435b13240d">SCRIPT_VERIFY_DISCOURAGE_UNKNOWN_ANNEX</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a3e5d381979b98c3ca10d1aabdedea9f3">SCRIPT_VERIFY_DISCOURAGE_OP_SUCCESS</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409aaf2dd51ac5408bdbe3755fb3d19768a0">SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_PUBKEYTYPE</a></div><div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a8b0a4415024860f87f29652a83b7b8f4"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a8b0a4415024860f87f29652a83b7b8f4">SCRIPT_VERIFY_NULLFAIL</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:114</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a224c69c180ccf70fa9208c435b13240d"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a224c69c180ccf70fa9208c435b13240d">SCRIPT_VERIFY_DISCOURAGE_UNKNOWN_ANNEX</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:132</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a3e5d381979b98c3ca10d1aabdedea9f3"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a3e5d381979b98c3ca10d1aabdedea9f3">SCRIPT_VERIFY_DISCOURAGE_OP_SUCCESS</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:135</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a40bf3e13bc60c4bef725907b7d39e227"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a40bf3e13bc60c4bef725907b7d39e227">SCRIPT_VERIFY_WITNESS</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:102</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409aaf2dd51ac5408bdbe3755fb3d19768a0"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409aaf2dd51ac5408bdbe3755fb3d19768a0">SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_PUBKEYTYPE</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:138</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a926cd06017eab0afa1c5c09560c43e94"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a926cd06017eab0afa1c5c09560c43e94">SCRIPT_VERIFY_DERSIG</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:53</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a02e26973bd44ecd8dfcf135f799bf693"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a02e26973bd44ecd8dfcf135f799bf693">SCRIPT_VERIFY_NULLDUMMY</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:60</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409ad91a5d333bbe401f86369179547fefe1"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409ad91a5d333bbe401f86369179547fefe1">SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_NOPS</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:81</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a7cae377bd68b4e2da8f33283cec5dda8"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a7cae377bd68b4e2da8f33283cec5dda8">SCRIPT_VERIFY_STRICTENC</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:50</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a798def447bb877507f1f10a42457881c"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a798def447bb877507f1f10a42457881c">SCRIPT_VERIFY_TAPROOT</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:126</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a5458d9c468a75a9108deb8f1fd70f1b7"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a5458d9c468a75a9108deb8f1fd70f1b7">SCRIPT_VERIFY_MINIMALIF</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:110</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409af1eb00affa65f849bf6e37f35d8b66a3"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409af1eb00affa65f849bf6e37f35d8b66a3">SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_WITNESS_PROGRAM</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:106</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a57ab7ff929bcb247049ba42e52861ba7"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a57ab7ff929bcb247049ba42e52861ba7">SCRIPT_VERIFY_LOW_S</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:57</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409addf7dd85ffe0653f478d6888bcbe4021"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409addf7dd85ffe0653f478d6888bcbe4021">SCRIPT_VERIFY_CHECKSEQUENCEVERIFY</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:98</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409abd6b3168136c35f6e3a378839f70ce15"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409abd6b3168136c35f6e3a378839f70ce15">SCRIPT_VERIFY_CLEANSTACK</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:88</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a652479a49081835e92ea3e6b96c16b47"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a652479a49081835e92ea3e6b96c16b47">SCRIPT_VERIFY_WITNESS_PUBKEYTYPE</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:118</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a75d407635cc10885454af651459da57d"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a75d407635cc10885454af651459da57d">SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_TAPROOT_VERSION</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:129</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409aca0e18480ac3e97d9ac848dda81759ce"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409aca0e18480ac3e97d9ac848dda81759ce">SCRIPT_VERIFY_MINIMALDATA</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:69</div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="../../df/d9b/standard_8h.html#a0701d4aba51c8615fcea8756d0a6f9ea">MANDATORY_SCRIPT_VERIFY_FLAGS</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a926cd06017eab0afa1c5c09560c43e94">SCRIPT_VERIFY_DERSIG</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a7cae377bd68b4e2da8f33283cec5dda8">SCRIPT_VERIFY_STRICTENC</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409aca0e18480ac3e97d9ac848dda81759ce">SCRIPT_VERIFY_MINIMALDATA</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a02e26973bd44ecd8dfcf135f799bf693">SCRIPT_VERIFY_NULLDUMMY</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409ad91a5d333bbe401f86369179547fefe1">SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_NOPS</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409abd6b3168136c35f6e3a378839f70ce15">SCRIPT_VERIFY_CLEANSTACK</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a5458d9c468a75a9108deb8f1fd70f1b7">SCRIPT_VERIFY_MINIMALIF</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a8b0a4415024860f87f29652a83b7b8f4">SCRIPT_VERIFY_NULLFAIL</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a5fd9da5fae3b94c839682742c8edf49e">SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409addf7dd85ffe0653f478d6888bcbe4021">SCRIPT_VERIFY_CHECKSEQUENCEVERIFY</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a57ab7ff929bcb247049ba42e52861ba7">SCRIPT_VERIFY_LOW_S</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a40bf3e13bc60c4bef725907b7d39e227">SCRIPT_VERIFY_WITNESS</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409af1eb00affa65f849bf6e37f35d8b66a3">SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_WITNESS_PROGRAM</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a652479a49081835e92ea3e6b96c16b47">SCRIPT_VERIFY_WITNESS_PUBKEYTYPE</a> |</div><div class="line">                                                             <a class="code" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a4e18fbfa14b7bb431d36f1af5e3e6ba3">SCRIPT_VERIFY_CONST_SCRIPTCODE</a></div><div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a8b0a4415024860f87f29652a83b7b8f4"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a8b0a4415024860f87f29652a83b7b8f4">SCRIPT_VERIFY_NULLFAIL</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:109</div></div>
+<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a40bf3e13bc60c4bef725907b7d39e227"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a40bf3e13bc60c4bef725907b7d39e227">SCRIPT_VERIFY_WITNESS</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:97</div></div>
+<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a926cd06017eab0afa1c5c09560c43e94"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a926cd06017eab0afa1c5c09560c43e94">SCRIPT_VERIFY_DERSIG</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:48</div></div>
+<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a02e26973bd44ecd8dfcf135f799bf693"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a02e26973bd44ecd8dfcf135f799bf693">SCRIPT_VERIFY_NULLDUMMY</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:55</div></div>
+<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409ad91a5d333bbe401f86369179547fefe1"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409ad91a5d333bbe401f86369179547fefe1">SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_NOPS</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:76</div></div>
+<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a7cae377bd68b4e2da8f33283cec5dda8"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a7cae377bd68b4e2da8f33283cec5dda8">SCRIPT_VERIFY_STRICTENC</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:45</div></div>
+<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a5458d9c468a75a9108deb8f1fd70f1b7"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a5458d9c468a75a9108deb8f1fd70f1b7">SCRIPT_VERIFY_MINIMALIF</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:105</div></div>
+<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409af1eb00affa65f849bf6e37f35d8b66a3"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409af1eb00affa65f849bf6e37f35d8b66a3">SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_WITNESS_PROGRAM</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:101</div></div>
+<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a57ab7ff929bcb247049ba42e52861ba7"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a57ab7ff929bcb247049ba42e52861ba7">SCRIPT_VERIFY_LOW_S</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:52</div></div>
+<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409addf7dd85ffe0653f478d6888bcbe4021"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409addf7dd85ffe0653f478d6888bcbe4021">SCRIPT_VERIFY_CHECKSEQUENCEVERIFY</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:93</div></div>
+<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409abd6b3168136c35f6e3a378839f70ce15"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409abd6b3168136c35f6e3a378839f70ce15">SCRIPT_VERIFY_CLEANSTACK</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:83</div></div>
+<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a652479a49081835e92ea3e6b96c16b47"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a652479a49081835e92ea3e6b96c16b47">SCRIPT_VERIFY_WITNESS_PUBKEYTYPE</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:113</div></div>
+<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409aca0e18480ac3e97d9ac848dda81759ce"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409aca0e18480ac3e97d9ac848dda81759ce">SCRIPT_VERIFY_MINIMALDATA</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:64</div></div>
 <div class="ttc" id="standard_8h_html_a0701d4aba51c8615fcea8756d0a6f9ea"><div class="ttname"><a href="../../df/d9b/standard_8h.html#a0701d4aba51c8615fcea8756d0a6f9ea">MANDATORY_SCRIPT_VERIFY_FLAGS</a></div><div class="ttdeci">static const unsigned int MANDATORY_SCRIPT_VERIFY_FLAGS</div><div class="ttdef"><b>Definition:</b> standard.h:54</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a4e18fbfa14b7bb431d36f1af5e3e6ba3"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a4e18fbfa14b7bb431d36f1af5e3e6ba3">SCRIPT_VERIFY_CONST_SCRIPTCODE</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:122</div></div>
-<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a5fd9da5fae3b94c839682742c8edf49e"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a5fd9da5fae3b94c839682742c8edf49e">SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:93</div></div>
+<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a4e18fbfa14b7bb431d36f1af5e3e6ba3"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a4e18fbfa14b7bb431d36f1af5e3e6ba3">SCRIPT_VERIFY_CONST_SCRIPTCODE</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:117</div></div>
+<div class="ttc" id="interpreter_8h_html_adb49720dc49f7d4e4cf9adbf2948e409a5fd9da5fae3b94c839682742c8edf49e"><div class="ttname"><a href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a5fd9da5fae3b94c839682742c8edf49e">SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY</a></div><div class="ttdef"><b>Definition:</b> interpreter.h:88</div></div>
 </div><!-- fragment --><p>Standard script verification flags that standard transactions will comply with. However scripts violating these flags may still be present in valid blocks and we must accept those blocks. </p>
 
 </div>

@@ -81,13 +81,13 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../d2/d41/interfaces_2wallet_8h_source.html">interfaces/wallet.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../de/de5/key_8h_source.html">key.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../dc/da1/key__io_8h_source.html">key_io.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d0/d82/keystore_8h_source.html">keystore.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d7/d44/policy_2fees_8h_source.html">policy/fees.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d0/d30/policy_8h_source.html">policy/policy.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d7/dc6/primitives_2block_8h_source.html">primitives/block.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../dc/d1c/primitives_2transaction_8h_source.html">primitives/transaction.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d9/d80/descriptor_8h_source.html">script/descriptor.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../de/d7f/script_8h_source.html">script/script.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../da/d68/signingprovider_8h_source.html">script/signingprovider.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../de/d8b/bip32_8h_source.html">util/bip32.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../da/d41/error_8h_source.html">util/error.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d2/db1/util_2fees_8h_source.html">util/fees.h</a>&gt;</code><br />
@@ -124,8 +124,12 @@ Functions</h2></td></tr>
 <tr class="separator:ab115d1b86c25902d2a32d7a919382bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e3b0724aabb0c37fda10ce9f4c86432"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/wallet_2wallet_8cpp.html#a1e3b0724aabb0c37fda10ce9f4c86432">LoadWallet</a> (<a class="el" href="../../df/d87/classinterfaces_1_1Chain.html">interfaces::Chain</a> &amp;chain, const std::string &amp;<a class="el" href="../../d8/d04/rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, std::string &amp;<a class="el" href="../../dc/db2/system_8h.html#a96c5fc7111f69f7dcaba992d95d13e03">error</a>, std::string &amp;warning)</td></tr>
 <tr class="separator:a1e3b0724aabb0c37fda10ce9f4c86432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8ea31837532cec09dc9193b6c9d1e6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/wallet_2wallet_8cpp.html#a4a8ea31837532cec09dc9193b6c9d1e6">CreateWallet</a> (<a class="el" href="../../df/d87/classinterfaces_1_1Chain.html">interfaces::Chain</a> &amp;chain, const std::string &amp;<a class="el" href="../../d8/d04/rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, std::string &amp;<a class="el" href="../../dc/db2/system_8h.html#a96c5fc7111f69f7dcaba992d95d13e03">error</a>, std::string &amp;warning, <a class="el" href="../../df/d8d/wallet_2wallet_8h.html#ad4b2c43026d449a5e3e31076d08b7ce4">WalletCreationStatus</a> &amp;status, const <a class="el" href="../../d0/d7f/secure_8h.html#a396ed773a5ac24aec28c8f7dc413c7ac">SecureString</a> &amp;passphrase, <a class="el" href="../../df/dd8/stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> wallet_creation_flags)</td></tr>
+<tr class="separator:a4a8ea31837532cec09dc9193b6c9d1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacb65e7716d90a3e44022b0f9fce577d2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gacb65e7716d90a3e44022b0f9fce577d2">GetAffectedKeys</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;spk, const <a class="el" href="../../d1/d80/classSigningProvider.html">SigningProvider</a> &amp;provider)</td></tr>
 <tr class="separator:gacb65e7716d90a3e44022b0f9fce577d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2065e9a77b9aa69a1a8d4edbab0f6d61"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga2065e9a77b9aa69a1a8d4edbab0f6d61">ExtractPubKey</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest, <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;pubKeyOut)</td></tr>
+<tr class="separator:ga2065e9a77b9aa69a1a8d4edbab0f6d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0fd4c6f23ea3ccac9050ef55ad5f90b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga0fd4c6f23ea3ccac9050ef55ad5f90b0">CalculateMaximumSignedTxSize</a> (const <a class="el" href="../../d8/dbe/classCTransaction.html">CTransaction</a> &amp;tx, const <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> *wallet, bool use_max_sig)</td></tr>
 <tr class="separator:ga0fd4c6f23ea3ccac9050ef55ad5f90b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga55c494ecfeaf5cdf44483c1eaa45b2fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga55c494ecfeaf5cdf44483c1eaa45b2fb">CalculateMaximumSignedTxSize</a> (const <a class="el" href="../../d8/dbe/classCTransaction.html">CTransaction</a> &amp;tx, const <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> *wallet, const std::vector&lt; <a class="el" href="../../d8/d1d/classCTxOut.html">CTxOut</a> &gt; &amp;txouts, bool use_max_sig)</td></tr>
@@ -171,6 +175,64 @@ Variables</h2></td></tr>
           <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>wallet</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a8ea31837532cec09dc9193b6c9d1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a8ea31837532cec09dc9193b6c9d1e6">&#9670;&nbsp;</a></span>CreateWallet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="../../d7/d57/classCWallet.html">CWallet</a>&gt; CreateWallet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d87/classinterfaces_1_1Chain.html">interfaces::Chain</a> &amp;&#160;</td>
+          <td class="paramname"><em>chain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>warning</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d8d/wallet_2wallet_8h.html#ad4b2c43026d449a5e3e31076d08b7ce4">WalletCreationStatus</a> &amp;&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d7f/secure_8h.html#a396ed773a5ac24aec28c8f7dc413c7ac">SecureString</a> &amp;&#160;</td>
+          <td class="paramname"><em>passphrase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>wallet_creation_flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -552,7 +614,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    {<a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a>,</div><div class="line">        <span class="stringliteral">&quot;You need to rescan the blockchain in order to correctly mark used &quot;</span></div><div class="line">        <span class="stringliteral">&quot;destinations in the past. Until this is done, some destinations may &quot;</span></div><div class="line">        <span class="stringliteral">&quot;be considered unused, even if the opposite is the case.&quot;</span></div><div class="line">    },</div><div class="line">}</div><div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a></div><div class="ttdef"><b>Definition:</b> wallet.h:125</div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    {<a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a>,</div><div class="line">        <span class="stringliteral">&quot;You need to rescan the blockchain in order to correctly mark used &quot;</span></div><div class="line">        <span class="stringliteral">&quot;destinations in the past. Until this is done, some destinations may &quot;</span></div><div class="line">        <span class="stringliteral">&quot;be considered unused, even if the opposite is the case.&quot;</span></div><div class="line">    },</div><div class="line">}</div><div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a></div><div class="ttdef"><b>Definition:</b> wallet.h:135</div></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -69,19 +69,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d3/dcd/sign_8h_source.html">sign.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../da/d68/signingprovider_8h_source.html">signingprovider.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for SigningProvider:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../d1/d80/classSigningProvider.png" usemap="#SigningProvider_map" alt=""/>
   <map id="SigningProvider_map" name="SigningProvider_map">
-<area href="../../d5/d94/classCKeyStore.html" alt="CKeyStore" shape="rect" coords="0,56,139,80"/>
-<area href="../../db/d6d/structFlatSigningProvider.html" alt="FlatSigningProvider" shape="rect" coords="149,56,288,80"/>
-<area href="../../d6/d27/classHidingSigningProvider.html" alt="HidingSigningProvider" shape="rect" coords="298,56,437,80"/>
-<area href="../../d5/dca/classCBasicKeyStore.html" alt="CBasicKeyStore" shape="rect" coords="0,112,139,136"/>
-<area href="../../d8/d87/classCCryptoKeyStore.html" alt="CCryptoKeyStore" shape="rect" coords="0,168,139,192"/>
-<area href="../../d7/d57/classCWallet.html" alt="CWallet" shape="rect" coords="0,224,139,248"/>
+<area href="../../d2/de0/classFillableSigningProvider.html" alt="FillableSigningProvider" shape="rect" coords="0,56,144,80"/>
+<area href="../../db/d6d/structFlatSigningProvider.html" alt="FlatSigningProvider" shape="rect" coords="154,56,298,80"/>
+<area href="../../d6/d27/classHidingSigningProvider.html" alt="HidingSigningProvider" shape="rect" coords="308,56,452,80"/>
+<area href="../../d7/d57/classCWallet.html" alt="CWallet" shape="rect" coords="0,112,144,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -91,10 +89,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a40e6a8b9b0573bdef31f02f455064435"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74f30a174ff9bb28c01dc689e6c6708f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d80/classSigningProvider.html#a74f30a174ff9bb28c01dc689e6c6708f">GetCScript</a> (const <a class="el" href="../../da/dbf/classCScriptID.html">CScriptID</a> &amp;scriptid, <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;script) const</td></tr>
 <tr class="separator:a74f30a174ff9bb28c01dc689e6c6708f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d59060da8cfa873e98dea6e739b4db"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d80/classSigningProvider.html#a95d59060da8cfa873e98dea6e739b4db">HaveCScript</a> (const <a class="el" href="../../da/dbf/classCScriptID.html">CScriptID</a> &amp;scriptid) const</td></tr>
+<tr class="separator:a95d59060da8cfa873e98dea6e739b4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe22326c4cc29cf4ecf235e5d1dc9d7d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d80/classSigningProvider.html#abe22326c4cc29cf4ecf235e5d1dc9d7d">GetPubKey</a> (const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;address, <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;pubkey) const</td></tr>
 <tr class="separator:abe22326c4cc29cf4ecf235e5d1dc9d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae32bd3b9b1ac6b65623a90cb97129b32"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d80/classSigningProvider.html#ae32bd3b9b1ac6b65623a90cb97129b32">GetKey</a> (const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;address, <a class="el" href="../../d0/dc4/classCKey.html">CKey</a> &amp;key) const</td></tr>
 <tr class="separator:ae32bd3b9b1ac6b65623a90cb97129b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a485f93a6ea08f41c9cc87598f88aac05"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d80/classSigningProvider.html#a485f93a6ea08f41c9cc87598f88aac05">HaveKey</a> (const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;address) const</td></tr>
+<tr class="separator:a485f93a6ea08f41c9cc87598f88aac05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae52b4bd33294274821cd6cae52f35c0b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d80/classSigningProvider.html#ae52b4bd33294274821cd6cae52f35c0b">GetKeyOrigin</a> (const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;keyid, <a class="el" href="../../d4/dce/structKeyOriginInfo.html">KeyOriginInfo</a> &amp;info) const</td></tr>
 <tr class="separator:ae52b4bd33294274821cd6cae52f35c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -161,7 +163,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="../../db/d6d/structFlatSigningProvider.html#ae0db7269eae5134442d37a78bf2dbde7">FlatSigningProvider</a>, <a class="el" href="../../d6/d27/classHidingSigningProvider.html#ab9214716c578177f521d90aac2df625c">HidingSigningProvider</a>, and <a class="el" href="../../d5/dca/classCBasicKeyStore.html#a7dc20df2337bca743b7323b76e626e20">CBasicKeyStore</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d2/de0/classFillableSigningProvider.html#a23575d00e2b2e257cda0cb7c2e3ac91d">FillableSigningProvider</a>, <a class="el" href="../../db/d6d/structFlatSigningProvider.html#ae0db7269eae5134442d37a78bf2dbde7">FlatSigningProvider</a>, and <a class="el" href="../../d6/d27/classHidingSigningProvider.html#ab9214716c578177f521d90aac2df625c">HidingSigningProvider</a>.</p>
 
 </div>
 </div>
@@ -199,7 +201,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="../../d8/d87/classCCryptoKeyStore.html#a01b3cbe18b296f2c51e6fe4137f24c4b">CCryptoKeyStore</a>, <a class="el" href="../../db/d6d/structFlatSigningProvider.html#a4a532e0d9e0651fd023b5bad43bafa38">FlatSigningProvider</a>, <a class="el" href="../../d6/d27/classHidingSigningProvider.html#a39f2c6985440995db9ac81979b746b46">HidingSigningProvider</a>, and <a class="el" href="../../d5/dca/classCBasicKeyStore.html#a6374547f3c9f1afcaac52812e58375ef">CBasicKeyStore</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d7/d57/classCWallet.html#aa300f61a18b3d786149914ccfd833b21">CWallet</a>, <a class="el" href="../../d2/de0/classFillableSigningProvider.html#a2a732a7efd332e0e64ceb93d74c358fe">FillableSigningProvider</a>, <a class="el" href="../../db/d6d/structFlatSigningProvider.html#a4a532e0d9e0651fd023b5bad43bafa38">FlatSigningProvider</a>, and <a class="el" href="../../d6/d27/classHidingSigningProvider.html#a39f2c6985440995db9ac81979b746b46">HidingSigningProvider</a>.</p>
 
 </div>
 </div>
@@ -275,12 +277,68 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="../../d8/d87/classCCryptoKeyStore.html#af57d6ee7c31e1d9673e811a32aaa5ebc">CCryptoKeyStore</a>, <a class="el" href="../../db/d6d/structFlatSigningProvider.html#a053ba26247d6adcb70bfba3b31c5e122">FlatSigningProvider</a>, <a class="el" href="../../d6/d27/classHidingSigningProvider.html#a52d502d368522ec9b246dbdfb9fff43b">HidingSigningProvider</a>, and <a class="el" href="../../d5/dca/classCBasicKeyStore.html#a9c437c32a05f9977bc5fabe6a976a4bc">CBasicKeyStore</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d7/d57/classCWallet.html#a563d6e9edfe932754e1bf0b5a4b562b7">CWallet</a>, <a class="el" href="../../d2/de0/classFillableSigningProvider.html#a0867644fe9c23c1da1717a2d6cadcd9d">FillableSigningProvider</a>, <a class="el" href="../../db/d6d/structFlatSigningProvider.html#a053ba26247d6adcb70bfba3b31c5e122">FlatSigningProvider</a>, and <a class="el" href="../../d6/d27/classHidingSigningProvider.html#a52d502d368522ec9b246dbdfb9fff43b">HidingSigningProvider</a>.</p>
+
+</div>
+</div>
+<a id="a95d59060da8cfa873e98dea6e739b4db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d59060da8cfa873e98dea6e739b4db">&#9670;&nbsp;</a></span>HaveCScript()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SigningProvider::HaveCScript </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/dbf/classCScriptID.html">CScriptID</a> &amp;&#160;</td>
+          <td class="paramname"><em>scriptid</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="../../d2/de0/classFillableSigningProvider.html#abb4f73cf47a78e2e653f73955a5fee0b">FillableSigningProvider</a>.</p>
+
+</div>
+</div>
+<a id="a485f93a6ea08f41c9cc87598f88aac05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a485f93a6ea08f41c9cc87598f88aac05">&#9670;&nbsp;</a></span>HaveKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SigningProvider::HaveKey </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;&#160;</td>
+          <td class="paramname"><em>address</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="../../d7/d57/classCWallet.html#ac28aab658be7e6efb3364b2bc0df30df">CWallet</a>, and <a class="el" href="../../d2/de0/classFillableSigningProvider.html#afce9a42034777061d6f26db514b0685f">FillableSigningProvider</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/script/<a class="el" href="../../d3/dcd/sign_8h_source.html">sign.h</a></li>
+<li>src/script/<a class="el" href="../../da/d68/signingprovider_8h_source.html">signingprovider.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

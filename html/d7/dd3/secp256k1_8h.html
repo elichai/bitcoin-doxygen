@@ -197,10 +197,10 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a16a0e7ca1212220590374d1a9d17c77d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dd3/secp256k1_8h.html#a3f1967acd0fe26283877c61b3f2694a5">SECP256K1_API</a> const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a282ec9e6dfec8c35955c3eb2f7476e5e">secp256k1_context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd3/secp256k1_8h.html#a16a0e7ca1212220590374d1a9d17c77d">secp256k1_context_no_precomp</a></td></tr>
+<tr class="separator:a16a0e7ca1212220590374d1a9d17c77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac03ab067f194eb561175a6b522def2d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dd3/secp256k1_8h.html#a3f1967acd0fe26283877c61b3f2694a5">SECP256K1_API</a> const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a539882fd91bff672712fa19a4cfaeb98">secp256k1_nonce_function</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd3/secp256k1_8h.html#ac03ab067f194eb561175a6b522def2d8">secp256k1_nonce_function_rfc6979</a></td></tr>
 <tr class="separator:ac03ab067f194eb561175a6b522def2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac20349cc339990ed7a50f41d0524bb53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dd3/secp256k1_8h.html#a3f1967acd0fe26283877c61b3f2694a5">SECP256K1_API</a> const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a539882fd91bff672712fa19a4cfaeb98">secp256k1_nonce_function</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd3/secp256k1_8h.html#ac20349cc339990ed7a50f41d0524bb53">secp256k1_nonce_function_bipschnorr</a></td></tr>
-<tr class="separator:ac20349cc339990ed7a50f41d0524bb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22f44df7786a1be5ad93aadfed75b932"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dd3/secp256k1_8h.html#a3f1967acd0fe26283877c61b3f2694a5">SECP256K1_API</a> const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a539882fd91bff672712fa19a4cfaeb98">secp256k1_nonce_function</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd3/secp256k1_8h.html#a22f44df7786a1be5ad93aadfed75b932">secp256k1_nonce_function_default</a></td></tr>
 <tr class="separator:a22f44df7786a1be5ad93aadfed75b932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -664,9 +664,10 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Updates the context randomization to protect against side-channel leakage. Returns: 1: randomization successfully updated 0: error Args: ctx: pointer to a context object (cannot be NULL) In: seed32: pointer to a 32-byte random seed (NULL resets to initial state)</p>
+<p>Updates the context randomization to protect against side-channel leakage. Returns: 1: randomization successfully updated or nothing to randomize 0: error Args: ctx: pointer to a context object (cannot be NULL) In: seed32: pointer to a 32-byte random seed (NULL resets to initial state)</p>
 <p>While secp256k1 code is written to be constant-time no matter what secret values are, it's possible that a future compiler may output code which isn't, and also that the CPU may not emit the same radio frequencies or draw the same amount power for all values.</p>
 <p>This function provides a seed which is combined into the blinding value: that blinding value is added before each multiplication (and removed afterwards) so that it does not affect function results, but shields against attacks which rely on any input-dependent behaviour.</p>
+<p>This function has currently an effect only on contexts initialized for signing because randomization is currently used only for signing. However, this is not guaranteed and may change in the future. It is safe to call this function on contexts not initialized for signing; then it will have no effect and return 1.</p>
 <p>You should call this after secp256k1_context_create or secp256k1_context_clone, and may call this repeatedly afterwards. </p>
 
 </div>
@@ -1498,18 +1499,18 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ac20349cc339990ed7a50f41d0524bb53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac20349cc339990ed7a50f41d0524bb53">&#9670;&nbsp;</a></span>secp256k1_nonce_function_bipschnorr</h2>
+<a id="a16a0e7ca1212220590374d1a9d17c77d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a0e7ca1212220590374d1a9d17c77d">&#9670;&nbsp;</a></span>secp256k1_context_no_precomp</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d7/dd3/secp256k1_8h.html#a3f1967acd0fe26283877c61b3f2694a5">SECP256K1_API</a> const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a539882fd91bff672712fa19a4cfaeb98">secp256k1_nonce_function</a> secp256k1_nonce_function_bipschnorr</td>
+          <td class="memname"><a class="el" href="../../d7/dd3/secp256k1_8h.html#a3f1967acd0fe26283877c61b3f2694a5">SECP256K1_API</a> const <a class="el" href="../../d7/dd3/secp256k1_8h.html#a282ec9e6dfec8c35955c3eb2f7476e5e">secp256k1_context</a>* secp256k1_context_no_precomp</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An implementation of the nonce generation function as defined in BIP-schnorr. If a data pointer is passed, it is assumed to be a pointer to 32 bytes of extra entropy. </p>
+<p>A simple secp256k1 context object with no precomputed tables. These are useful for type serialization/parsing functions which require a context object to maintain API consistency, but currently do not require expensive precomputations or dynamic allocations. </p>
 
 </div>
 </div>

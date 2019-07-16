@@ -70,10 +70,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad4d55381352baf1985ecb0c64b016d6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/namespaceanonymous__namespace_02validation_8cpp_03.html#ad4d55381352baf1985ecb0c64b016d6d">pindexBestInvalid</a> = ::<a class="el" href="../../db/d38/validation_8h.html#a786c4a7e5e455b2fe27d2fdaa02e6a1d">ChainstateActive</a>().pindexBestInvalid</td></tr>
-<tr class="separator:ad4d55381352baf1985ecb0c64b016d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeeb1a7cf8cf79b48aea827557360a30"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *, <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/namespaceanonymous__namespace_02validation_8cpp_03.html#aeeeb1a7cf8cf79b48aea827557360a30">mapBlocksUnlinked</a> = ::<a class="el" href="../../db/d38/validation_8h.html#a786c4a7e5e455b2fe27d2fdaa02e6a1d">ChainstateActive</a>().mapBlocksUnlinked</td></tr>
-<tr class="separator:aeeeb1a7cf8cf79b48aea827557360a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ffb072c651dd2b3d08e1e599cfdb8aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d9c/classBlockManager.html">BlockManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/namespaceanonymous__namespace_02validation_8cpp_03.html#a3ffb072c651dd2b3d08e1e599cfdb8aa">g_blockman</a></td></tr>
+<tr class="separator:a3ffb072c651dd2b3d08e1e599cfdb8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b7a1a8372149c53e7ea79638f3b396"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/namespaceanonymous__namespace_02validation_8cpp_03.html#a82b7a1a8372149c53e7ea79638f3b396">pindexBestInvalid</a> = nullptr</td></tr>
+<tr class="separator:a82b7a1a8372149c53e7ea79638f3b396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5968b23b996e7bf293658ba93499781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d6b/sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/namespaceanonymous__namespace_02validation_8cpp_03.html#ab5968b23b996e7bf293658ba93499781">cs_LastBlockFile</a></td></tr>
 <tr class="separator:ab5968b23b996e7bf293658ba93499781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e03f911ff68f36a30d26395b00d50e9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d0/d0b/classCBlockFileInfo.html">CBlockFileInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/namespaceanonymous__namespace_02validation_8cpp_03.html#a0e03f911ff68f36a30d26395b00d50e9">vinfoBlockFile</a></td></tr>
@@ -117,18 +117,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aeeeb1a7cf8cf79b48aea827557360a30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeeeb1a7cf8cf79b48aea827557360a30">&#9670;&nbsp;</a></span>mapBlocksUnlinked</h2>
+<a id="a3ffb072c651dd2b3d08e1e599cfdb8aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ffb072c651dd2b3d08e1e599cfdb8aa">&#9670;&nbsp;</a></span>g_blockman</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::multimap&lt;<a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a>*, <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a>*&gt;&amp; anonymous_namespace{validation.cpp}::mapBlocksUnlinked = ::<a class="el" href="../../db/d38/validation_8h.html#a786c4a7e5e455b2fe27d2fdaa02e6a1d">ChainstateActive</a>().mapBlocksUnlinked</td>
+          <td class="memname"><a class="el" href="../../d6/d9c/classBlockManager.html">BlockManager</a> anonymous_namespace{validation.cpp}::g_blockman</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>All pairs A-&gt;B, where A (or one of its ancestors) misses transactions, but B has transactions. Pruned nodes may have entries where B is missing data. </p>
 
 </div>
 </div>
@@ -146,14 +145,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4d55381352baf1985ecb0c64b016d6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4d55381352baf1985ecb0c64b016d6d">&#9670;&nbsp;</a></span>pindexBestInvalid</h2>
+<a id="a82b7a1a8372149c53e7ea79638f3b396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82b7a1a8372149c53e7ea79638f3b396">&#9670;&nbsp;</a></span>pindexBestInvalid</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a>*&amp; anonymous_namespace{validation.cpp}::pindexBestInvalid = ::<a class="el" href="../../db/d38/validation_8h.html#a786c4a7e5e455b2fe27d2fdaa02e6a1d">ChainstateActive</a>().pindexBestInvalid</td>
+          <td class="memname"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a>* anonymous_namespace{validation.cpp}::pindexBestInvalid = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">

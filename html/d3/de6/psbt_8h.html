@@ -81,6 +81,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../dc/d1c/primitives_2transaction_8h_source.html">primitives/transaction.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d4/daf/pubkey_8h_source.html">pubkey.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d3/dcd/sign_8h_source.html">script/sign.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../da/d68/signingprovider_8h_source.html">script/signingprovider.h</a>&gt;</code><br />
 </div>
 <p><a href="../../d3/de6/psbt_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -131,8 +132,6 @@ Variables</h2></td></tr>
 <tr class="separator:a49614d0219e3140091813c522d27a527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23070ec099b737cb67e40a001be12e6f"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de6/psbt_8h.html#a23070ec099b737cb67e40a001be12e6f">PSBT_GLOBAL_UNSIGNED_TX</a> = 0x00</td></tr>
 <tr class="separator:a23070ec099b737cb67e40a001be12e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b1c4d4b313199e3fdf47477d1b13a9e"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de6/psbt_8h.html#a4b1c4d4b313199e3fdf47477d1b13a9e">PSBT_GLOBAL_UNDEFINED</a> = 0xFF</td></tr>
-<tr class="separator:a4b1c4d4b313199e3fdf47477d1b13a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2363a890e18ba65ee0d75c66cb023641"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de6/psbt_8h.html#a2363a890e18ba65ee0d75c66cb023641">PSBT_IN_NON_WITNESS_UTXO</a> = 0x00</td></tr>
 <tr class="separator:a2363a890e18ba65ee0d75c66cb023641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc84d98c2dd3027fd0253970caf3726d"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de6/psbt_8h.html#afc84d98c2dd3027fd0253970caf3726d">PSBT_IN_WITNESS_UTXO</a> = 0x01</td></tr>
@@ -151,20 +150,12 @@ Variables</h2></td></tr>
 <tr class="separator:a2f1f9f3386a32a4f9db1902ae2702e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56d66d0afa96c96975f81e639d815921"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de6/psbt_8h.html#a56d66d0afa96c96975f81e639d815921">PSBT_IN_SCRIPTWITNESS</a> = 0x08</td></tr>
 <tr class="separator:a56d66d0afa96c96975f81e639d815921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05d97cd068b1928204f94b277c543378"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de6/psbt_8h.html#a05d97cd068b1928204f94b277c543378">PSBT_IN_PAY_TO_CONTRACT</a> = 0x0A</td></tr>
-<tr class="separator:a05d97cd068b1928204f94b277c543378"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a107df1eac2bc3b96280bd7cf8a19aed0"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de6/psbt_8h.html#a107df1eac2bc3b96280bd7cf8a19aed0">PSBT_IN_TAPROOT_PATH</a> = 0x0B</td></tr>
-<tr class="separator:a107df1eac2bc3b96280bd7cf8a19aed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42b4b34159bc3f05522aebbb4df269b6"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de6/psbt_8h.html#a42b4b34159bc3f05522aebbb4df269b6">PSBT_OUT_REDEEMSCRIPT</a> = 0x00</td></tr>
 <tr class="separator:a42b4b34159bc3f05522aebbb4df269b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e3cec02e883555536c213c767493bfc"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de6/psbt_8h.html#a8e3cec02e883555536c213c767493bfc">PSBT_OUT_WITNESSSCRIPT</a> = 0x01</td></tr>
 <tr class="separator:a8e3cec02e883555536c213c767493bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d7208b769bca69c037e7ee4b29b455e"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de6/psbt_8h.html#a5d7208b769bca69c037e7ee4b29b455e">PSBT_OUT_BIP32_DERIVATION</a> = 0x02</td></tr>
 <tr class="separator:a5d7208b769bca69c037e7ee4b29b455e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7efc69b167a541fb7871406e2f11e3cc"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de6/psbt_8h.html#a7efc69b167a541fb7871406e2f11e3cc">PSBT_OUT_PAY_TO_CONTRACT</a> = 0x03</td></tr>
-<tr class="separator:a7efc69b167a541fb7871406e2f11e3cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a564ce1af2e3189d75316c7b76936d630"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de6/psbt_8h.html#a564ce1af2e3189d75316c7b76936d630">PSBT_OUT_TAPROOT_PATH</a> = 0x04</td></tr>
-<tr class="separator:a564ce1af2e3189d75316c7b76936d630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4caa734fd190e1fdd063c2ae62af160b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de6/psbt_8h.html#a4caa734fd190e1fdd063c2ae62af160b">PSBT_SEPARATOR</a> = 0x00</td></tr>
 <tr class="separator:a4caa734fd190e1fdd063c2ae62af160b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -496,28 +487,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a4b1c4d4b313199e3fdf47477d1b13a9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b1c4d4b313199e3fdf47477d1b13a9e">&#9670;&nbsp;</a></span>PSBT_GLOBAL_UNDEFINED</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> PSBT_GLOBAL_UNDEFINED = 0xFF</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a23070ec099b737cb67e40a001be12e6f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23070ec099b737cb67e40a001be12e6f">&#9670;&nbsp;</a></span>PSBT_GLOBAL_UNSIGNED_TX</h2>
 
@@ -595,28 +564,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> PSBT_IN_PARTIAL_SIG = 0x02</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a05d97cd068b1928204f94b277c543378"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05d97cd068b1928204f94b277c543378">&#9670;&nbsp;</a></span>PSBT_IN_PAY_TO_CONTRACT</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> PSBT_IN_PAY_TO_CONTRACT = 0x0A</td>
         </tr>
       </table>
   </td>
@@ -716,28 +663,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a107df1eac2bc3b96280bd7cf8a19aed0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a107df1eac2bc3b96280bd7cf8a19aed0">&#9670;&nbsp;</a></span>PSBT_IN_TAPROOT_PATH</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> PSBT_IN_TAPROOT_PATH = 0x0B</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="afc84d98c2dd3027fd0253970caf3726d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc84d98c2dd3027fd0253970caf3726d">&#9670;&nbsp;</a></span>PSBT_IN_WITNESS_UTXO</h2>
 
@@ -826,28 +751,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7efc69b167a541fb7871406e2f11e3cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7efc69b167a541fb7871406e2f11e3cc">&#9670;&nbsp;</a></span>PSBT_OUT_PAY_TO_CONTRACT</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> PSBT_OUT_PAY_TO_CONTRACT = 0x03</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a42b4b34159bc3f05522aebbb4df269b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42b4b34159bc3f05522aebbb4df269b6">&#9670;&nbsp;</a></span>PSBT_OUT_REDEEMSCRIPT</h2>
 
@@ -859,28 +762,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> PSBT_OUT_REDEEMSCRIPT = 0x00</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a564ce1af2e3189d75316c7b76936d630"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a564ce1af2e3189d75316c7b76936d630">&#9670;&nbsp;</a></span>PSBT_OUT_TAPROOT_PATH</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> PSBT_OUT_TAPROOT_PATH = 0x04</td>
         </tr>
       </table>
   </td>

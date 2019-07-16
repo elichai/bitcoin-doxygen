@@ -32,6 +32,6 @@ var searchData=
   ['writebatchitemprinter',['WriteBatchItemPrinter',['../d4/dda/classleveldb_1_1anonymous__namespace_02dumpfile_8cc_03_1_1WriteBatchItemPrinter.html',1,'leveldb::anonymous_namespace{dumpfile.cc}']]],
   ['writebatchtest',['WriteBatchTest',['../db/d65/classleveldb_1_1WriteBatchTest.html',1,'leveldb']]],
   ['writeoptions',['WriteOptions',['../d1/d76/structleveldb_1_1WriteOptions.html',1,'leveldb']]],
-  ['writer',['Writer',['../d6/dc7/classleveldb_1_1log_1_1Writer.html',1,'leveldb::log::Writer'],['../d4/d3b/structleveldb_1_1DBImpl_1_1Writer.html',1,'leveldb::DBImpl::Writer']]],
+  ['writer',['Writer',['../d4/d3b/structleveldb_1_1DBImpl_1_1Writer.html',1,'leveldb::DBImpl::Writer'],['../d6/dc7/classleveldb_1_1log_1_1Writer.html',1,'leveldb::log::Writer']]],
   ['wshdescriptor',['WSHDescriptor',['../d7/d11/classanonymous__namespace_02descriptor_8cpp_03_1_1WSHDescriptor.html',1,'anonymous_namespace{descriptor.cpp}']]]
 ];

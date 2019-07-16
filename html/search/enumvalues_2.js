@@ -33,6 +33,7 @@ var searchData=
   ['consensus',['CONSENSUS',['../d5/d0b/consensus_2validation_8h.html#a0d64dfd2ecba62623019545b95085b23a6ea28b46407abd2931a73c789ecdd944',1,'validation.h']]],
   ['conservative',['CONSERVATIVE',['../d7/d44/policy_2fees_8h.html#ad4442247e3a53b4e0e9142797e833186a321c4353253381c1d9274aea14ee6d38',1,'CONSERVATIVE():&#160;fees.h'],['../d7/d44/policy_2fees_8h.html#aff36f74244c52c764c1af21d5f812173a321c4353253381c1d9274aea14ee6d38',1,'CONSERVATIVE():&#160;fees.h']]],
   ['corrupt',['CORRUPT',['../de/dd6/walletdb_8h.html#a7558d92e9ea1d446075da1b514c4a944afad2f4d832184f8b063e736cac40012b',1,'walletdb.h']]],
+  ['creation_5ffailed',['CREATION_FAILED',['../df/d8d/wallet_2wallet_8h.html#ad4b2c43026d449a5e3e31076d08b7ce4a9ea07547e4dd9214f55fd6407e46903c',1,'wallet.h']]],
   ['credit',['CREDIT',['../d8/d51/classCWalletTx.html#a7e2c195e09e22a512c8a390a3d1e6655a6f0b67bdf2ca575f3762b92fd4f7ab94',1,'CWalletTx']]],
   ['critical',['Critical',['../d4/d22/classNotificator.html#aa2ff8a05d471e32e77584a2b8dd182aba596518f9cfdbd57b0fdc68fc95c69ecd',1,'Notificator']]],
   ['ct_5fdeleted',['CT_DELETED',['../d9/d6d/ui__interface_8h.html#a293ba931937e469a6327b8d6b4872969a6aa8d1cd0da86fe8886e3a5c47f194ef',1,'ui_interface.h']]],

@@ -438,6 +438,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Try to connect to the specified service on the specified socket.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addrConnect</td><td>The service to which to connect. </td></tr>
+    <tr><td class="paramname">hSocket</td><td>The socket on which to connect. </td></tr>
+    <tr><td class="paramname">nTimeout</td><td>Wait this many milliseconds for the connection to be established. </td></tr>
+    <tr><td class="paramname">manual_connection</td><td>Whether or not the connection was manually requested (e.g. thru the addnode RPC)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether or not a connection was successfully made. </dd></dl>
 
 </div>
 </div>
@@ -490,6 +501,19 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Connect to a specified destination service through a SOCKS5 proxy by first connecting to the SOCKS5 proxy.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proxy</td><td>The SOCKS5 proxy. </td></tr>
+    <tr><td class="paramname">strDest</td><td>The destination service to which to connect. </td></tr>
+    <tr><td class="paramname">port</td><td>The destination port. </td></tr>
+    <tr><td class="paramname">hSocket</td><td>The socket on which to connect to the SOCKS5 proxy. </td></tr>
+    <tr><td class="paramname">nTimeout</td><td>Wait this many milliseconds for the connection to the SOCKS5 proxy to be established. </td></tr>
+    <tr><td class="paramname">outProxyConnectionFailed[out]</td><td>Whether or not the connection to the SOCKS5 proxy failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether or not the operation succeeded. </dd></dl>
 
 </div>
 </div>
@@ -508,6 +532,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Try to create a socket file descriptor with specific properties in the communications domain (address family) of the specified service.</p>
+<p>For details on the desired properties, see the inline comments in the source code. </p>
 
 </div>
 </div>
@@ -663,16 +689,19 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Read bytes from socket. This will either read the full number of bytes requested or return False on error or timeout. This function can be interrupted by calling <a class="el" href="../../d0/d0e/netbase_8cpp.html#a851a9917fb3475698f6632cfee0b4e23">InterruptSocks5()</a></p>
+<p>Try to read a specified number of bytes from a socket. Please read the "see
+also" section for more detail.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>Buffer to receive into </td></tr>
-    <tr><td class="paramname">len</td><td>Length of data to receive </td></tr>
-    <tr><td class="paramname">timeout</td><td>Timeout in milliseconds for receive operation</td></tr>
+    <tr><td class="paramname">data</td><td>The buffer where the read bytes should be stored. </td></tr>
+    <tr><td class="paramname">len</td><td>The number of bytes to read into the specified buffer. </td></tr>
+    <tr><td class="paramname">timeout</td><td>The total timeout in milliseconds for this read. </td></tr>
+    <tr><td class="paramname">hSocket</td><td>The socket (has to be in non-blocking mode) from which to read bytes.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This function requires that hSocket is in non-blocking mode. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An IntrRecvError indicating the resulting status of this read. <a class="el" href="../../d0/d0e/netbase_8cpp.html#a016a344931d1ff79d2489292ad877b37ae0aa021e21dddbd6d8cecec71e9cf564">IntrRecvError::OK</a> only if all of the specified number of bytes were read.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>This function can be interrupted by calling <a class="el" href="../../d0/d0e/netbase_8cpp.html#a851a9917fb3475698f6632cfee0b4e23">InterruptSocks5(bool)</a>. Sockets can be made non-blocking with <a class="el" href="../../d0/d0e/netbase_8cpp.html#ade3b7e8272b95fc577fa0387b863725a">SetSocketNonBlocking</a>(const <a class="el" href="../../d3/d2d/compat_8h.html#ab8a4083c1e5d7c4172936f59e67ce798">SOCKET</a>&amp;, bool). </dd></dl>
 
 </div>
 </div>
@@ -825,6 +854,18 @@ template&lt;typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Resolve a service string to its corresponding service.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">pszName</td><td>The string representing a service. Could be a name or a numerical IP address (IPv6 addresses should be in their disambiguated bracketed form), optionally followed by a port number. (e.g. example.com:8333 or</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vAddr</td><td>The resulting services to which the specified service string resolved. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">portDefault</td><td>The default port for resulting services if not specified by the service string. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">fAllowLookup</td><td>Whether or not hostname lookups are permitted. If yes, external queries may be performed. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">nMaxSolutions</td><td>The maximum number of results we want, specifying 0 means "as many solutions as we get."</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether or not the service string successfully resolved to any resulting services. </dd></dl>
 
 </div>
 </div>
@@ -865,6 +906,8 @@ template&lt;typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Resolve a service string to its first corresponding service.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d0e/netbase_8cpp.html#a56a2f4bcb9fb77b5efe358f804f642cc">Lookup(const char *, std::vector&lt;CService&gt;&amp;, int, bool, unsigned int)</a> for additional parameter descriptions. </dd></dl>
 
 </div>
 </div>
@@ -905,6 +948,16 @@ template&lt;typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Resolve a host string to its corresponding network addresses.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">pszName</td><td>The string representing a host. Could be a name or a numerical IP address (IPv6 addresses in their bracketed form are allowed). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vIP</td><td>The resulting network addresses to which the specified host string resolved.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether or not the specified host string successfully resolved to any resulting network addresses.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d0e/netbase_8cpp.html#a56a2f4bcb9fb77b5efe358f804f642cc">Lookup(const char *, std::vector&lt;CService&gt;&amp;, int, bool, unsigned int)</a> for additional parameter descriptions. </dd></dl>
 
 </div>
 </div>
@@ -939,6 +992,8 @@ template&lt;typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Resolve a host string to its first corresponding network address.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d0e/netbase_8cpp.html#a3cdc8ba9f8d72752ff5cdd1e7407cdef">LookupHost(const char *, std::vector&lt;CNetAddr&gt;&amp;, unsigned int, bool)</a> for additional parameter descriptions. </dd></dl>
 
 </div>
 </div>
@@ -1015,6 +1070,9 @@ template&lt;typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Resolve a service string with a numeric IP to its first corresponding service.</p>
+<dl class="section return"><dt>Returns</dt><dd>The resulting <a class="el" href="../../d4/d24/classCService.html">CService</a> if the resolution was successful, [::]:0 otherwise.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d0e/netbase_8cpp.html#a98276049fa599d00d64eb8444b8636ff">Lookup(const char *, CService&amp;, int, bool)</a> for additional parameter descriptions. </dd></dl>
 
 </div>
 </div>
@@ -1043,6 +1101,15 @@ template&lt;typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Parse and resolve a specified subnet string into the appropriate internal representation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszName</td><td>A string representation of a subnet of the form <code>network address [ "/", ( CIDR-style suffix | netmask ) ]</code>(e.g. <code>2001:db8::/32</code>, <code>192.0.2.0/255.255.255.0</code>, or <code>8.8.8.8</code>). </td></tr>
+    <tr><td class="paramname">ret</td><td>The resulting internal representation of a subnet.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the operation succeeded or not. </dd></dl>
 
 </div>
 </div>
@@ -1117,6 +1184,10 @@ template&lt;typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set the name proxy to use for all connections to nodes specified by a hostname. After setting this proxy, connecting to a node sepcified by a hostname won't result in a local lookup of said hostname, rather, connect to the node by asking the name proxy for a proxy connection to the hostname, effectively delegating the hostname lookup to the specified proxy.</p>
+<p>This delegation increases privacy for those who set the name proxy as they no longer leak their external hostname queries to their DNS servers.</p>
+<dl class="section return"><dt>Returns</dt><dd>Whether or not the operation succeeded.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>SOCKS5's support for UDP-over-SOCKS5 has been considered, but no SOCK5 server in common use (most notably Tor) actually implements UDP support, and a DNS resolver is beyond the scope of this project. </dd></dl>
 
 </div>
 </div>
@@ -1241,7 +1312,19 @@ template&lt;typename... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Connect using SOCKS5 (as described in RFC1928) </p>
+<p>Connect to a specified destination service through an already connected SOCKS5 proxy.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strDest</td><td>The destination fully-qualified domain name. </td></tr>
+    <tr><td class="paramname">port</td><td>The destination port. </td></tr>
+    <tr><td class="paramname">auth</td><td>The credentials with which to authenticate with the specified SOCKS5 proxy. </td></tr>
+    <tr><td class="paramname">hSocket</td><td>The SOCKS5 proxy socket.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether or not the operation succeeded.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The specified SOCKS5 proxy socket must already be connected to the SOCKS5 proxy.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://www.ietf.org/rfc/rfc1928.txt">RFC1928: SOCKS Protocol Version 5</a> </dd></dl>
 
 </div>
 </div>

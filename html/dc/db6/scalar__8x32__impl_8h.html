@@ -72,8 +72,7 @@ $(function() {
 <div class="title">scalar_8x32_impl.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string.h&gt;</code><br />
-</div>
+
 <p><a href="../../dc/db6/scalar__8x32__impl_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -134,14 +133,6 @@ Macros</h2></td></tr>
 <tr class="separator:a2384e06d62f7580d7599d3b77b68acbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7738483bf87a265b882763603d527b3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db6/scalar__8x32__impl_8h.html#a7738483bf87a265b882763603d527b3b">extract_fast</a>(n)</td></tr>
 <tr class="separator:a7738483bf87a265b882763603d527b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af931bf11c41af34dde1b90f1b26488f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db6/scalar__8x32__impl_8h.html#af931bf11c41af34dde1b90f1b26488f6">ROTL32</a>(x,  n)&#160;&#160;&#160;((x) &lt;&lt; (n) | (x) &gt;&gt; (32-(n)))</td></tr>
-<tr class="separator:af931bf11c41af34dde1b90f1b26488f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae524f06f43cef9dde57fb1cecc75d4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db6/scalar__8x32__impl_8h.html#aae524f06f43cef9dde57fb1cecc75d4a">QUARTERROUND</a>(a,  b,  c,  d)</td></tr>
-<tr class="separator:aae524f06f43cef9dde57fb1cecc75d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d0e2eaadc95216b3a3c775409a6093e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db6/scalar__8x32__impl_8h.html#a1d0e2eaadc95216b3a3c775409a6093e">BE32</a>(p)&#160;&#160;&#160;((((p) &amp; 0xFF) &lt;&lt; 24) | (((p) &amp; 0xFF00) &lt;&lt; 8) | (((p) &amp; 0xFF0000) &gt;&gt; 8) | (((p) &amp; 0xFF000000) &gt;&gt; 24))</td></tr>
-<tr class="separator:a1d0e2eaadc95216b3a3c775409a6093e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f4c2f85e821423baae2644ad0c80fb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db6/scalar__8x32__impl_8h.html#a2f4c2f85e821423baae2644ad0c80fb2">LE32</a>(p)&#160;&#160;&#160;(p)</td></tr>
-<tr class="separator:a2f4c2f85e821423baae2644ad0c80fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -191,28 +182,8 @@ Functions</h2></td></tr>
 <tr class="separator:a82b458aab9138b7111490eae6cec6404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1867b2a6504ecb951d95f14e032bfa38"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/dd3/secp256k1_8h.html#a7ddc487fd46aee88f21cabedb7268b1e">SECP256K1_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db6/scalar__8x32__impl_8h.html#a1867b2a6504ecb951d95f14e032bfa38">secp256k1_scalar_mul_shift_var</a> (<a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *r, const <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *a, const <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *b, unsigned int shift)</td></tr>
 <tr class="separator:a1867b2a6504ecb951d95f14e032bfa38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af719b25341c72cb34e5c57635d0958dd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db6/scalar__8x32__impl_8h.html#af719b25341c72cb34e5c57635d0958dd">secp256k1_scalar_chacha20</a> (<a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *r1, <a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *r2, const unsigned char *seed, <a class="el" href="../../df/dd8/stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> idx)</td></tr>
-<tr class="separator:af719b25341c72cb34e5c57635d0958dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a1d0e2eaadc95216b3a3c775409a6093e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d0e2eaadc95216b3a3c775409a6093e">&#9670;&nbsp;</a></span>BE32</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BE32</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">p</td><td>)</td>
-          <td>&#160;&#160;&#160;((((p) &amp; 0xFF) &lt;&lt; 24) | (((p) &amp; 0xFF00) &lt;&lt; 8) | (((p) &amp; 0xFF0000) &gt;&gt; 8) | (((p) &amp; 0xFF000000) &gt;&gt; 24))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2384e06d62f7580d7599d3b77b68acbb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2384e06d62f7580d7599d3b77b68acbb">&#9670;&nbsp;</a></span>extract</h2>
 
@@ -248,24 +219,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{ \</div><div class="line">    (n) = c0; \</div><div class="line">    c0 = c1; \</div><div class="line">    c1 = 0; \</div><div class="line">    VERIFY_CHECK(c2 == 0); \</div><div class="line">}</div></div><!-- fragment --><p>Extract the lowest 32 bits of (c0,c1,c2) into n, and left shift the number 32 bits. c2 is required to be zero. </p>
-
-</div>
-</div>
-<a id="a2f4c2f85e821423baae2644ad0c80fb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f4c2f85e821423baae2644ad0c80fb2">&#9670;&nbsp;</a></span>LE32</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LE32</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">p</td><td>)</td>
-          <td>&#160;&#160;&#160;(p)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -356,75 +309,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{ \</div><div class="line">    uint32_t tl, th; \</div><div class="line">    { \</div><div class="line">        uint64_t t = (<a class="code" href="../../df/dd8/stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a>)a * b; \</div><div class="line">        th = t &gt;&gt; 32;         <span class="comment">/* at most 0xFFFFFFFE */</span> \</div><div class="line">        tl = t; \</div><div class="line">    } \</div><div class="line">    c0 += tl;                 <span class="comment">/* overflow is handled on the next line */</span> \</div><div class="line">    th += (c0 &lt; tl) ? 1 : 0;  <span class="comment">/* at most 0xFFFFFFFF */</span> \</div><div class="line">    c1 += th;                 <span class="comment">/* never overflows by contract (verified in the next line) */</span> \</div><div class="line">    VERIFY_CHECK(c1 &gt;= th); \</div><div class="line">}</div><div class="ttc" id="stdint_8h_html_aaa5d1cd013383c889537491c3cfd9aad"><div class="ttname"><a href="../../df/dd8/stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a></div><div class="ttdeci">unsigned long long uint64_t</div><div class="ttdef"><b>Definition:</b> stdint.h:22</div></div>
 </div><!-- fragment --><p>Add a*b to the number defined by (c0,c1). c1 must never overflow. </p>
-
-</div>
-</div>
-<a id="aae524f06f43cef9dde57fb1cecc75d4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae524f06f43cef9dde57fb1cecc75d4a">&#9670;&nbsp;</a></span>QUARTERROUND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define QUARTERROUND</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">c, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">d&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">a += b; d = <a class="code" href="../../dc/db6/scalar__8x32__impl_8h.html#af931bf11c41af34dde1b90f1b26488f6">ROTL32</a>(d ^ a, 16); \</div><div class="line">  c += d; b = <a class="code" href="../../dc/db6/scalar__8x32__impl_8h.html#af931bf11c41af34dde1b90f1b26488f6">ROTL32</a>(b ^ c, 12); \</div><div class="line">  a += b; d = <a class="code" href="../../dc/db6/scalar__8x32__impl_8h.html#af931bf11c41af34dde1b90f1b26488f6">ROTL32</a>(d ^ a, 8); \</div><div class="line">  c += d; b = <a class="code" href="../../dc/db6/scalar__8x32__impl_8h.html#af931bf11c41af34dde1b90f1b26488f6">ROTL32</a>(b ^ c, 7);</div><div class="ttc" id="scalar__8x32__impl_8h_html_af931bf11c41af34dde1b90f1b26488f6"><div class="ttname"><a href="../../dc/db6/scalar__8x32__impl_8h.html#af931bf11c41af34dde1b90f1b26488f6">ROTL32</a></div><div class="ttdeci">#define ROTL32(x, n)</div><div class="ttdef"><b>Definition:</b> scalar_8x32_impl.h:723</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="af931bf11c41af34dde1b90f1b26488f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af931bf11c41af34dde1b90f1b26488f6">&#9670;&nbsp;</a></span>ROTL32</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ROTL32</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">n&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((x) &lt;&lt; (n) | (x) &gt;&gt; (32-(n)))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -829,54 +713,6 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>flag</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af719b25341c72cb34e5c57635d0958dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af719b25341c72cb34e5c57635d0958dd">&#9670;&nbsp;</a></span>secp256k1_scalar_chacha20()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void secp256k1_scalar_chacha20 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *&#160;</td>
-          <td class="paramname"><em>r1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../df/d44/structsecp256k1__scalar.html">secp256k1_scalar</a> *&#160;</td>
-          <td class="paramname"><em>r2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>seed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a>&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -117,6 +117,8 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:af726b7977c42081d4ed0d42b922abfd3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#af726b7977c42081d4ed0d42b922abfd3">GetAvoidReuseFlag</a> (<a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> *const pwallet, const <a class="el" href="../../d7/d96/classUniValue.html">UniValue</a> &amp;param)</td></tr>
 <tr class="separator:af726b7977c42081d4ed0d42b922abfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef9a05a8754387e2c2ec61469cf069c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#a8ef9a05a8754387e2c2ec61469cf069c">HaveKey</a> (const <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> &amp;wallet, const <a class="el" href="../../d0/dc4/classCKey.html">CKey</a> &amp;key)</td></tr>
+<tr class="separator:a8ef9a05a8754387e2c2ec61469cf069c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af704ea42262521346e3be551cfbc5a7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#af704ea42262521346e3be551cfbc5a7f">GetWalletNameFromJSONRPCRequest</a> (const <a class="el" href="../../d8/db0/classJSONRPCRequest.html">JSONRPCRequest</a> &amp;request, std::string &amp;wallet_name)</td></tr>
 <tr class="separator:af704ea42262521346e3be551cfbc5a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13cf9bdc928d8ca0b67e34791da05ddc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/rpcwallet_8cpp.html#a13cf9bdc928d8ca0b67e34791da05ddc">GetWalletForJSONRPCRequest</a> (const <a class="el" href="../../d8/db0/classJSONRPCRequest.html">JSONRPCRequest</a> &amp;request)</td></tr>
@@ -1034,6 +1036,35 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ef9a05a8754387e2c2ec61469cf069c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef9a05a8754387e2c2ec61469cf069c">&#9670;&nbsp;</a></span>HaveKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HaveKey </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> &amp;&#160;</td>
+          <td class="paramname"><em>wallet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/dc4/classCKey.html">CKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks if a <a class="el" href="../../d0/dc4/classCKey.html">CKey</a> is in the given <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> compressed or otherwise </p>
 
 </div>
 </div>

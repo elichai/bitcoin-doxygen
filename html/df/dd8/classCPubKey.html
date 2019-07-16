@@ -127,8 +127,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a25f8b70340ad20ddab0f80ec4cee9396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b3fef213b227394ca9d0a1e3baa957e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd8/classCPubKey.html#a5b3fef213b227394ca9d0a1e3baa957e">Verify</a> (const <a class="el" href="../../d2/d86/classuint256.html">uint256</a> &amp;hash, const std::vector&lt; unsigned char &gt; &amp;vchSig) const</td></tr>
 <tr class="separator:a5b3fef213b227394ca9d0a1e3baa957e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa385b96e3f0cb304769bc7738c799c26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd8/classCPubKey.html#aa385b96e3f0cb304769bc7738c799c26">VerifySchnorr</a> (const <a class="el" href="../../d2/d86/classuint256.html">uint256</a> &amp;hash, const std::vector&lt; unsigned char &gt; &amp;sig) const</td></tr>
-<tr class="separator:aa385b96e3f0cb304769bc7738c799c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a169505e735a02db385486b0affeb565c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd8/classCPubKey.html#a169505e735a02db385486b0affeb565c">RecoverCompact</a> (const <a class="el" href="../../d2/d86/classuint256.html">uint256</a> &amp;hash, const std::vector&lt; unsigned char &gt; &amp;vchSig)</td></tr>
 <tr class="memdesc:a169505e735a02db385486b0affeb565c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recover a public key from a compact signature.  <a href="#a169505e735a02db385486b0affeb565c">More...</a><br /></td></tr>
 <tr class="separator:a169505e735a02db385486b0affeb565c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,9 +136,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac28722f47ab8a613bf9982608d13aa1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd8/classCPubKey.html#ac28722f47ab8a613bf9982608d13aa1f">Derive</a> (<a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;pubkeyChild, <a class="el" href="../../db/dfb/hash_8h.html#aa201a9867f780a040c7af908e0a85db3">ChainCode</a> &amp;ccChild, unsigned int nChild, const <a class="el" href="../../db/dfb/hash_8h.html#aa201a9867f780a040c7af908e0a85db3">ChainCode</a> &amp;cc) const</td></tr>
 <tr class="memdesc:ac28722f47ab8a613bf9982608d13aa1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derive BIP32 child pubkey.  <a href="#ac28722f47ab8a613bf9982608d13aa1f">More...</a><br /></td></tr>
 <tr class="separator:ac28722f47ab8a613bf9982608d13aa1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e4b50238996e148ade7b55ea366b86c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd8/classCPubKey.html#a7e4b50238996e148ade7b55ea366b86c">CheckPayToContract</a> (const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;base, const <a class="el" href="../../d2/d86/classuint256.html">uint256</a> &amp;hash) const</td></tr>
-<tr class="memdesc:a7e4b50238996e148ade7b55ea366b86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify a P2C derivation. Hash must be a cryptographic hash that commits to base.  <a href="#a7e4b50238996e148ade7b55ea366b86c">More...</a><br /></td></tr>
-<tr class="separator:a7e4b50238996e148ade7b55ea366b86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -335,36 +330,6 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Check whether a signature is normalized (lower-S). </p>
-
-</div>
-</div>
-<a id="a7e4b50238996e148ade7b55ea366b86c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e4b50238996e148ade7b55ea366b86c">&#9670;&nbsp;</a></span>CheckPayToContract()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CPubKey::CheckPayToContract </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;&#160;</td>
-          <td class="paramname"><em>base</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d2/d86/classuint256.html">uint256</a> &amp;&#160;</td>
-          <td class="paramname"><em>hash</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Verify a P2C derivation. Hash must be a cryptographic hash that commits to base. </p>
 
 </div>
 </div>
@@ -892,35 +857,6 @@ template&lt;typename Stream &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Verify a DER signature (~72 bytes). If this public key is not fully valid, the return value will be false. </p>
-
-</div>
-</div>
-<a id="aa385b96e3f0cb304769bc7738c799c26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa385b96e3f0cb304769bc7738c799c26">&#9670;&nbsp;</a></span>VerifySchnorr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CPubKey::VerifySchnorr </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d2/d86/classuint256.html">uint256</a> &amp;&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; unsigned char &gt; &amp;&#160;</td>
-          <td class="paramname"><em>sig</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Verify a Schnorr (DLS) signature (64 bytes) </p>
 
 </div>
 </div>

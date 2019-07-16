@@ -102,6 +102,7 @@ $(function() {
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;boost/signals2/signal.hpp&gt;</code><br />
 </div>
 <p><a href="../../df/d8d/wallet_2wallet_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -109,7 +110,7 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8c/classCKeyPool.html">CKeyPool</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classCReserveKey.html">CReserveKey</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d7c/classReserveDestination.html">ReserveDestination</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dda/classCAddressBookData.html">CAddressBookData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +144,11 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ad4b2c43026d449a5e3e31076d08b7ce4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/wallet_2wallet_8h.html#ad4b2c43026d449a5e3e31076d08b7ce4">WalletCreationStatus</a> { <a class="el" href="../../df/d8d/wallet_2wallet_8h.html#ad4b2c43026d449a5e3e31076d08b7ce4ac7f69f7c9e5aea9b8f54cf02870e2bf8">SUCCESS</a>, 
+<a class="el" href="../../df/d8d/wallet_2wallet_8h.html#ad4b2c43026d449a5e3e31076d08b7ce4a9ea07547e4dd9214f55fd6407e46903c">CREATION_FAILED</a>, 
+<a class="el" href="../../df/d8d/wallet_2wallet_8h.html#ad4b2c43026d449a5e3e31076d08b7ce4a81ddb18cf34247939f41485282133536">ENCRYPTION_FAILED</a>
+ }</td></tr>
+<tr class="separator:ad4b2c43026d449a5e3e31076d08b7ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39a6b71da3eb95cddc0836d3b27ac7c9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/wallet_2wallet_8h.html#a39a6b71da3eb95cddc0836d3b27ac7c9">WalletFeature</a> { <br />
 &#160;&#160;<a class="el" href="../../df/d8d/wallet_2wallet_8h.html#a39a6b71da3eb95cddc0836d3b27ac7c9a5fea711c20fa9e9721ac59d94b6e5d72">FEATURE_BASE</a> = 10500, 
 <a class="el" href="../../df/d8d/wallet_2wallet_8h.html#a39a6b71da3eb95cddc0836d3b27ac7c9a16fc17e025bfd90749cb594e8fc664b0">FEATURE_WALLETCRYPT</a> = 40000, 
@@ -179,6 +185,8 @@ Functions</h2></td></tr>
 <tr class="separator:a59fb74ca7a0b34f8f86ec58464a72f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab115d1b86c25902d2a32d7a919382bd1"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/wallet_2wallet_8h.html#ab115d1b86c25902d2a32d7a919382bd1">LoadWallet</a> (<a class="el" href="../../df/d87/classinterfaces_1_1Chain.html">interfaces::Chain</a> &amp;chain, const <a class="el" href="../../d1/d69/classWalletLocation.html">WalletLocation</a> &amp;location, std::string &amp;<a class="el" href="../../dc/db2/system_8h.html#a96c5fc7111f69f7dcaba992d95d13e03">error</a>, std::string &amp;warning)</td></tr>
 <tr class="separator:ab115d1b86c25902d2a32d7a919382bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8ea31837532cec09dc9193b6c9d1e6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/wallet_2wallet_8h.html#a4a8ea31837532cec09dc9193b6c9d1e6">CreateWallet</a> (<a class="el" href="../../df/d87/classinterfaces_1_1Chain.html">interfaces::Chain</a> &amp;chain, const std::string &amp;<a class="el" href="../../d8/d04/rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, std::string &amp;<a class="el" href="../../dc/db2/system_8h.html#a96c5fc7111f69f7dcaba992d95d13e03">error</a>, std::string &amp;warning, <a class="el" href="../../df/d8d/wallet_2wallet_8h.html#ad4b2c43026d449a5e3e31076d08b7ce4">WalletCreationStatus</a> &amp;status, const <a class="el" href="../../d0/d7f/secure_8h.html#a396ed773a5ac24aec28c8f7dc413c7ac">SecureString</a> &amp;passphrase, <a class="el" href="../../df/dd8/stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> wallet_creation_flags)</td></tr>
+<tr class="separator:a4a8ea31837532cec09dc9193b6c9d1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ac39b557acef3326f11b3cd3537568f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/wallet_2wallet_8h.html#a4ac39b557acef3326f11b3cd3537568f">ReadOrderPos</a> (<a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> &amp;nOrderPos, <a class="el" href="../../df/d8d/wallet_2wallet_8h.html#aaf509cb8d82c13c57426420ef68ced6a">mapValue_t</a> &amp;mapValue)</td></tr>
 <tr class="separator:a4ac39b557acef3326f11b3cd3537568f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af07173c51df7b2e2087e134f52f51c61"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/wallet_2wallet_8h.html#af07173c51df7b2e2087e134f52f51c61">WriteOrderPos</a> (const <a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> &amp;nOrderPos, <a class="el" href="../../df/d8d/wallet_2wallet_8h.html#aaf509cb8d82c13c57426420ef68ced6a">mapValue_t</a> &amp;mapValue)</td></tr>
@@ -274,6 +282,25 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ad4b2c43026d449a5e3e31076d08b7ce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4b2c43026d449a5e3e31076d08b7ce4">&#9670;&nbsp;</a></span>WalletCreationStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../df/d8d/wallet_2wallet_8h.html#ad4b2c43026d449a5e3e31076d08b7ce4">WalletCreationStatus</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad4b2c43026d449a5e3e31076d08b7ce4ac7f69f7c9e5aea9b8f54cf02870e2bf8"></a>SUCCESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad4b2c43026d449a5e3e31076d08b7ce4a9ea07547e4dd9214f55fd6407e46903c"></a>CREATION_FAILED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad4b2c43026d449a5e3e31076d08b7ce4a81ddb18cf34247939f41485282133536"></a>ENCRYPTION_FAILED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a39a6b71da3eb95cddc0836d3b27ac7c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a39a6b71da3eb95cddc0836d3b27ac7c9">&#9670;&nbsp;</a></span>WalletFeature</h2>
 
@@ -335,6 +362,64 @@ Variables</h2></td></tr>
           <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>wallet</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a8ea31837532cec09dc9193b6c9d1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a8ea31837532cec09dc9193b6c9d1e6">&#9670;&nbsp;</a></span>CreateWallet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="../../d7/d57/classCWallet.html">CWallet</a>&gt; CreateWallet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d87/classinterfaces_1_1Chain.html">interfaces::Chain</a> &amp;&#160;</td>
+          <td class="paramname"><em>chain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>warning</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d8d/wallet_2wallet_8h.html#ad4b2c43026d449a5e3e31076d08b7ce4">WalletCreationStatus</a> &amp;&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d7f/secure_8h.html#a396ed773a5ac24aec28c8f7dc413c7ac">SecureString</a> &amp;&#160;</td>
+          <td class="paramname"><em>passphrase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a>&#160;</td>
+          <td class="paramname"><em>wallet_creation_flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -960,10 +1045,10 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">        <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a></div><div class="line">    |   <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8ae89353a8ab93640fdd04106570ba8660">WALLET_FLAG_BLANK_WALLET</a></div><div class="line">    |   <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a9ff9eb97aab76e3f2d02bb5c881cbbcc">WALLET_FLAG_KEY_ORIGIN_METADATA</a></div><div class="line">    |   <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86">WALLET_FLAG_DISABLE_PRIVATE_KEYS</a></div><div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8ae89353a8ab93640fdd04106570ba8660"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8ae89353a8ab93640fdd04106570ba8660">WALLET_FLAG_BLANK_WALLET</a></div><div class="ttdef"><b>Definition:</b> wallet.h:143</div></div>
-<div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a9ff9eb97aab76e3f2d02bb5c881cbbcc"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a9ff9eb97aab76e3f2d02bb5c881cbbcc">WALLET_FLAG_KEY_ORIGIN_METADATA</a></div><div class="ttdef"><b>Definition:</b> wallet.h:128</div></div>
-<div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a></div><div class="ttdef"><b>Definition:</b> wallet.h:125</div></div>
-<div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86">WALLET_FLAG_DISABLE_PRIVATE_KEYS</a></div><div class="ttdef"><b>Definition:</b> wallet.h:131</div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">        <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a></div><div class="line">    |   <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8ae89353a8ab93640fdd04106570ba8660">WALLET_FLAG_BLANK_WALLET</a></div><div class="line">    |   <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a9ff9eb97aab76e3f2d02bb5c881cbbcc">WALLET_FLAG_KEY_ORIGIN_METADATA</a></div><div class="line">    |   <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86">WALLET_FLAG_DISABLE_PRIVATE_KEYS</a></div><div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8ae89353a8ab93640fdd04106570ba8660"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8ae89353a8ab93640fdd04106570ba8660">WALLET_FLAG_BLANK_WALLET</a></div><div class="ttdef"><b>Definition:</b> wallet.h:153</div></div>
+<div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a9ff9eb97aab76e3f2d02bb5c881cbbcc"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a9ff9eb97aab76e3f2d02bb5c881cbbcc">WALLET_FLAG_KEY_ORIGIN_METADATA</a></div><div class="ttdef"><b>Definition:</b> wallet.h:138</div></div>
+<div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a></div><div class="ttdef"><b>Definition:</b> wallet.h:135</div></div>
+<div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86">WALLET_FLAG_DISABLE_PRIVATE_KEYS</a></div><div class="ttdef"><b>Definition:</b> wallet.h:141</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -986,7 +1071,7 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">        <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a></div><div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a></div><div class="ttdef"><b>Definition:</b> wallet.h:125</div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">        <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a></div><div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a></div><div class="ttdef"><b>Definition:</b> wallet.h:135</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1023,10 +1108,10 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    {<span class="stringliteral">&quot;avoid_reuse&quot;</span>, <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a>},</div><div class="line">    {<span class="stringliteral">&quot;blank&quot;</span>, <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8ae89353a8ab93640fdd04106570ba8660">WALLET_FLAG_BLANK_WALLET</a>},</div><div class="line">    {<span class="stringliteral">&quot;key_origin_metadata&quot;</span>, <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a9ff9eb97aab76e3f2d02bb5c881cbbcc">WALLET_FLAG_KEY_ORIGIN_METADATA</a>},</div><div class="line">    {<span class="stringliteral">&quot;disable_private_keys&quot;</span>, <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86">WALLET_FLAG_DISABLE_PRIVATE_KEYS</a>},</div><div class="line">}</div><div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8ae89353a8ab93640fdd04106570ba8660"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8ae89353a8ab93640fdd04106570ba8660">WALLET_FLAG_BLANK_WALLET</a></div><div class="ttdef"><b>Definition:</b> wallet.h:143</div></div>
-<div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a9ff9eb97aab76e3f2d02bb5c881cbbcc"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a9ff9eb97aab76e3f2d02bb5c881cbbcc">WALLET_FLAG_KEY_ORIGIN_METADATA</a></div><div class="ttdef"><b>Definition:</b> wallet.h:128</div></div>
-<div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a></div><div class="ttdef"><b>Definition:</b> wallet.h:125</div></div>
-<div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86">WALLET_FLAG_DISABLE_PRIVATE_KEYS</a></div><div class="ttdef"><b>Definition:</b> wallet.h:131</div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    {<span class="stringliteral">&quot;avoid_reuse&quot;</span>, <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a>},</div><div class="line">    {<span class="stringliteral">&quot;blank&quot;</span>, <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8ae89353a8ab93640fdd04106570ba8660">WALLET_FLAG_BLANK_WALLET</a>},</div><div class="line">    {<span class="stringliteral">&quot;key_origin_metadata&quot;</span>, <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a9ff9eb97aab76e3f2d02bb5c881cbbcc">WALLET_FLAG_KEY_ORIGIN_METADATA</a>},</div><div class="line">    {<span class="stringliteral">&quot;disable_private_keys&quot;</span>, <a class="code" href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86">WALLET_FLAG_DISABLE_PRIVATE_KEYS</a>},</div><div class="line">}</div><div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8ae89353a8ab93640fdd04106570ba8660"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8ae89353a8ab93640fdd04106570ba8660">WALLET_FLAG_BLANK_WALLET</a></div><div class="ttdef"><b>Definition:</b> wallet.h:153</div></div>
+<div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a9ff9eb97aab76e3f2d02bb5c881cbbcc"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a9ff9eb97aab76e3f2d02bb5c881cbbcc">WALLET_FLAG_KEY_ORIGIN_METADATA</a></div><div class="ttdef"><b>Definition:</b> wallet.h:138</div></div>
+<div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a4e9b88a014a2fa4a31f3698fef9f5ce2">WALLET_FLAG_AVOID_REUSE</a></div><div class="ttdef"><b>Definition:</b> wallet.h:135</div></div>
+<div class="ttc" id="wallet_2wallet_8h_html_a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86"><div class="ttname"><a href="../../df/d8d/wallet_2wallet_8h.html#a399ea1efa219e50cce4be2b4bbf703f8a47b6a219e3ca6733b2a251be3e5def86">WALLET_FLAG_DISABLE_PRIVATE_KEYS</a></div><div class="ttdef"><b>Definition:</b> wallet.h:141</div></div>
 </div><!-- fragment -->
 </div>
 </div>

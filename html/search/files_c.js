@@ -7,7 +7,7 @@ var searchData=
   ['macos_5fappnap_2eh',['macos_appnap.h',['../dd/db2/macos__appnap_8h.html',1,'']]],
   ['macos_5fappnap_2emm',['macos_appnap.mm',['../d7/d84/macos__appnap_8mm.html',1,'']]],
   ['main_2ecpp',['main.cpp',['../df/d0a/main_8cpp.html',1,'']]],
-  ['main_5fimpl_2eh',['main_impl.h',['../d1/d4c/ecdh_2main__impl_8h.html',1,'(Global Namespace)'],['../d6/d5d/recovery_2main__impl_8h.html',1,'(Global Namespace)'],['../db/d73/schnorrsig_2main__impl_8h.html',1,'(Global Namespace)']]],
+  ['main_5fimpl_2eh',['main_impl.h',['../d1/d4c/ecdh_2main__impl_8h.html',1,'(Global Namespace)'],['../d6/d5d/recovery_2main__impl_8h.html',1,'(Global Namespace)']]],
   ['makeseeds_2epy',['makeseeds.py',['../df/dde/makeseeds_8py.html',1,'']]],
   ['memenv_2ecc',['memenv.cc',['../dc/d6b/memenv_8cc.html',1,'']]],
   ['memenv_2eh',['memenv.h',['../d0/dd6/memenv_8h.html',1,'']]],

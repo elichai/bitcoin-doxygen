@@ -6,7 +6,6 @@ var searchData=
   ['scripterror_5ft',['ScriptError_t',['../d9/d8d/script__error_8h.html#a3150eb7362e5d1e0732dd10c973a0eb5',1,'script_error.h']]],
   ['separatorstyle',['SeparatorStyle',['../d3/dc8/classBitcoinUnits.html#a5151919ed4f75e0597047b0287b9ebf8',1,'BitcoinUnits']]],
   ['serviceflags',['ServiceFlags',['../d2/d5e/protocol_8h.html#ad131f3177584caea787cdbf6f85a9537',1,'protocol.h']]],
-  ['signaturetype',['SignatureType',['../d3/d97/interpreter_8h.html#a7456a1be27da2089f984a0ede62c6c50',1,'interpreter.h']]],
   ['sigversion',['SigVersion',['../d3/d97/interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8f',1,'interpreter.h']]],
   ['socks5atyp',['SOCKS5Atyp',['../d0/d0e/netbase_8cpp.html#a01938064f13a24e2b97dc4ec66f4d769',1,'netbase.cpp']]],
   ['socks5command',['SOCKS5Command',['../d0/d0e/netbase_8cpp.html#a063679a898bf66a0314e922fdf29300f',1,'netbase.cpp']]],

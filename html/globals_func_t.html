@@ -64,9 +64,6 @@ $(function() {
 &#160;
 
 <h3><a id="index_t"></a>- t -</h3><ul>
-<li>TaggedHash()
-: <a class="el" href="d2/de2/interpreter_8cpp.html#a3f7593c9e854f8a388b46a8481202ed9">interpreter.cpp</a>
-</li>
 <li>test_add_neg_y_diff_x()
 : <a class="el" href="d5/d7f/tests_8c.html#a849e08074670ab1644fdec5cc5ef08a7">tests.c</a>
 </li>
@@ -120,6 +117,9 @@ $(function() {
 </li>
 <li>test_ecmult_multi()
 : <a class="el" href="d5/d7f/tests_8c.html#a5aeb2e68664a8e944fbea37d8d4fc589">tests.c</a>
+</li>
+<li>test_ecmult_multi_batch_size_helper()
+: <a class="el" href="d5/d7f/tests_8c.html#a2104595d05af59d545d33ba88b1e1728">tests.c</a>
 </li>
 <li>test_ecmult_multi_batching()
 : <a class="el" href="d5/d7f/tests_8c.html#a01bd8f97bc16f6fb25deced59c535490">tests.c</a>
@@ -181,27 +181,6 @@ $(function() {
 <li>test_random_pubkeys()
 : <a class="el" href="d5/d7f/tests_8c.html#a9f06c34f3caa68b5da0ad133c86f5e3c">tests.c</a>
 </li>
-<li>test_schnorrsig_api()
-: <a class="el" href="d6/d29/schnorrsig_2tests__impl_8h.html#a6320d510b1064ca67b38449768bb30fa">tests_impl.h</a>
-</li>
-<li>test_schnorrsig_bip_vectors()
-: <a class="el" href="d6/d29/schnorrsig_2tests__impl_8h.html#afb3ba37b63917b20de461d7fe5072241">tests_impl.h</a>
-</li>
-<li>test_schnorrsig_bip_vectors_check_signing()
-: <a class="el" href="d6/d29/schnorrsig_2tests__impl_8h.html#a3b01c7779c841c064a57476a412d119e">tests_impl.h</a>
-</li>
-<li>test_schnorrsig_bip_vectors_check_verify()
-: <a class="el" href="d6/d29/schnorrsig_2tests__impl_8h.html#adc3aeb76c4ac373bc4f2862278bd80a5">tests_impl.h</a>
-</li>
-<li>test_schnorrsig_serialize()
-: <a class="el" href="d6/d29/schnorrsig_2tests__impl_8h.html#aa49cb7c60d7261972b1d7230e36c8b5e">tests_impl.h</a>
-</li>
-<li>test_schnorrsig_sign()
-: <a class="el" href="d6/d29/schnorrsig_2tests__impl_8h.html#a12bd744ae085199a91c835561c1638f5">tests_impl.h</a>
-</li>
-<li>test_schnorrsig_sign_verify()
-: <a class="el" href="d6/d29/schnorrsig_2tests__impl_8h.html#a4fa907516ec8ecdf369682659178fde5">tests_impl.h</a>
-</li>
 <li>test_secp256k1_pippenger_bucket_window_inv()
 : <a class="el" href="d5/d7f/tests_8c.html#a3d6e3b0cf5eb071756605d42d52f5cc0">tests.c</a>
 </li>
@@ -235,11 +214,14 @@ $(function() {
 : <a class="el" href="d6/d26/bitcoingui_8cpp.html#a1eea420ba3e07673f74709af33a578fd">bitcoingui.cpp</a>
 </li>
 <li>ThreadScriptCheck()
-: <a class="el" href="dd/d7d/validation_8cpp.html#a925a33e7952a157922b0bbb8dab29a20">validation.cpp</a>
-, <a class="el" href="db/d38/validation_8h.html#a925a33e7952a157922b0bbb8dab29a20">validation.h</a>
+: <a class="el" href="db/d38/validation_8h.html#a925a33e7952a157922b0bbb8dab29a20">validation.h</a>
+, <a class="el" href="dd/d7d/validation_8cpp.html#a925a33e7952a157922b0bbb8dab29a20">validation.cpp</a>
 </li>
 <li>TimingResistantEqual()
 : <a class="el" href="de/df9/strencodings_8h.html#a7ddc80f6840eae3277e324aec17c2568">strencodings.h</a>
+</li>
+<li>timingsafe_bcmp()
+: <a class="el" href="dd/df7/crypto_2chacha__poly__aead_8cpp.html#ae0916558f451d8cd208a2e5a20271ade">chacha_poly_aead.cpp</a>
 </li>
 <li>ToByteVector()
 : <a class="el" href="de/d7f/script_8h.html#a54e10bc63d490dd5d39d245102b81359">script.h</a>
@@ -280,8 +262,8 @@ $(function() {
 , <a class="el" href="dc/db2/system_8h.html#acb8d6b822bc1bfa609bf43bbac1a0d44">system.h</a>
 </li>
 <li>TryCreateDirectories()
-: <a class="el" href="dc/db2/system_8h.html#a9042a919d837da9d97311a0c460c597c">system.h</a>
-, <a class="el" href="d6/df8/system_8cpp.html#a9042a919d837da9d97311a0c460c597c">system.cpp</a>
+: <a class="el" href="d6/df8/system_8cpp.html#a9042a919d837da9d97311a0c460c597c">system.cpp</a>
+, <a class="el" href="dc/db2/system_8h.html#a9042a919d837da9d97311a0c460c597c">system.h</a>
 </li>
 <li>TxInErrorToJSON()
 : <a class="el" href="d1/d68/rawtransaction__util_8cpp.html#aa18bf1f4cd71863cd807845a220ad475">rawtransaction_util.cpp</a>

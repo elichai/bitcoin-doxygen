@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['le32',['LE32',['../db/d1f/scalar__4x64__impl_8h.html#a2f4c2f85e821423baae2644ad0c80fb2',1,'LE32():&#160;scalar_4x64_impl.h'],['../dc/db6/scalar__8x32__impl_8h.html#a2f4c2f85e821423baae2644ad0c80fb2',1,'LE32():&#160;scalar_8x32_impl.h']]],
   ['leave_5fcritical_5fsection',['LEAVE_CRITICAL_SECTION',['../de/d6b/sync_8h.html#a2b89bac48633dc1532691f1106a55f6c',1,'sync.h']]],
   ['leveldb_5fonce_5finit',['LEVELDB_ONCE_INIT',['../da/d4a/port__example_8h.html#aa0f16c685b4ebb93ccc49f5ae36e1c9d',1,'LEVELDB_ONCE_INIT():&#160;port_example.h'],['../dc/d7c/port__posix_8h.html#aa0f16c685b4ebb93ccc49f5ae36e1c9d',1,'LEVELDB_ONCE_INIT():&#160;port_posix.h'],['../dc/d20/port__win_8h.html#aa0f16c685b4ebb93ccc49f5ae36e1c9d',1,'LEVELDB_ONCE_INIT():&#160;port_win.h']]],
   ['limited_5fstring',['LIMITED_STRING',['../df/d9d/serialize_8h.html#a78e63691a056ce2368984400605e4f6e',1,'serialize.h']]],

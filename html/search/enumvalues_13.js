@@ -7,8 +7,6 @@ var searchData=
   ['tab_5fnetwork',['TAB_NETWORK',['../d3/d30/classOptionsDialog.html#a5764f8df35613b971f648cd11f49e47dab5c3dd8e8abfcf430956c982bc5761ca',1,'OptionsDialog']]],
   ['tab_5fpeers',['TAB_PEERS',['../d5/de7/classRPCConsole.html#a0ef5130bf15aacb7f47352de810c1c20ac6603d8379ce457d0738ec92cc3994c7',1,'RPCConsole']]],
   ['table_5ftest',['TABLE_TEST',['../de/d6a/namespaceleveldb.html#aefcb8349b9101fe6eeff98a1682f1342afcbbb26886c91919805d694a85d7a7d0',1,'leveldb']]],
-  ['taproot',['TAPROOT',['../d3/d97/interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8fa1526b180923f9569c6045129400229b9',1,'interpreter.h']]],
-  ['tapscript',['TAPSCRIPT',['../d3/d97/interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8faf91c6e2b2fe0cbda47ac0801786555e9',1,'interpreter.h']]],
   ['thirdpartytxurls',['ThirdPartyTxUrls',['../d1/d31/classOptionsModel.html#a5c6c9ca8a01aca9f53e91f118e4878d2a91cfe21dbeeec49b82df81756e2c658c',1,'OptionsModel']]],
   ['thismonth',['ThisMonth',['../d6/d5b/classTransactionView.html#a73d1bbedc72fa131591aadb3aba150f8a34f3d05ba9262c629e7d6a4e809ab927',1,'TransactionView']]],
   ['thisweek',['ThisWeek',['../d6/d5b/classTransactionView.html#a73d1bbedc72fa131591aadb3aba150f8ad690fc9e22dbb55e86f2198553d26bec',1,'TransactionView']]],

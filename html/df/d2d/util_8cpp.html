@@ -74,8 +74,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="../../dc/da1/key__io_8h_source.html">key_io.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d0/d82/keystore_8h_source.html">keystore.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/db6/outputtype_8h_source.html">outputtype.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../da/d68/signingprovider_8h_source.html">script/signingprovider.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d9/db6/rpc_2util_8h_source.html">rpc/util.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d9/d80/descriptor_8h_source.html">script/descriptor.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d1/db1/tinyformat_8h_source.html">tinyformat.h</a>&gt;</code><br />
@@ -115,10 +115,10 @@ Functions</h2></td></tr>
 <tr class="separator:a9ef4f8fb114508ceb861a0e8c3e0d26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac18ea86a874bf7841b716eca2b467746"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/util_8cpp.html#ac18ea86a874bf7841b716eca2b467746">HexToPubKey</a> (const std::string &amp;hex_in)</td></tr>
 <tr class="separator:ac18ea86a874bf7841b716eca2b467746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad97eb14e556166df34392ec8eb8d3167"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/util_8cpp.html#ad97eb14e556166df34392ec8eb8d3167">AddrToPubKey</a> (<a class="el" href="../../d5/d94/classCKeyStore.html">CKeyStore</a> *const keystore, const std::string &amp;addr_in)</td></tr>
-<tr class="separator:ad97eb14e556166df34392ec8eb8d3167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aead1b27c0461b7284cec4bf3a4b9ebe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d9b/standard_8h.html#ae7e198080de1ddaee514c99e22d65a76">CTxDestination</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/util_8cpp.html#aead1b27c0461b7284cec4bf3a4b9ebe1">AddAndGetMultisigDestination</a> (const int required, const std::vector&lt; <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &gt; &amp;pubkeys, <a class="el" href="../../db/db6/outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a> type, <a class="el" href="../../d5/d94/classCKeyStore.html">CKeyStore</a> &amp;keystore, <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;script_out)</td></tr>
-<tr class="separator:aead1b27c0461b7284cec4bf3a4b9ebe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5171a20e3a8cad2bff4237173177dd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/util_8cpp.html#af5171a20e3a8cad2bff4237173177dd9">AddrToPubKey</a> (<a class="el" href="../../d2/de0/classFillableSigningProvider.html">FillableSigningProvider</a> *const keystore, const std::string &amp;addr_in)</td></tr>
+<tr class="separator:af5171a20e3a8cad2bff4237173177dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8c4646d61f74ed875717d360d71791"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d9b/standard_8h.html#ae7e198080de1ddaee514c99e22d65a76">CTxDestination</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/util_8cpp.html#a2d8c4646d61f74ed875717d360d71791">AddAndGetMultisigDestination</a> (const int required, const std::vector&lt; <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &gt; &amp;pubkeys, <a class="el" href="../../db/db6/outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a> type, <a class="el" href="../../d2/de0/classFillableSigningProvider.html">FillableSigningProvider</a> &amp;keystore, <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;script_out)</td></tr>
+<tr class="separator:a2d8c4646d61f74ed875717d360d71791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af91efe7877ce4e77064e04d13888ae4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d96/classUniValue.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/util_8cpp.html#af91efe7877ce4e77064e04d13888ae4f">DescribeAddress</a> (const <a class="el" href="../../df/d9b/standard_8h.html#ae7e198080de1ddaee514c99e22d65a76">CTxDestination</a> &amp;dest)</td></tr>
 <tr class="separator:af91efe7877ce4e77064e04d13888ae4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae928fea7d8ddf182a6ccc24e2156b065"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/util_8cpp.html#ae928fea7d8ddf182a6ccc24e2156b065">ParseConfirmTarget</a> (const <a class="el" href="../../d7/d96/classUniValue.html">UniValue</a> &amp;value, unsigned int max_target)</td></tr>
@@ -142,8 +142,8 @@ Variables</h2></td></tr>
 <tr class="separator:acf4b7d928dcde6f56e7d3e4783132d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aead1b27c0461b7284cec4bf3a4b9ebe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aead1b27c0461b7284cec4bf3a4b9ebe1">&#9670;&nbsp;</a></span>AddAndGetMultisigDestination()</h2>
+<a id="a2d8c4646d61f74ed875717d360d71791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8c4646d61f74ed875717d360d71791">&#9670;&nbsp;</a></span>AddAndGetMultisigDestination()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,7 +169,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/d94/classCKeyStore.html">CKeyStore</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/de0/classFillableSigningProvider.html">FillableSigningProvider</a> &amp;&#160;</td>
           <td class="paramname"><em>keystore</em>, </td>
         </tr>
         <tr>
@@ -188,8 +188,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad97eb14e556166df34392ec8eb8d3167"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad97eb14e556166df34392ec8eb8d3167">&#9670;&nbsp;</a></span>AddrToPubKey()</h2>
+<a id="af5171a20e3a8cad2bff4237173177dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5171a20e3a8cad2bff4237173177dd9">&#9670;&nbsp;</a></span>AddrToPubKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,7 +197,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> AddrToPubKey </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/d94/classCKeyStore.html">CKeyStore</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/de0/classFillableSigningProvider.html">FillableSigningProvider</a> *const&#160;</td>
           <td class="paramname"><em>keystore</em>, </td>
         </tr>
         <tr>

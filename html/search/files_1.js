@@ -20,7 +20,6 @@ var searchData=
   ['bench_5fecmult_2ec',['bench_ecmult.c',['../db/dba/bench__ecmult_8c.html',1,'']]],
   ['bench_5finternal_2ec',['bench_internal.c',['../d9/d5e/bench__internal_8c.html',1,'']]],
   ['bench_5frecover_2ec',['bench_recover.c',['../d7/d8e/bench__recover_8c.html',1,'']]],
-  ['bench_5fschnorrsig_2ec',['bench_schnorrsig.c',['../d2/db5/bench__schnorrsig_8c.html',1,'']]],
   ['bench_5fsign_2ec',['bench_sign.c',['../da/dae/bench__sign_8c.html',1,'']]],
   ['bench_5fverify_2ec',['bench_verify.c',['../dd/d4a/bench__verify_8c.html',1,'']]],
   ['benchmarking_2emd',['benchmarking.md',['../da/d08/benchmarking_8md.html',1,'']]],

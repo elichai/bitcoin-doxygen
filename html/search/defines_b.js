@@ -4,7 +4,6 @@ var searchData=
   ['make_5fraii',['MAKE_RAII',['../db/dd2/events_8h.html#a09462c45afc2664e6582665e742371c0',1,'events.h']]],
   ['map_5fanonymous',['MAP_ANONYMOUS',['../d4/d71/support_2lockedpool_8cpp.html#ae4f86bff73414c5fc08c058f957212f0',1,'lockedpool.cpp']]],
   ['max_5fpath',['MAX_PATH',['../d3/d2d/compat_8h.html#ab99ded389af74001a6298fc9e44e74e5',1,'compat.h']]],
-  ['max_5fsigs',['MAX_SIGS',['../d2/db5/bench__schnorrsig_8c.html#aa5101beec91f21213a0e719bf8625e47',1,'bench_schnorrsig.c']]],
   ['micro',['MICRO',['../dd/d7d/validation_8cpp.html#a39f795126ae5c79f068a2c5c49d6ee59',1,'validation.cpp']]],
   ['milli',['MILLI',['../dd/d7d/validation_8cpp.html#adeb4b9151c69e22165f63162cc43e459',1,'validation.cpp']]],
   ['min_5fcore_5ffiledescriptors',['MIN_CORE_FILEDESCRIPTORS',['../d0/dc9/init_8cpp.html#a42e91d203626e60d6c5c4f14cd04e421',1,'init.cpp']]],

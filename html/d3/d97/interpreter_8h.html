@@ -87,8 +87,6 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d17/structPrecomputedTransactionData.html">PrecomputedTransactionData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/structScriptExecutionData.html">ScriptExecutionData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfe/classBaseSignatureChecker.html">BaseSignatureChecker</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dae/classGenericTransactionSignatureChecker.html">GenericTransactionSignatureChecker&lt; T &gt;</a></td></tr>
@@ -103,16 +101,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:af9bdc3014f3d54c426b6d2df10de4960"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="../../d3/d97/interpreter_8h.html#af9bdc3014f3d54c426b6d2df10de4960ac68c7df6528b3001624e56b2de3826de">SIGHASH_ALL</a> = 1, 
+<tr class="memitem:af9bdc3014f3d54c426b6d2df10de4960"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../d3/d97/interpreter_8h.html#af9bdc3014f3d54c426b6d2df10de4960ac68c7df6528b3001624e56b2de3826de">SIGHASH_ALL</a> = 1, 
 <a class="el" href="../../d3/d97/interpreter_8h.html#af9bdc3014f3d54c426b6d2df10de4960acaba9b1f029a1628196345fce5667f6f">SIGHASH_NONE</a> = 2, 
 <a class="el" href="../../d3/d97/interpreter_8h.html#af9bdc3014f3d54c426b6d2df10de4960ad9bb96e76cf9f1b6ebbf50373f4f9ca5">SIGHASH_SINGLE</a> = 3, 
-<a class="el" href="../../d3/d97/interpreter_8h.html#af9bdc3014f3d54c426b6d2df10de4960a9412c721b741fe9be1e3247dc390a4d2">SIGHASH_ANYONECANPAY</a> = 0x80, 
-<br />
-&#160;&#160;<a class="el" href="../../d3/d97/interpreter_8h.html#af9bdc3014f3d54c426b6d2df10de4960a792bc2718c0a67a9dcb04c9a11fbddf0">SIGHASH_TAPDEFAULT</a> = 0, 
-<a class="el" href="../../d3/d97/interpreter_8h.html#af9bdc3014f3d54c426b6d2df10de4960a8b454654533df79b46f137f242139c69">SIGHASH_TAPOUTPUTMASK</a> = 3, 
-<a class="el" href="../../d3/d97/interpreter_8h.html#af9bdc3014f3d54c426b6d2df10de4960afde387b03008287fc7b5b5cc3ec8a558">SIGHASH_TAPINPUTMASK</a> = 0x80
-<br />
+<a class="el" href="../../d3/d97/interpreter_8h.html#af9bdc3014f3d54c426b6d2df10de4960a9412c721b741fe9be1e3247dc390a4d2">SIGHASH_ANYONECANPAY</a> = 0x80
  }</td></tr>
 <tr class="separator:af9bdc3014f3d54c426b6d2df10de4960"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb49720dc49f7d4e4cf9adbf2948e409"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
@@ -137,26 +129,14 @@ Enumerations</h2></td></tr>
 <a class="el" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a8b0a4415024860f87f29652a83b7b8f4">SCRIPT_VERIFY_NULLFAIL</a> = (1U &lt;&lt; 14), 
 <br />
 &#160;&#160;<a class="el" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a652479a49081835e92ea3e6b96c16b47">SCRIPT_VERIFY_WITNESS_PUBKEYTYPE</a> = (1U &lt;&lt; 15), 
-<a class="el" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a4e18fbfa14b7bb431d36f1af5e3e6ba3">SCRIPT_VERIFY_CONST_SCRIPTCODE</a> = (1U &lt;&lt; 16), 
-<a class="el" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a798def447bb877507f1f10a42457881c">SCRIPT_VERIFY_TAPROOT</a> = (1U &lt;&lt; 17), 
-<a class="el" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a75d407635cc10885454af651459da57d">SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_TAPROOT_VERSION</a> = (1U &lt;&lt; 18), 
-<br />
-&#160;&#160;<a class="el" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a224c69c180ccf70fa9208c435b13240d">SCRIPT_VERIFY_DISCOURAGE_UNKNOWN_ANNEX</a> = (1U &lt;&lt; 19), 
-<a class="el" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a3e5d381979b98c3ca10d1aabdedea9f3">SCRIPT_VERIFY_DISCOURAGE_OP_SUCCESS</a> = (1U &lt;&lt; 20), 
-<a class="el" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409aaf2dd51ac5408bdbe3755fb3d19768a0">SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_PUBKEYTYPE</a> = (1U &lt;&lt; 21)
+<a class="el" href="../../d3/d97/interpreter_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a4e18fbfa14b7bb431d36f1af5e3e6ba3">SCRIPT_VERIFY_CONST_SCRIPTCODE</a> = (1U &lt;&lt; 16)
 <br />
  }</td></tr>
 <tr class="separator:adb49720dc49f7d4e4cf9adbf2948e409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3db3199560fd5419a3be2fcd88a28f8f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d97/interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8f">SigVersion</a> { <a class="el" href="../../d3/d97/interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8fae7b1a5c82772e0e055096008cb9883ef">SigVersion::BASE</a> = 0, 
-<a class="el" href="../../d3/d97/interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8fafd7f573f76ca2911662d17ada249f8b0">SigVersion::WITNESS_V0</a> = 1, 
-<a class="el" href="../../d3/d97/interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8fa1526b180923f9569c6045129400229b9">SigVersion::TAPROOT</a> = 2, 
-<a class="el" href="../../d3/d97/interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8faf91c6e2b2fe0cbda47ac0801786555e9">SigVersion::TAPSCRIPT</a> = 3
+<a class="el" href="../../d3/d97/interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8fafd7f573f76ca2911662d17ada249f8b0">SigVersion::WITNESS_V0</a> = 1
  }</td></tr>
 <tr class="separator:a3db3199560fd5419a3be2fcd88a28f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7456a1be27da2089f984a0ede62c6c50"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d97/interpreter_8h.html#a7456a1be27da2089f984a0ede62c6c50">SignatureType</a> { <a class="el" href="../../d3/d97/interpreter_8h.html#a7456a1be27da2089f984a0ede62c6c50ab1870fa8801941a8b0faddfd614d3493">SignatureType::ECDSA</a>, 
-<a class="el" href="../../d3/d97/interpreter_8h.html#a7456a1be27da2089f984a0ede62c6c50a18cc6c134600bab98300072c58224c51">SignatureType::SCHNORR</a>
- }</td></tr>
-<tr class="separator:a7456a1be27da2089f984a0ede62c6c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -165,11 +145,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ad7fa04f3c495a5f5ae7a97bc15cf0ce0"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:ad7fa04f3c495a5f5ae7a97bc15cf0ce0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d2/d86/classuint256.html">uint256</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d97/interpreter_8h.html#ad7fa04f3c495a5f5ae7a97bc15cf0ce0">SignatureHash</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;scriptCode, const T &amp;txTo, unsigned int nIn, int nHashType, const <a class="el" href="../../dd/d2f/amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;amount, <a class="el" href="../../d3/d97/interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8f">SigVersion</a> sigversion, const <a class="el" href="../../d8/d17/structPrecomputedTransactionData.html">PrecomputedTransactionData</a> *cache=nullptr)</td></tr>
 <tr class="separator:ad7fa04f3c495a5f5ae7a97bc15cf0ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04bf96a095e03a211ffe00a33654e162"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a04bf96a095e03a211ffe00a33654e162"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d97/interpreter_8h.html#a04bf96a095e03a211ffe00a33654e162">SignatureHashTap</a> (<a class="el" href="../../d2/d86/classuint256.html">uint256</a> &amp;hash_out, const <a class="el" href="../../db/dfd/structScriptExecutionData.html">ScriptExecutionData</a> &amp;execdata, const T &amp;tx_to, unsigned int in_pos, <a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> hash_type, <a class="el" href="../../d3/d97/interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8f">SigVersion</a> sigversion, const <a class="el" href="../../d8/d17/structPrecomputedTransactionData.html">PrecomputedTransactionData</a> &amp;cache)</td></tr>
-<tr class="separator:a04bf96a095e03a211ffe00a33654e162"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa095235e842e20cba1a74f6edfcabf39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d97/interpreter_8h.html#aa095235e842e20cba1a74f6edfcabf39">EvalScript</a> (std::vector&lt; std::vector&lt; unsigned char &gt; &gt; &amp;stack, const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;script, unsigned int <a class="el" href="../../dc/ddf/bitcoin-tx_8cpp.html#ac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, const <a class="el" href="../../db/dfe/classBaseSignatureChecker.html">BaseSignatureChecker</a> &amp;checker, <a class="el" href="../../d3/d97/interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8f">SigVersion</a> sigversion, <a class="el" href="../../d9/d8d/script__error_8h.html#ad4323df51ed704d5f9eaef57ad5a425c">ScriptError</a> *<a class="el" href="../../dc/db2/system_8h.html#a96c5fc7111f69f7dcaba992d95d13e03">error</a>=nullptr, <a class="el" href="../../db/dfd/structScriptExecutionData.html">ScriptExecutionData</a> execdata={})</td></tr>
-<tr class="separator:aa095235e842e20cba1a74f6edfcabf39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea38d31b2cc35a1ecfad02eaed0f85e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d97/interpreter_8h.html#acea38d31b2cc35a1ecfad02eaed0f85e">EvalScript</a> (std::vector&lt; std::vector&lt; unsigned char &gt; &gt; &amp;stack, const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;script, unsigned int <a class="el" href="../../dc/ddf/bitcoin-tx_8cpp.html#ac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, const <a class="el" href="../../db/dfe/classBaseSignatureChecker.html">BaseSignatureChecker</a> &amp;checker, <a class="el" href="../../d3/d97/interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8f">SigVersion</a> sigversion, <a class="el" href="../../d9/d8d/script__error_8h.html#ad4323df51ed704d5f9eaef57ad5a425c">ScriptError</a> *<a class="el" href="../../dc/db2/system_8h.html#a96c5fc7111f69f7dcaba992d95d13e03">error</a>=nullptr)</td></tr>
+<tr class="separator:acea38d31b2cc35a1ecfad02eaed0f85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20c210d3ade38906e6b8f57b30a1880b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d97/interpreter_8h.html#a20c210d3ade38906e6b8f57b30a1880b">VerifyScript</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;scriptSig, const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;scriptPubKey, const <a class="el" href="../../db/d42/structCScriptWitness.html">CScriptWitness</a> *witness, unsigned int <a class="el" href="../../dc/ddf/bitcoin-tx_8cpp.html#ac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, const <a class="el" href="../../db/dfe/classBaseSignatureChecker.html">BaseSignatureChecker</a> &amp;checker, <a class="el" href="../../d9/d8d/script__error_8h.html#ad4323df51ed704d5f9eaef57ad5a425c">ScriptError</a> *serror=nullptr)</td></tr>
 <tr class="separator:a20c210d3ade38906e6b8f57b30a1880b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f7b8396505b865c8ba5a3509ab8664d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d97/interpreter_8h.html#a4f7b8396505b865c8ba5a3509ab8664d">CountWitnessSigOps</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;scriptSig, const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;scriptPubKey, const <a class="el" href="../../db/d42/structCScriptWitness.html">CScriptWitness</a> *witness, unsigned int <a class="el" href="../../dc/ddf/bitcoin-tx_8cpp.html#ac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>)</td></tr>
@@ -183,8 +160,6 @@ Variables</h2></td></tr>
 <tr class="separator:aa4c09ca017b3df8bdce4c9444537d71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14ee21c2a2f3a92932aa6adda0de72d8"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d97/interpreter_8h.html#a14ee21c2a2f3a92932aa6adda0de72d8">WITNESS_V0_KEYHASH_SIZE</a> = 20</td></tr>
 <tr class="separator:a14ee21c2a2f3a92932aa6adda0de72d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1390cb0e5f75cfc4e314c4d55d6bb18"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d97/interpreter_8h.html#ac1390cb0e5f75cfc4e314c4d55d6bb18">WITNESS_V1_TAPROOT_SIZE</a> = 33</td></tr>
-<tr class="separator:ac1390cb0e5f75cfc4e314c4d55d6bb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a550f6fff1a461a56192dad807a412988"></a>
@@ -233,9 +208,6 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="af9bdc3014f3d54c426b6d2df10de4960acaba9b1f029a1628196345fce5667f6f"></a>SIGHASH_NONE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af9bdc3014f3d54c426b6d2df10de4960ad9bb96e76cf9f1b6ebbf50373f4f9ca5"></a>SIGHASH_SINGLE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af9bdc3014f3d54c426b6d2df10de4960a9412c721b741fe9be1e3247dc390a4d2"></a>SIGHASH_ANYONECANPAY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af9bdc3014f3d54c426b6d2df10de4960a792bc2718c0a67a9dcb04c9a11fbddf0"></a>SIGHASH_TAPDEFAULT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af9bdc3014f3d54c426b6d2df10de4960a8b454654533df79b46f137f242139c69"></a>SIGHASH_TAPOUTPUTMASK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af9bdc3014f3d54c426b6d2df10de4960afde387b03008287fc7b5b5cc3ec8a558"></a>SIGHASH_TAPINPUTMASK&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -272,37 +244,6 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="adb49720dc49f7d4e4cf9adbf2948e409a8b0a4415024860f87f29652a83b7b8f4"></a>SCRIPT_VERIFY_NULLFAIL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="adb49720dc49f7d4e4cf9adbf2948e409a652479a49081835e92ea3e6b96c16b47"></a>SCRIPT_VERIFY_WITNESS_PUBKEYTYPE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="adb49720dc49f7d4e4cf9adbf2948e409a4e18fbfa14b7bb431d36f1af5e3e6ba3"></a>SCRIPT_VERIFY_CONST_SCRIPTCODE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="adb49720dc49f7d4e4cf9adbf2948e409a798def447bb877507f1f10a42457881c"></a>SCRIPT_VERIFY_TAPROOT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="adb49720dc49f7d4e4cf9adbf2948e409a75d407635cc10885454af651459da57d"></a>SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_TAPROOT_VERSION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="adb49720dc49f7d4e4cf9adbf2948e409a224c69c180ccf70fa9208c435b13240d"></a>SCRIPT_VERIFY_DISCOURAGE_UNKNOWN_ANNEX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="adb49720dc49f7d4e4cf9adbf2948e409a3e5d381979b98c3ca10d1aabdedea9f3"></a>SCRIPT_VERIFY_DISCOURAGE_OP_SUCCESS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="adb49720dc49f7d4e4cf9adbf2948e409aaf2dd51ac5408bdbe3755fb3d19768a0"></a>SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_PUBKEYTYPE&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="a7456a1be27da2089f984a0ede62c6c50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7456a1be27da2089f984a0ede62c6c50">&#9670;&nbsp;</a></span>SignatureType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="../../d3/d97/interpreter_8h.html#a7456a1be27da2089f984a0ede62c6c50">SignatureType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7456a1be27da2089f984a0ede62c6c50ab1870fa8801941a8b0faddfd614d3493"></a>ECDSA&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7456a1be27da2089f984a0ede62c6c50a18cc6c134600bab98300072c58224c51"></a>SCHNORR&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -329,8 +270,6 @@ Variables</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3db3199560fd5419a3be2fcd88a28f8fae7b1a5c82772e0e055096008cb9883ef"></a>BASE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3db3199560fd5419a3be2fcd88a28f8fafd7f573f76ca2911662d17ada249f8b0"></a>WITNESS_V0&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3db3199560fd5419a3be2fcd88a28f8fa1526b180923f9569c6045129400229b9"></a>TAPROOT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3db3199560fd5419a3be2fcd88a28f8faf91c6e2b2fe0cbda47ac0801786555e9"></a>TAPSCRIPT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -410,8 +349,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa095235e842e20cba1a74f6edfcabf39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa095235e842e20cba1a74f6edfcabf39">&#9670;&nbsp;</a></span>EvalScript()</h2>
+<a id="acea38d31b2cc35a1ecfad02eaed0f85e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acea38d31b2cc35a1ecfad02eaed0f85e">&#9670;&nbsp;</a></span>EvalScript()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,13 +389,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d9/d8d/script__error_8h.html#ad4323df51ed704d5f9eaef57ad5a425c">ScriptError</a> *&#160;</td>
-          <td class="paramname"><em>error</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../db/dfd/structScriptExecutionData.html">ScriptExecutionData</a>&#160;</td>
-          <td class="paramname"><em>execdata</em> = <code>{}</code>&#160;</td>
+          <td class="paramname"><em>error</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -545,66 +478,6 @@ template&lt;class T &gt; </div>
           <td></td>
           <td class="paramtype">const <a class="el" href="../../d8/d17/structPrecomputedTransactionData.html">PrecomputedTransactionData</a> *&#160;</td>
           <td class="paramname"><em>cache</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a04bf96a095e03a211ffe00a33654e162"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04bf96a095e03a211ffe00a33654e162">&#9670;&nbsp;</a></span>SignatureHashTap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool SignatureHashTap </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/d86/classuint256.html">uint256</a> &amp;&#160;</td>
-          <td class="paramname"><em>hash_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../db/dfd/structScriptExecutionData.html">ScriptExecutionData</a> &amp;&#160;</td>
-          <td class="paramname"><em>execdata</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>tx_to</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>in_pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>hash_type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d3/d97/interpreter_8h.html#a3db3199560fd5419a3be2fcd88a28f8f">SigVersion</a>&#160;</td>
-          <td class="paramname"><em>sigversion</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d8/d17/structPrecomputedTransactionData.html">PrecomputedTransactionData</a> &amp;&#160;</td>
-          <td class="paramname"><em>cache</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -711,28 +584,6 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Signature hash sizes </p>
-
-</div>
-</div>
-<a id="ac1390cb0e5f75cfc4e314c4d55d6bb18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1390cb0e5f75cfc4e314c4d55d6bb18">&#9670;&nbsp;</a></span>WITNESS_V1_TAPROOT_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr size_t WITNESS_V1_TAPROOT_SIZE = 33</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

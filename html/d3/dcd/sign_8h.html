@@ -78,20 +78,13 @@ $(function() {
 <code>#include &lt;hash.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d4/daf/pubkey_8h_source.html">pubkey.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d3/d97/interpreter_8h_source.html">script/interpreter.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d1/d4b/keyorigin_8h_source.html">script/keyorigin.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/d8e/streams_8h_source.html">streams.h</a>&gt;</code><br />
 </div>
 <p><a href="../../d3/dcd/sign_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dce/structKeyOriginInfo.html">KeyOriginInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d80/classSigningProvider.html">SigningProvider</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d27/classHidingSigningProvider.html">HidingSigningProvider</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6d/structFlatSigningProvider.html">FlatSigningProvider</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dcf/classBaseSignatureCreator.html">BaseSignatureCreator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0a/classMutableTransactionSignatureCreator.html">MutableTransactionSignatureCreator</a></td></tr>
@@ -106,8 +99,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a41a956a97c71469163d8be3a63ff0fb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d6d/structFlatSigningProvider.html">FlatSigningProvider</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dcd/sign_8h.html#a41a956a97c71469163d8be3a63ff0fb1">Merge</a> (const <a class="el" href="../../db/d6d/structFlatSigningProvider.html">FlatSigningProvider</a> &amp;a, const <a class="el" href="../../db/d6d/structFlatSigningProvider.html">FlatSigningProvider</a> &amp;b)</td></tr>
-<tr class="separator:a41a956a97c71469163d8be3a63ff0fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ca0e322433b3a17166f3ff112196169"><td class="memTemplParams" colspan="2">template&lt;typename Stream , typename... X&gt; </td></tr>
 <tr class="memitem:a0ca0e322433b3a17166f3ff112196169"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/dcd/sign_8h.html#a0ca0e322433b3a17166f3ff112196169">SerializeToVector</a> (Stream &amp;s, const <a class="el" href="../../dd/d84/net_8cpp.html#a826edd40636cbaa44266b97c8c6a4fa3">X</a> &amp;... args)</td></tr>
 <tr class="separator:a0ca0e322433b3a17166f3ff112196169"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,8 +128,6 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a129cc81972e09e3ba1c29777eb9d0ed0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d1/d80/classSigningProvider.html">SigningProvider</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dcd/sign_8h.html#a129cc81972e09e3ba1c29777eb9d0ed0">DUMMY_SIGNING_PROVIDER</a></td></tr>
-<tr class="separator:a129cc81972e09e3ba1c29777eb9d0ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb428a7d137dcfc2a1f29dd1a562ca8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/dcf/classBaseSignatureCreator.html">BaseSignatureCreator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dcd/sign_8h.html#adeb428a7d137dcfc2a1f29dd1a562ca8">DUMMY_SIGNATURE_CREATOR</a></td></tr>
 <tr class="separator:adeb428a7d137dcfc2a1f29dd1a562ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa46e7059be2d9fa3dc2f4675704e8218"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/dcf/classBaseSignatureCreator.html">BaseSignatureCreator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dcd/sign_8h.html#aa46e7059be2d9fa3dc2f4675704e8218">DUMMY_MAXIMUM_SIGNATURE_CREATOR</a></td></tr>
@@ -277,34 +266,6 @@ template&lt;typename Stream &gt; </div>
           <td></td>
           <td class="paramtype">const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;&#160;</td>
           <td class="paramname"><em>script</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a41a956a97c71469163d8be3a63ff0fb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41a956a97c71469163d8be3a63ff0fb1">&#9670;&nbsp;</a></span>Merge()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/d6d/structFlatSigningProvider.html">FlatSigningProvider</a> Merge </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../db/d6d/structFlatSigningProvider.html">FlatSigningProvider</a> &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../db/d6d/structFlatSigningProvider.html">FlatSigningProvider</a> &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -608,20 +569,6 @@ template&lt;typename Stream , typename... X&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>A signature creator that just produces 71-byte empty signatures. </p>
-
-</div>
-</div>
-<a id="a129cc81972e09e3ba1c29777eb9d0ed0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a129cc81972e09e3ba1c29777eb9d0ed0">&#9670;&nbsp;</a></span>DUMMY_SIGNING_PROVIDER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="../../d1/d80/classSigningProvider.html">SigningProvider</a>&amp; DUMMY_SIGNING_PROVIDER</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

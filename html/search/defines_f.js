@@ -7,6 +7,5 @@ var searchData=
   ['real_5fthin_5fsp_5futf8',['REAL_THIN_SP_UTF8',['../de/d15/bitcoinunits_8h.html#ae9c6264bdac2425accb12473abda20bc',1,'bitcoinunits.h']]],
   ['rot',['ROT',['../dd/d1f/ctaes_8c.html#aff1b0a61aaba64d2465f65fed7cb62f2',1,'ctaes.c']]],
   ['rotl',['ROTL',['../da/d82/siphash_8cpp.html#addd42b95ef425979d1d0dca095dec800',1,'siphash.cpp']]],
-  ['rotl32',['ROTL32',['../db/d1f/scalar__4x64__impl_8h.html#af931bf11c41af34dde1b90f1b26488f6',1,'ROTL32():&#160;scalar_4x64_impl.h'],['../dc/db6/scalar__8x32__impl_8h.html#af931bf11c41af34dde1b90f1b26488f6',1,'ROTL32():&#160;scalar_8x32_impl.h']]],
   ['round',['Round',['../d2/d64/hash__impl_8h.html#a4a6398f77b0cf603722649d4fd67260f',1,'hash_impl.h']]]
 ];

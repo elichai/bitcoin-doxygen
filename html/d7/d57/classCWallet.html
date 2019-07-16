@@ -84,10 +84,8 @@ Inheritance diagram for CWallet:</div>
  <div class="center">
   <img src="../../d7/d57/classCWallet.png" usemap="#CWallet_map" alt=""/>
   <map id="CWallet_map" name="CWallet_map">
-<area href="../../d8/d87/classCCryptoKeyStore.html" alt="CCryptoKeyStore" shape="rect" coords="0,168,182,192"/>
-<area href="../../da/d68/classinterfaces_1_1Chain_1_1Notifications.html" title="Chain notifications." alt="interfaces::Chain::Notifications" shape="rect" coords="192,168,374,192"/>
-<area href="../../d5/dca/classCBasicKeyStore.html" alt="CBasicKeyStore" shape="rect" coords="0,112,182,136"/>
-<area href="../../d5/d94/classCKeyStore.html" alt="CKeyStore" shape="rect" coords="0,56,182,80"/>
+<area href="../../d2/de0/classFillableSigningProvider.html" alt="FillableSigningProvider" shape="rect" coords="0,56,182,80"/>
+<area href="../../da/d68/classinterfaces_1_1Chain_1_1Notifications.html" title="Chain notifications." alt="interfaces::Chain::Notifications" shape="rect" coords="192,56,374,80"/>
 <area href="../../d1/d80/classSigningProvider.html" alt="SigningProvider" shape="rect" coords="0,0,182,24"/>
   </map>
 </div></div>
@@ -128,6 +126,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a16351441b8ec90163df412f511c8f2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac206dd308bcbe5263fde0a0c71bf9e7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#ac206dd308bcbe5263fde0a0c71bf9e7f">~CWallet</a> ()</td></tr>
 <tr class="separator:ac206dd308bcbe5263fde0a0c71bf9e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add676e643140c93d394bc01bc96f5cd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#add676e643140c93d394bc01bc96f5cd9">IsCrypted</a> () const</td></tr>
+<tr class="separator:add676e643140c93d394bc01bc96f5cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c3f07bfe360af297efdbf84c211dd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#ac2c3f07bfe360af297efdbf84c211dd6">IsLocked</a> () const</td></tr>
+<tr class="separator:ac2c3f07bfe360af297efdbf84c211dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0404b6bc1cb804aadc69b9902b52282a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a0404b6bc1cb804aadc69b9902b52282a">Lock</a> ()</td></tr>
+<tr class="separator:a0404b6bc1cb804aadc69b9902b52282a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a324c8eb5c0dd2b3ece84a73728386236"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="../../d2/d86/classuint256.html">uint256</a>, <a class="el" href="../../d8/d51/classCWalletTx.html">CWalletTx</a> &gt; mapWallet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a324c8eb5c0dd2b3ece84a73728386236">GUARDED_BY</a> (<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="separator:a324c8eb5c0dd2b3ece84a73728386236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96bd200ef60382b7ea0e5278186544c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> nOrderPosNext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a96bd200ef60382b7ea0e5278186544c5">GUARDED_BY</a> (<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)=0</td></tr>
@@ -203,14 +207,21 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab23f2585ab9f1cc8284518b573048d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab7b95f29dbf960047aa0511713036871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gab7b95f29dbf960047aa0511713036871">UpdateTimeFirstKey</a> (<a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> nCreateTime) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="separator:gab7b95f29dbf960047aa0511713036871"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9bd8ca47110186b31c258308d3bbd7c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga9bd8ca47110186b31c258308d3bbd7c2">AddCryptedKey</a> (const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;vchPubKey, const std::vector&lt; unsigned char &gt; &amp;vchCryptedSecret) override</td></tr>
-<tr class="memdesc:ga9bd8ca47110186b31c258308d3bbd7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an encrypted key to the store, and saves it to disk.  <a href="../../d4/df0/group__mapWallet.html#ga9bd8ca47110186b31c258308d3bbd7c2">More...</a><br /></td></tr>
-<tr class="separator:ga9bd8ca47110186b31c258308d3bbd7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e90096a903d49cd751f05fcdb7692ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga3e90096a903d49cd751f05fcdb7692ce">AddCryptedKey</a> (const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;vchPubKey, const std::vector&lt; unsigned char &gt; &amp;vchCryptedSecret)</td></tr>
+<tr class="memdesc:ga3e90096a903d49cd751f05fcdb7692ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an encrypted key to the store, and saves it to disk.  <a href="../../d4/df0/group__mapWallet.html#ga3e90096a903d49cd751f05fcdb7692ce">More...</a><br /></td></tr>
+<tr class="separator:ga3e90096a903d49cd751f05fcdb7692ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga01fbd78238d4ef833d059f12a7e8ac9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga01fbd78238d4ef833d059f12a7e8ac9f">LoadCryptedKey</a> (const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;vchPubKey, const std::vector&lt; unsigned char &gt; &amp;vchCryptedSecret)</td></tr>
 <tr class="memdesc:ga01fbd78238d4ef833d059f12a7e8ac9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an encrypted key to the store, without saving it to disk (used by LoadWallet)  <a href="../../d4/df0/group__mapWallet.html#ga01fbd78238d4ef833d059f12a7e8ac9f">More...</a><br /></td></tr>
 <tr class="separator:ga01fbd78238d4ef833d059f12a7e8ac9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa300f61a18b3d786149914ccfd833b21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#aa300f61a18b3d786149914ccfd833b21">GetKey</a> (const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;address, <a class="el" href="../../d0/dc4/classCKey.html">CKey</a> &amp;keyOut) const override</td></tr>
+<tr class="separator:aa300f61a18b3d786149914ccfd833b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563d6e9edfe932754e1bf0b5a4b562b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a563d6e9edfe932754e1bf0b5a4b562b7">GetPubKey</a> (const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;address, <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;vchPubKeyOut) const override</td></tr>
+<tr class="separator:a563d6e9edfe932754e1bf0b5a4b562b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28aab658be7e6efb3364b2bc0df30df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#ac28aab658be7e6efb3364b2bc0df30df">HaveKey</a> (const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;address) const override</td></tr>
+<tr class="separator:ac28aab658be7e6efb3364b2bc0df30df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92bc932016ff0c01646bc955e44cd40e"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a92bc932016ff0c01646bc955e44cd40e">GetKeys</a> () const override</td></tr>
+<tr class="separator:a92bc932016ff0c01646bc955e44cd40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga15df27607f4dde9f262e0f030c9414b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga15df27607f4dde9f262e0f030c9414b5">AddCScript</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;redeemScript) override</td></tr>
-<tr class="memdesc:ga15df27607f4dde9f262e0f030c9414b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Support for BIP 0013 : see <a href="https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki">https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki</a>.  <a href="../../d4/df0/group__mapWallet.html#ga15df27607f4dde9f262e0f030c9414b5">More...</a><br /></td></tr>
 <tr class="separator:ga15df27607f4dde9f262e0f030c9414b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadbf0abef9da8102f000d4afd5cec5bbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gadbf0abef9da8102f000d4afd5cec5bbc">LoadCScript</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;redeemScript)</td></tr>
 <tr class="separator:gadbf0abef9da8102f000d4afd5cec5bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,11 +243,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:gaf96e275eac457df2013e8ceb1810b703"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gaf96e275eac457df2013e8ceb1810b703">AddWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest, <a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> nCreateTime) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="memdesc:gaf96e275eac457df2013e8ceb1810b703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a watch-only address to the store, and saves it to disk.  <a href="../../d4/df0/group__mapWallet.html#gaf96e275eac457df2013e8ceb1810b703">More...</a><br /></td></tr>
 <tr class="separator:gaf96e275eac457df2013e8ceb1810b703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca3c3836aa8bf1e706951886ba77080c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gaca3c3836aa8bf1e706951886ba77080c">RemoveWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest) override <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
-<tr class="separator:gaca3c3836aa8bf1e706951886ba77080c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab67eab7bca24140bdfe4eecf9bde59b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gab67eab7bca24140bdfe4eecf9bde59b0">RemoveWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
+<tr class="separator:gab67eab7bca24140bdfe4eecf9bde59b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad6580f1844fc639389e1c6a1e2787ee6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gad6580f1844fc639389e1c6a1e2787ee6">LoadWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest)</td></tr>
 <tr class="memdesc:gad6580f1844fc639389e1c6a1e2787ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a watch-only address to the store, without saving it to disk (used by LoadWallet)  <a href="../../d4/df0/group__mapWallet.html#gad6580f1844fc639389e1c6a1e2787ee6">More...</a><br /></td></tr>
 <tr class="separator:gad6580f1844fc639389e1c6a1e2787ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbf52cb8723ec541d9615aa0cd684c7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gafbf52cb8723ec541d9615aa0cd684c7b">HaveWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest) const</td></tr>
+<tr class="memdesc:gafbf52cb8723ec541d9615aa0cd684c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the watch-only script is in the wallet.  <a href="../../d4/df0/group__mapWallet.html#gafbf52cb8723ec541d9615aa0cd684c7b">More...</a><br /></td></tr>
+<tr class="separator:gafbf52cb8723ec541d9615aa0cd684c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7fc2cf08373ccb79709007297cc1c87b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga7fc2cf08373ccb79709007297cc1c87b">HaveWatchOnly</a> () const</td></tr>
+<tr class="memdesc:ga7fc2cf08373ccb79709007297cc1c87b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether there are any watch-only things in the wallet.  <a href="../../d4/df0/group__mapWallet.html#ga7fc2cf08373ccb79709007297cc1c87b">More...</a><br /></td></tr>
+<tr class="separator:ga7fc2cf08373ccb79709007297cc1c87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11284c5646eb54a16a8a719718623db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#aa11284c5646eb54a16a8a719718623db">GetWatchPubKey</a> (const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;address, <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;pubkey_out) const</td></tr>
+<tr class="memdesc:aa11284c5646eb54a16a8a719718623db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches a pubkey from mapWatchKeys if it exists there.  <a href="#aa11284c5646eb54a16a8a719718623db">More...</a><br /></td></tr>
+<tr class="separator:aa11284c5646eb54a16a8a719718623db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4370ceeca17c1fc58c419e4cdc65b433"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga4370ceeca17c1fc58c419e4cdc65b433">Unlock</a> (const <a class="el" href="../../d0/d7f/secure_8h.html#a396ed773a5ac24aec28c8f7dc413c7ac">SecureString</a> &amp;strWalletPassphrase, bool accept_no_keys=false)</td></tr>
 <tr class="separator:ga4370ceeca17c1fc58c419e4cdc65b433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4abcec3066e7c462f4564c159fc15031"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga4abcec3066e7c462f4564c159fc15031">ChangeWalletPassphrase</a> (const <a class="el" href="../../d0/d7f/secure_8h.html#a396ed773a5ac24aec28c8f7dc413c7ac">SecureString</a> &amp;strOldWalletPassphrase, const <a class="el" href="../../d0/d7f/secure_8h.html#a396ed773a5ac24aec28c8f7dc413c7ac">SecureString</a> &amp;strNewWalletPassphrase)</td></tr>
@@ -285,10 +305,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ga15a558d8fa0db299f38ed1e45a60aaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga199df06fa484b1142a6ae64e04519c45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/group__Actions.html#ga199df06fa484b1142a6ae64e04519c45">SignTransaction</a> (<a class="el" href="../../d0/db2/structCMutableTransaction.html">CMutableTransaction</a> &amp;tx) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="separator:ga199df06fa484b1142a6ae64e04519c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga42068df76177627faf57b6902f83b8c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/group__Actions.html#ga42068df76177627faf57b6902f83b8c2">CreateTransaction</a> (<a class="el" href="../../d8/d66/classinterfaces_1_1Chain_1_1Lock.html">interfaces::Chain::Lock</a> &amp;locked_chain, const std::vector&lt; <a class="el" href="../../da/d22/structCRecipient.html">CRecipient</a> &gt; &amp;vecSend, <a class="el" href="../../dc/d1c/primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, <a class="el" href="../../de/d33/classCReserveKey.html">CReserveKey</a> &amp;reservekey, <a class="el" href="../../dd/d2f/amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;nFeeRet, int &amp;nChangePosInOut, std::string &amp;strFailReason, const <a class="el" href="../../de/da6/classCCoinControl.html">CCoinControl</a> &amp;coin_control, bool sign=true)</td></tr>
-<tr class="separator:ga42068df76177627faf57b6902f83b8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga75138cd0a823269a3f7ac6c34d2ae115"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/group__Actions.html#ga75138cd0a823269a3f7ac6c34d2ae115">CommitTransaction</a> (<a class="el" href="../../dc/d1c/primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> tx, <a class="el" href="../../df/d8d/wallet_2wallet_8h.html#aaf509cb8d82c13c57426420ef68ced6a">mapValue_t</a> mapValue, std::vector&lt; std::pair&lt; std::string, std::string &gt;&gt; orderForm, <a class="el" href="../../de/d33/classCReserveKey.html">CReserveKey</a> &amp;reservekey, <a class="el" href="../../d4/d71/classCValidationState.html">CValidationState</a> &amp;state)</td></tr>
-<tr class="separator:ga75138cd0a823269a3f7ac6c34d2ae115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5dd394f26814e58c45a74264f849e37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/group__Actions.html#gac5dd394f26814e58c45a74264f849e37">CreateTransaction</a> (<a class="el" href="../../d8/d66/classinterfaces_1_1Chain_1_1Lock.html">interfaces::Chain::Lock</a> &amp;locked_chain, const std::vector&lt; <a class="el" href="../../da/d22/structCRecipient.html">CRecipient</a> &gt; &amp;vecSend, <a class="el" href="../../dc/d1c/primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> &amp;tx, <a class="el" href="../../de/d7c/classReserveDestination.html">ReserveDestination</a> &amp;reservedest, <a class="el" href="../../dd/d2f/amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a> &amp;nFeeRet, int &amp;nChangePosInOut, std::string &amp;strFailReason, const <a class="el" href="../../de/da6/classCCoinControl.html">CCoinControl</a> &amp;coin_control, bool sign=true)</td></tr>
+<tr class="separator:gac5dd394f26814e58c45a74264f849e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17b5f81aa4bae177a834b5743e4ab4fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/group__Actions.html#ga17b5f81aa4bae177a834b5743e4ab4fd">CommitTransaction</a> (<a class="el" href="../../dc/d1c/primitives_2transaction_8h.html#ae462b4b8f07705a82bf11cf361959b97">CTransactionRef</a> tx, <a class="el" href="../../df/d8d/wallet_2wallet_8h.html#aaf509cb8d82c13c57426420ef68ced6a">mapValue_t</a> mapValue, std::vector&lt; std::pair&lt; std::string, std::string &gt;&gt; orderForm, <a class="el" href="../../de/d7c/classReserveDestination.html">ReserveDestination</a> &amp;reservedest, <a class="el" href="../../d4/d71/classCValidationState.html">CValidationState</a> &amp;state)</td></tr>
+<tr class="separator:ga17b5f81aa4bae177a834b5743e4ab4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1796678cc4513584fc736efb31685923"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a1796678cc4513584fc736efb31685923">DummySignTx</a> (<a class="el" href="../../d0/db2/structCMutableTransaction.html">CMutableTransaction</a> &amp;txNew, const std::set&lt; <a class="el" href="../../d8/d1d/classCTxOut.html">CTxOut</a> &gt; &amp;txouts, bool use_max_sig=false) const</td></tr>
 <tr class="separator:a1796678cc4513584fc736efb31685923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa0456933ad14ce2ab2edb7892d326285"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gaa0456933ad14ce2ab2edb7892d326285">DummySignTx</a> (<a class="el" href="../../d0/db2/structCMutableTransaction.html">CMutableTransaction</a> &amp;txNew, const std::vector&lt; <a class="el" href="../../d8/d1d/classCTxOut.html">CTxOut</a> &gt; &amp;txouts, bool use_max_sig=false) const</td></tr>
@@ -315,8 +335,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:gae460b8c824a1a6633615f95373e533f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga850917dd6c91c3dd09b4cea9b0a7426f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/group__Actions.html#ga850917dd6c91c3dd09b4cea9b0a7426f">ReturnKey</a> (<a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> nIndex, bool fInternal, const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;pubkey)</td></tr>
 <tr class="separator:ga850917dd6c91c3dd09b4cea9b0a7426f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac452f46eafeb2b4adfe86f7208048032"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/group__Actions.html#gac452f46eafeb2b4adfe86f7208048032">GetKeyFromPool</a> (<a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;key, bool internal=false)</td></tr>
-<tr class="separator:gac452f46eafeb2b4adfe86f7208048032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2555a9442e58b3c5593fef21f1b39d2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/group__Actions.html#ga2555a9442e58b3c5593fef21f1b39d2d">GetOldestKeyPoolTime</a> ()</td></tr>
 <tr class="separator:ga2555a9442e58b3c5593fef21f1b39d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga23a900513e363e8e79d604cab9a7c7fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/group__Actions.html#ga23a900513e363e8e79d604cab9a7c7fc">MarkReserveKeysAsUsed</a> (<a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> keypool_id) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
@@ -329,6 +347,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:gac5db411528106b9a5df01c4312b8c577"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf2f1304d4e2bc5c192b5fffe2540716c"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../df/d9b/standard_8h.html#ae7e198080de1ddaee514c99e22d65a76">CTxDestination</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/group__Actions.html#gaf2f1304d4e2bc5c192b5fffe2540716c">GetLabelAddresses</a> (const std::string &amp;label) const</td></tr>
 <tr class="separator:gaf2f1304d4e2bc5c192b5fffe2540716c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccf0ecc3a8df66fb259ddabc8c5d0e74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/group__Actions.html#gaccf0ecc3a8df66fb259ddabc8c5d0e74">GetNewDestination</a> (const <a class="el" href="../../db/db6/outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a> type, const std::string label, <a class="el" href="../../df/d9b/standard_8h.html#ae7e198080de1ddaee514c99e22d65a76">CTxDestination</a> &amp;dest, std::string &amp;<a class="el" href="../../dc/db2/system_8h.html#a96c5fc7111f69f7dcaba992d95d13e03">error</a>)</td></tr>
+<tr class="separator:gaccf0ecc3a8df66fb259ddabc8c5d0e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80b9de54d40f82ea8a7fc52b3d7efcde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/group__Actions.html#ga80b9de54d40f82ea8a7fc52b3d7efcde">GetNewChangeDestination</a> (const <a class="el" href="../../db/db6/outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a> type, <a class="el" href="../../df/d9b/standard_8h.html#ae7e198080de1ddaee514c99e22d65a76">CTxDestination</a> &amp;dest, std::string &amp;<a class="el" href="../../dc/db2/system_8h.html#a96c5fc7111f69f7dcaba992d95d13e03">error</a>)</td></tr>
+<tr class="separator:ga80b9de54d40f82ea8a7fc52b3d7efcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4eada57edc1c443564b8cc9b853d955c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/df6/ismine_8h.html#a050f9a1a807967a24bcbeebfc5952533">isminetype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga4eada57edc1c443564b8cc9b853d955c">IsMine</a> (const <a class="el" href="../../d1/dc4/classCTxIn.html">CTxIn</a> &amp;txin) const</td></tr>
 <tr class="separator:ga4eada57edc1c443564b8cc9b853d955c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5ab4855aac6f4b335421944403e44d6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d2f/amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga5ab4855aac6f4b335421944403e44d6d">GetDebit</a> (const <a class="el" href="../../d1/dc4/classCTxIn.html">CTxIn</a> &amp;txin, const <a class="el" href="../../d2/d41/interfaces_2wallet_8h.html#aaa5e1639d76aef50f70532acc3302c4b">isminefilter</a> &amp;filter) const</td></tr>
@@ -440,37 +462,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4083c9a8583aa7b355da55280a519cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fded992ac1b212e1b59ab777646b1e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a4fded992ac1b212e1b59ab777646b1e4">GetKeyOrigin</a> (const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;keyid, <a class="el" href="../../d4/dce/structKeyOriginInfo.html">KeyOriginInfo</a> &amp;info) const override</td></tr>
 <tr class="separator:a4fded992ac1b212e1b59ab777646b1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classCCryptoKeyStore"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCCryptoKeyStore')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d8/d87/classCCryptoKeyStore.html">CCryptoKeyStore</a></td></tr>
-<tr class="memitem:a7c7f1075182d42fcb0781d1dc7a876c3 inherit pub_methods_classCCryptoKeyStore"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#a7c7f1075182d42fcb0781d1dc7a876c3">CCryptoKeyStore</a> ()</td></tr>
-<tr class="separator:a7c7f1075182d42fcb0781d1dc7a876c3 inherit pub_methods_classCCryptoKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc8fed44366c98fb481333ca6e867088 inherit pub_methods_classCCryptoKeyStore"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#acc8fed44366c98fb481333ca6e867088">IsCrypted</a> () const</td></tr>
-<tr class="separator:acc8fed44366c98fb481333ca6e867088 inherit pub_methods_classCCryptoKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52919fa284a3aa10f1b4bd6018b6dbee inherit pub_methods_classCCryptoKeyStore"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#a52919fa284a3aa10f1b4bd6018b6dbee">IsLocked</a> () const</td></tr>
-<tr class="separator:a52919fa284a3aa10f1b4bd6018b6dbee inherit pub_methods_classCCryptoKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab73ebcbfa6e0aaf271d0fff9369a6685 inherit pub_methods_classCCryptoKeyStore"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#ab73ebcbfa6e0aaf271d0fff9369a6685">Lock</a> ()</td></tr>
-<tr class="separator:ab73ebcbfa6e0aaf271d0fff9369a6685 inherit pub_methods_classCCryptoKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59d19911aeddf00c974378b508e9d114 inherit pub_methods_classCCryptoKeyStore"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#a59d19911aeddf00c974378b508e9d114">HaveKey</a> (const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;address) const override</td></tr>
-<tr class="memdesc:a59d19911aeddf00c974378b508e9d114 inherit pub_methods_classCCryptoKeyStore"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a key corresponding to a given address is present in the store.  <a href="../../d8/d87/classCCryptoKeyStore.html#a59d19911aeddf00c974378b508e9d114">More...</a><br /></td></tr>
-<tr class="separator:a59d19911aeddf00c974378b508e9d114 inherit pub_methods_classCCryptoKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01b3cbe18b296f2c51e6fe4137f24c4b inherit pub_methods_classCCryptoKeyStore"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#a01b3cbe18b296f2c51e6fe4137f24c4b">GetKey</a> (const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;address, <a class="el" href="../../d0/dc4/classCKey.html">CKey</a> &amp;keyOut) const override</td></tr>
-<tr class="separator:a01b3cbe18b296f2c51e6fe4137f24c4b inherit pub_methods_classCCryptoKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af57d6ee7c31e1d9673e811a32aaa5ebc inherit pub_methods_classCCryptoKeyStore"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#af57d6ee7c31e1d9673e811a32aaa5ebc">GetPubKey</a> (const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;address, <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;vchPubKeyOut) const override</td></tr>
-<tr class="separator:af57d6ee7c31e1d9673e811a32aaa5ebc inherit pub_methods_classCCryptoKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae841dfd0bc11abf12e6bcacbe9f1f7b1 inherit pub_methods_classCCryptoKeyStore"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#ae841dfd0bc11abf12e6bcacbe9f1f7b1">GetKeys</a> () const override</td></tr>
-<tr class="separator:ae841dfd0bc11abf12e6bcacbe9f1f7b1 inherit pub_methods_classCCryptoKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classCBasicKeyStore"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCBasicKeyStore')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/dca/classCBasicKeyStore.html">CBasicKeyStore</a></td></tr>
-<tr class="memitem:a07950fc7f9bba7f2460d89a882ac544b inherit pub_methods_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#a07950fc7f9bba7f2460d89a882ac544b">AddKey</a> (const <a class="el" href="../../d0/dc4/classCKey.html">CKey</a> &amp;key)</td></tr>
-<tr class="separator:a07950fc7f9bba7f2460d89a882ac544b inherit pub_methods_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7d3983c6d1f1396896d4304b6437028 inherit pub_methods_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#ad7d3983c6d1f1396896d4304b6437028">HaveCScript</a> (const <a class="el" href="../../da/dbf/classCScriptID.html">CScriptID</a> &amp;hash) const override</td></tr>
-<tr class="separator:ad7d3983c6d1f1396896d4304b6437028 inherit pub_methods_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b29a3d2711c3a343e1cb400c6c72349 inherit pub_methods_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../da/dbf/classCScriptID.html">CScriptID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#a9b29a3d2711c3a343e1cb400c6c72349">GetCScripts</a> () const override</td></tr>
-<tr class="separator:a9b29a3d2711c3a343e1cb400c6c72349 inherit pub_methods_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dc20df2337bca743b7323b76e626e20 inherit pub_methods_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#a7dc20df2337bca743b7323b76e626e20">GetCScript</a> (const <a class="el" href="../../da/dbf/classCScriptID.html">CScriptID</a> &amp;hash, <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;redeemScriptOut) const override</td></tr>
-<tr class="separator:a7dc20df2337bca743b7323b76e626e20 inherit pub_methods_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefbc267bb1305990d70969a7e64a1cdf inherit pub_methods_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#aefbc267bb1305990d70969a7e64a1cdf">HaveWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest) const override</td></tr>
-<tr class="separator:aefbc267bb1305990d70969a7e64a1cdf inherit pub_methods_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c3cb520c8b5e616c8717a5d53e8b38a inherit pub_methods_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#a0c3cb520c8b5e616c8717a5d53e8b38a">HaveWatchOnly</a> () const override</td></tr>
-<tr class="separator:a0c3cb520c8b5e616c8717a5d53e8b38a inherit pub_methods_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classFillableSigningProvider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classFillableSigningProvider')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d2/de0/classFillableSigningProvider.html">FillableSigningProvider</a></td></tr>
+<tr class="memitem:ad9d3e5484107cb9e02ed642899cf1fb3 inherit pub_methods_classFillableSigningProvider"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#ad9d3e5484107cb9e02ed642899cf1fb3">AddKey</a> (const <a class="el" href="../../d0/dc4/classCKey.html">CKey</a> &amp;key)</td></tr>
+<tr class="separator:ad9d3e5484107cb9e02ed642899cf1fb3 inherit pub_methods_classFillableSigningProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb4f73cf47a78e2e653f73955a5fee0b inherit pub_methods_classFillableSigningProvider"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#abb4f73cf47a78e2e653f73955a5fee0b">HaveCScript</a> (const <a class="el" href="../../da/dbf/classCScriptID.html">CScriptID</a> &amp;hash) const override</td></tr>
+<tr class="separator:abb4f73cf47a78e2e653f73955a5fee0b inherit pub_methods_classFillableSigningProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8db1f2b94890fcb897b386914629de3 inherit pub_methods_classFillableSigningProvider"><td class="memItemLeft" align="right" valign="top">virtual std::set&lt; <a class="el" href="../../da/dbf/classCScriptID.html">CScriptID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#ab8db1f2b94890fcb897b386914629de3">GetCScripts</a> () const</td></tr>
+<tr class="separator:ab8db1f2b94890fcb897b386914629de3 inherit pub_methods_classFillableSigningProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23575d00e2b2e257cda0cb7c2e3ac91d inherit pub_methods_classFillableSigningProvider"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#a23575d00e2b2e257cda0cb7c2e3ac91d">GetCScript</a> (const <a class="el" href="../../da/dbf/classCScriptID.html">CScriptID</a> &amp;hash, <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;redeemScriptOut) const override</td></tr>
+<tr class="separator:a23575d00e2b2e257cda0cb7c2e3ac91d inherit pub_methods_classFillableSigningProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSigningProvider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSigningProvider')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d1/d80/classSigningProvider.html">SigningProvider</a></td></tr>
 <tr class="memitem:a40e6a8b9b0573bdef31f02f455064435 inherit pub_methods_classSigningProvider"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d80/classSigningProvider.html#a40e6a8b9b0573bdef31f02f455064435">~SigningProvider</a> ()</td></tr>
 <tr class="separator:a40e6a8b9b0573bdef31f02f455064435 inherit pub_methods_classSigningProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -498,7 +498,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a6421cf039f959e66012549aa39b5202c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../df/d45/classinterfaces_1_1Handler.html">interfaces::Handler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a6421cf039f959e66012549aa39b5202c">m_chain_notifications_handler</a></td></tr>
 <tr class="separator:a6421cf039f959e66012549aa39b5202c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e7cbbe996bd7cc20a5d56185de9862"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a49e7cbbe996bd7cc20a5d56185de9862">nRelockTime</a> = 0</td></tr>
-<tr class="memdesc:a49e7cbbe996bd7cc20a5d56185de9862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds a timestamp at which point the wallet is scheduled (externally) to be relocked. Caller must arrange for actual relocking to occur via <a class="el" href="../../d8/d87/classCCryptoKeyStore.html#ab73ebcbfa6e0aaf271d0fff9369a6685">Lock()</a>.  <a href="#a49e7cbbe996bd7cc20a5d56185de9862">More...</a><br /></td></tr>
+<tr class="memdesc:a49e7cbbe996bd7cc20a5d56185de9862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds a timestamp at which point the wallet is scheduled (externally) to be relocked. Caller must arrange for actual relocking to occur via <a class="el" href="../../d7/d57/classCWallet.html#a0404b6bc1cb804aadc69b9902b52282a">Lock()</a>.  <a href="#a49e7cbbe996bd7cc20a5d56185de9862">More...</a><br /></td></tr>
 <tr class="separator:a49e7cbbe996bd7cc20a5d56185de9862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a72e33a130ea09912efb1712df03300"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d59/classCFeeRate.html">CFeeRate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a8a72e33a130ea09912efb1712df03300">m_pay_tx_fee</a> {<a class="el" href="../../df/d8d/wallet_2wallet_8h.html#af48c14a9f06edf06b555ffb68c3af730">DEFAULT_PAY_TX_FEE</a>}</td></tr>
 <tr class="separator:a8a72e33a130ea09912efb1712df03300"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -536,19 +536,43 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a52e8f380ef8d36622381687056d95df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ec9af7fd85cfa590ea7e4d091ebed6c"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a8ec9af7fd85cfa590ea7e4d091ebed6c">NotifyCanGetAddressesChanged</a></td></tr>
 <tr class="separator:a8ec9af7fd85cfa590ea7e4d091ebed6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d5e60c856bbbabf0ce7ed7171623b7"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void(<a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> *wallet)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a31d5e60c856bbbabf0ce7ed7171623b7">NotifyStatusChanged</a></td></tr>
+<tr class="separator:a31d5e60c856bbbabf0ce7ed7171623b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3a26546ad2c3c2be5ed3c1c24ac70f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#ad3a26546ad2c3c2be5ed3c1c24ac70f0">cs_wallet</a></td></tr>
 <tr class="separator:ad3a26546ad2c3c2be5ed3c1c24ac70f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_classCCryptoKeyStore"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classCCryptoKeyStore')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d8/d87/classCCryptoKeyStore.html">CCryptoKeyStore</a></td></tr>
-<tr class="memitem:a251b9ed228a19ab39d542985b425fc85 inherit pub_attribs_classCCryptoKeyStore"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void(<a class="el" href="../../d8/d87/classCCryptoKeyStore.html">CCryptoKeyStore</a> *wallet)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#a251b9ed228a19ab39d542985b425fc85">NotifyStatusChanged</a></td></tr>
-<tr class="separator:a251b9ed228a19ab39d542985b425fc85 inherit pub_attribs_classCCryptoKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
+<tr class="memitem:a3108389720232fa2b7c8a5324abfba5b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a3108389720232fa2b7c8a5324abfba5b">CryptedKeyMap</a> = std::map&lt; <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a>, std::pair&lt; <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a>, std::vector&lt; unsigned char &gt; &gt;&gt;</td></tr>
+<tr class="separator:a3108389720232fa2b7c8a5324abfba5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8015d7af0d82b3dd217fcd437ce1d4e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#ae8015d7af0d82b3dd217fcd437ce1d4e">WatchOnlySet</a> = std::set&lt; <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &gt;</td></tr>
+<tr class="separator:ae8015d7af0d82b3dd217fcd437ce1d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b05c3a7e25dccaf26505e7bc1f2c317"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a2b05c3a7e25dccaf26505e7bc1f2c317">WatchKeyMap</a> = std::map&lt; <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a>, <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &gt;</td></tr>
+<tr class="separator:a2b05c3a7e25dccaf26505e7bc1f2c317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1ff91a68ef01851cda6178dde9f2395"><td class="memItemLeft" align="right" valign="top">typedef std::multimap&lt; <a class="el" href="../../de/dce/classCOutPoint.html">COutPoint</a>, <a class="el" href="../../d2/d86/classuint256.html">uint256</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#ad1ff91a68ef01851cda6178dde9f2395">TxSpends</a></td></tr>
 <tr class="separator:ad1ff91a68ef01851cda6178dde9f2395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a280034f2be9f4e81bed196686761973c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1f/crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> vMasterKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a280034f2be9f4e81bed196686761973c">GUARDED_BY</a> (<a class="el" href="../../d2/de0/classFillableSigningProvider.html#ac36459aeb27507269a86c089ba2def90">cs_KeyStore</a>)</td></tr>
+<tr class="separator:a280034f2be9f4e81bed196686761973c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29994de20efc2765a20fd717f2942947"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a29994de20efc2765a20fd717f2942947">SetCrypted</a> ()</td></tr>
+<tr class="separator:a29994de20efc2765a20fd717f2942947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37dc6bb9765d8db1707c975fb3d6ca07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a37dc6bb9765d8db1707c975fb3d6ca07">EncryptKeys</a> (<a class="el" href="../../df/d1f/crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;vMasterKeyIn)</td></tr>
+<tr class="memdesc:a37dc6bb9765d8db1707c975fb3d6ca07"><td class="mdescLeft">&#160;</td><td class="mdescRight">will encrypt previously unencrypted keys  <a href="#a37dc6bb9765d8db1707c975fb3d6ca07">More...</a><br /></td></tr>
+<tr class="separator:a37dc6bb9765d8db1707c975fb3d6ca07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3935971cd92f8dc6c32acb2c6aa3edb5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a3935971cd92f8dc6c32acb2c6aa3edb5">Unlock</a> (const <a class="el" href="../../df/d1f/crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;vMasterKeyIn, bool accept_no_keys=false)</td></tr>
+<tr class="separator:a3935971cd92f8dc6c32acb2c6aa3edb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af24be22c999b065a99cbe0bd8b2f3ecd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d57/classCWallet.html#a3108389720232fa2b7c8a5324abfba5b">CryptedKeyMap</a> mapCryptedKeys&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#af24be22c999b065a99cbe0bd8b2f3ecd">GUARDED_BY</a> (<a class="el" href="../../d2/de0/classFillableSigningProvider.html#ac36459aeb27507269a86c089ba2def90">cs_KeyStore</a>)</td></tr>
+<tr class="separator:af24be22c999b065a99cbe0bd8b2f3ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84af1a4d11919e01db4825d2f6ca0f23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d57/classCWallet.html#ae8015d7af0d82b3dd217fcd437ce1d4e">WatchOnlySet</a> setWatchOnly&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a84af1a4d11919e01db4825d2f6ca0f23">GUARDED_BY</a> (<a class="el" href="../../d2/de0/classFillableSigningProvider.html#ac36459aeb27507269a86c089ba2def90">cs_KeyStore</a>)</td></tr>
+<tr class="separator:a84af1a4d11919e01db4825d2f6ca0f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d7379466e25870b24163b85bcb02ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d57/classCWallet.html#a2b05c3a7e25dccaf26505e7bc1f2c317">WatchKeyMap</a> mapWatchKeys&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a69d7379466e25870b24163b85bcb02ed">GUARDED_BY</a> (<a class="el" href="../../d2/de0/classFillableSigningProvider.html#ac36459aeb27507269a86c089ba2def90">cs_KeyStore</a>)</td></tr>
+<tr class="separator:a69d7379466e25870b24163b85bcb02ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5af31f28e1cdb12d10a6abd0b0b2bd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#ad5af31f28e1cdb12d10a6abd0b0b2bd9">AddCryptedKeyInner</a> (const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;vchPubKey, const std::vector&lt; unsigned char &gt; &amp;vchCryptedSecret)</td></tr>
+<tr class="separator:ad5af31f28e1cdb12d10a6abd0b0b2bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a307232ef9f3bf66dde17550595f3e718"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a307232ef9f3bf66dde17550595f3e718">AddKeyPubKeyInner</a> (const <a class="el" href="../../d0/dc4/classCKey.html">CKey</a> &amp;key, const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;pubkey)</td></tr>
+<tr class="separator:a307232ef9f3bf66dde17550595f3e718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90383ef29b0a9c0d7e67fd33eb9038e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/de2/classWalletBatch.html">WalletBatch</a> *encrypted_batch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a90383ef29b0a9c0d7e67fd33eb9038e5">GUARDED_BY</a> (<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="separator:a90383ef29b0a9c0d7e67fd33eb9038e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1456f6775023c7613f3e776635f4178b"><td class="memItemLeft" align="right" valign="top">int nWalletVersion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a1456f6775023c7613f3e776635f4178b">GUARDED_BY</a> (<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
@@ -585,10 +609,12 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:aebf8e8aab1ba7bc3ee1812a172dca1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75d0cdf6f1e1b65faa28deaf446fbce8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> nTimeFirstKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a75d0cdf6f1e1b65faa28deaf446fbce8">GUARDED_BY</a> (<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)=0</td></tr>
 <tr class="separator:a75d0cdf6f1e1b65faa28deaf446fbce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84e18fec1f19c9963fd810d076b71e82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga84e18fec1f19c9963fd810d076b71e82">AddWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest) override <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
-<tr class="separator:ga84e18fec1f19c9963fd810d076b71e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f605a21def1140ec97b3b2fd6934a02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga8f605a21def1140ec97b3b2fd6934a02">AddWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
+<tr class="separator:ga8f605a21def1140ec97b3b2fd6934a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6b285d8ecd80a42128ef460cdc08f864"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga6b285d8ecd80a42128ef460cdc08f864">AddWatchOnlyWithDB</a> (<a class="el" href="../../d3/de2/classWalletBatch.html">WalletBatch</a> &amp;batch, const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="separator:ga6b285d8ecd80a42128ef460cdc08f864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga601fde6dc17669ecab5c49d0a1941037"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga601fde6dc17669ecab5c49d0a1941037">AddWatchOnlyInMem</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest)</td></tr>
+<tr class="separator:ga601fde6dc17669ecab5c49d0a1941037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61a504bb182f884e1fd9f34e77d69dd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a61a504bb182f884e1fd9f34e77d69dd6">AddKeyOriginWithDB</a> (<a class="el" href="../../d3/de2/classWalletBatch.html">WalletBatch</a> &amp;batch, const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;pubkey, const <a class="el" href="../../d4/dce/structKeyOriginInfo.html">KeyOriginInfo</a> &amp;info)</td></tr>
 <tr class="separator:a61a504bb182f884e1fd9f34e77d69dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf482ede71b2fde291b8c6ec262b22ef4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gaf482ede71b2fde291b8c6ec262b22ef4">AddKeyPubKeyWithDB</a> (<a class="el" href="../../d3/de2/classWalletBatch.html">WalletBatch</a> &amp;batch, const <a class="el" href="../../d0/dc4/classCKey.html">CKey</a> &amp;key, const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;pubkey) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
@@ -609,12 +635,20 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:gaa3d59dbbe55b4c4618873b46711c7c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e473f876758b0667150a7c7430e71c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d86/classuint256.html">uint256</a> m_last_block_processed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a0e473f876758b0667150a7c7430e71c1">GUARDED_BY</a> (<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="separator:a0e473f876758b0667150a7c7430e71c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac452f46eafeb2b4adfe86f7208048032"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db7/group__Actions.html#gac452f46eafeb2b4adfe86f7208048032">GetKeyFromPool</a> (<a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;key, bool internal=false)</td></tr>
+<tr class="memdesc:gac452f46eafeb2b4adfe86f7208048032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches a key from the keypool.  <a href="../../d5/db7/group__Actions.html#gac452f46eafeb2b4adfe86f7208048032">More...</a><br /></td></tr>
+<tr class="separator:gac452f46eafeb2b4adfe86f7208048032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classinterfaces_1_1Chain_1_1Notifications"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classinterfaces_1_1Chain_1_1Notifications')"><img src="../../closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="../../da/d68/classinterfaces_1_1Chain_1_1Notifications.html">interfaces::Chain::Notifications</a></td></tr>
 <tr class="memitem:af28292f6f5bf7a20da4007283d0065a6 inherit pub_methods_classinterfaces_1_1Chain_1_1Notifications"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/classinterfaces_1_1Chain_1_1Notifications.html#af28292f6f5bf7a20da4007283d0065a6">~Notifications</a> ()</td></tr>
 <tr class="separator:af28292f6f5bf7a20da4007283d0065a6 inherit pub_methods_classinterfaces_1_1Chain_1_1Notifications"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a7d4582a3c77599232e045c0ce8dd66a5"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a7d4582a3c77599232e045c0ce8dd66a5">fUseCrypto</a></td></tr>
+<tr class="separator:a7d4582a3c77599232e045c0ce8dd66a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3472513c3a21d76acd2696feba7582f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a3472513c3a21d76acd2696feba7582f8">fDecryptionThoroughlyChecked</a></td></tr>
+<tr class="memdesc:a3472513c3a21d76acd2696feba7582f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">keeps track of whether Unlock has run a thorough check before  <a href="#a3472513c3a21d76acd2696feba7582f8">More...</a><br /></td></tr>
+<tr class="separator:a3472513c3a21d76acd2696feba7582f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a611bda5ae5f842c1b1e8ce9e12f275a8"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#a611bda5ae5f842c1b1e8ce9e12f275a8">fAbortRescan</a> {false}</td></tr>
 <tr class="separator:a611bda5ae5f842c1b1e8ce9e12f275a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ad69160602f590832956e999a54714"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d57/classCWallet.html#ae1ad69160602f590832956e999a54714">fScanningWallet</a> {false}</td></tr>
@@ -653,46 +687,47 @@ Friends</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_types_classCCryptoKeyStore"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classCCryptoKeyStore')"><img src="../../closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="../../d8/d87/classCCryptoKeyStore.html">CCryptoKeyStore</a></td></tr>
-<tr class="memitem:ad4f0daf8b90edf62666a0f32e993de92 inherit pro_types_classCCryptoKeyStore"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#ad4f0daf8b90edf62666a0f32e993de92">CryptedKeyMap</a> = std::map&lt; <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a>, std::pair&lt; <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a>, std::vector&lt; unsigned char &gt; &gt;&gt;</td></tr>
-<tr class="separator:ad4f0daf8b90edf62666a0f32e993de92 inherit pro_types_classCCryptoKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_types_classCBasicKeyStore"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classCBasicKeyStore')"><img src="../../closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="../../d5/dca/classCBasicKeyStore.html">CBasicKeyStore</a></td></tr>
-<tr class="memitem:a648dedab8e5488d0f5ad3aa709546e73 inherit pro_types_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#a648dedab8e5488d0f5ad3aa709546e73">KeyMap</a> = std::map&lt; <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a>, <a class="el" href="../../d0/dc4/classCKey.html">CKey</a> &gt;</td></tr>
-<tr class="separator:a648dedab8e5488d0f5ad3aa709546e73 inherit pro_types_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a901973fd2ab7e9f6a727d85bffafcd91 inherit pro_types_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#a901973fd2ab7e9f6a727d85bffafcd91">WatchKeyMap</a> = std::map&lt; <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a>, <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &gt;</td></tr>
-<tr class="separator:a901973fd2ab7e9f6a727d85bffafcd91 inherit pro_types_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd481d7c932641c06a9cc02885e247f5 inherit pro_types_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#abd481d7c932641c06a9cc02885e247f5">ScriptMap</a> = std::map&lt; <a class="el" href="../../da/dbf/classCScriptID.html">CScriptID</a>, <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &gt;</td></tr>
-<tr class="separator:abd481d7c932641c06a9cc02885e247f5 inherit pro_types_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdf934112932e239671ee547e19d2333 inherit pro_types_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#acdf934112932e239671ee547e19d2333">WatchOnlySet</a> = std::set&lt; <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &gt;</td></tr>
-<tr class="separator:acdf934112932e239671ee547e19d2333 inherit pro_types_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classCCryptoKeyStore"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classCCryptoKeyStore')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d8/d87/classCCryptoKeyStore.html">CCryptoKeyStore</a></td></tr>
-<tr class="memitem:af202f587051735be5a39344d9e333720 inherit pro_methods_classCCryptoKeyStore"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#af202f587051735be5a39344d9e333720">SetCrypted</a> ()</td></tr>
-<tr class="separator:af202f587051735be5a39344d9e333720 inherit pro_methods_classCCryptoKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c0f6b63fb04193df16243c4459b7c61 inherit pro_methods_classCCryptoKeyStore"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#a8c0f6b63fb04193df16243c4459b7c61">EncryptKeys</a> (<a class="el" href="../../df/d1f/crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;vMasterKeyIn)</td></tr>
-<tr class="memdesc:a8c0f6b63fb04193df16243c4459b7c61 inherit pro_methods_classCCryptoKeyStore"><td class="mdescLeft">&#160;</td><td class="mdescRight">will encrypt previously unencrypted keys  <a href="../../d8/d87/classCCryptoKeyStore.html#a8c0f6b63fb04193df16243c4459b7c61">More...</a><br /></td></tr>
-<tr class="separator:a8c0f6b63fb04193df16243c4459b7c61 inherit pro_methods_classCCryptoKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a128d1d75cc5b09d721551e958b32aab3 inherit pro_methods_classCCryptoKeyStore"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#a128d1d75cc5b09d721551e958b32aab3">Unlock</a> (const <a class="el" href="../../df/d1f/crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;vMasterKeyIn, bool accept_no_keys=false)</td></tr>
-<tr class="separator:a128d1d75cc5b09d721551e958b32aab3 inherit pro_methods_classCCryptoKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eab28e7b189f66f1e8c64e9646005f7 inherit pro_methods_classCCryptoKeyStore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#ad4f0daf8b90edf62666a0f32e993de92">CryptedKeyMap</a> mapCryptedKeys&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/classCCryptoKeyStore.html#a2eab28e7b189f66f1e8c64e9646005f7">GUARDED_BY</a> (<a class="el" href="../../d5/dca/classCBasicKeyStore.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>)</td></tr>
-<tr class="separator:a2eab28e7b189f66f1e8c64e9646005f7 inherit pro_methods_classCCryptoKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classCBasicKeyStore"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classCBasicKeyStore')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d5/dca/classCBasicKeyStore.html">CBasicKeyStore</a></td></tr>
-<tr class="memitem:a0bd330aef561fd25691db3ad2565f0dc inherit pro_methods_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#a648dedab8e5488d0f5ad3aa709546e73">KeyMap</a> mapKeys&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#a0bd330aef561fd25691db3ad2565f0dc">GUARDED_BY</a> (<a class="el" href="../../d5/dca/classCBasicKeyStore.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>)</td></tr>
-<tr class="separator:a0bd330aef561fd25691db3ad2565f0dc inherit pro_methods_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0216ae381747fdf437baffbb036f13d inherit pro_methods_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#a901973fd2ab7e9f6a727d85bffafcd91">WatchKeyMap</a> mapWatchKeys&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#aa0216ae381747fdf437baffbb036f13d">GUARDED_BY</a> (<a class="el" href="../../d5/dca/classCBasicKeyStore.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>)</td></tr>
-<tr class="separator:aa0216ae381747fdf437baffbb036f13d inherit pro_methods_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69b3bca0e65afc5247a0084a40fa52e9 inherit pro_methods_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#abd481d7c932641c06a9cc02885e247f5">ScriptMap</a> mapScripts&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#a69b3bca0e65afc5247a0084a40fa52e9">GUARDED_BY</a> (<a class="el" href="../../d5/dca/classCBasicKeyStore.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>)</td></tr>
-<tr class="separator:a69b3bca0e65afc5247a0084a40fa52e9 inherit pro_methods_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0354f5a797ae9dada1d9a7f68837c249 inherit pro_methods_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#acdf934112932e239671ee547e19d2333">WatchOnlySet</a> setWatchOnly&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#a0354f5a797ae9dada1d9a7f68837c249">GUARDED_BY</a> (<a class="el" href="../../d5/dca/classCBasicKeyStore.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>)</td></tr>
-<tr class="separator:a0354f5a797ae9dada1d9a7f68837c249 inherit pro_methods_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbd18b3adbe681247f7ae685cb629fc1 inherit pro_methods_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#abbd18b3adbe681247f7ae685cb629fc1">ImplicitlyLearnRelatedKeyScripts</a> (const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;pubkey) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d5/dca/classCBasicKeyStore.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a>)</td></tr>
-<tr class="separator:abbd18b3adbe681247f7ae685cb629fc1 inherit pro_methods_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classCBasicKeyStore"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classCBasicKeyStore')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d5/dca/classCBasicKeyStore.html">CBasicKeyStore</a></td></tr>
-<tr class="memitem:ab2851bed8f1f651b32c707e59b86a323 inherit pro_attribs_classCBasicKeyStore"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d6b/sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dca/classCBasicKeyStore.html#ab2851bed8f1f651b32c707e59b86a323">cs_KeyStore</a></td></tr>
-<tr class="separator:ab2851bed8f1f651b32c707e59b86a323 inherit pro_attribs_classCBasicKeyStore"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_classFillableSigningProvider"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classFillableSigningProvider')"><img src="../../closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="../../d2/de0/classFillableSigningProvider.html">FillableSigningProvider</a></td></tr>
+<tr class="memitem:a92490f401756d5b0340169a33c04d42c inherit pro_types_classFillableSigningProvider"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#a92490f401756d5b0340169a33c04d42c">KeyMap</a> = std::map&lt; <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a>, <a class="el" href="../../d0/dc4/classCKey.html">CKey</a> &gt;</td></tr>
+<tr class="separator:a92490f401756d5b0340169a33c04d42c inherit pro_types_classFillableSigningProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d68295f88839f3b2de04ab7ac01d94 inherit pro_types_classFillableSigningProvider"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#a47d68295f88839f3b2de04ab7ac01d94">ScriptMap</a> = std::map&lt; <a class="el" href="../../da/dbf/classCScriptID.html">CScriptID</a>, <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &gt;</td></tr>
+<tr class="separator:a47d68295f88839f3b2de04ab7ac01d94 inherit pro_types_classFillableSigningProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classFillableSigningProvider"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classFillableSigningProvider')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d2/de0/classFillableSigningProvider.html">FillableSigningProvider</a></td></tr>
+<tr class="memitem:a5297b8342879cbe6ff24b4535ed5839e inherit pro_methods_classFillableSigningProvider"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#a92490f401756d5b0340169a33c04d42c">KeyMap</a> mapKeys&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#a5297b8342879cbe6ff24b4535ed5839e">GUARDED_BY</a> (<a class="el" href="../../d2/de0/classFillableSigningProvider.html#ac36459aeb27507269a86c089ba2def90">cs_KeyStore</a>)</td></tr>
+<tr class="separator:a5297b8342879cbe6ff24b4535ed5839e inherit pro_methods_classFillableSigningProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fde0688101ba2761f4b6f29183f9c3 inherit pro_methods_classFillableSigningProvider"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#a47d68295f88839f3b2de04ab7ac01d94">ScriptMap</a> mapScripts&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#a59fde0688101ba2761f4b6f29183f9c3">GUARDED_BY</a> (<a class="el" href="../../d2/de0/classFillableSigningProvider.html#ac36459aeb27507269a86c089ba2def90">cs_KeyStore</a>)</td></tr>
+<tr class="separator:a59fde0688101ba2761f4b6f29183f9c3 inherit pro_methods_classFillableSigningProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fabb46b2ebb2795d288ca6ed3cbd138 inherit pro_methods_classFillableSigningProvider"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#a5fabb46b2ebb2795d288ca6ed3cbd138">ImplicitlyLearnRelatedKeyScripts</a> (const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;pubkey) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d2/de0/classFillableSigningProvider.html#ac36459aeb27507269a86c089ba2def90">cs_KeyStore</a>)</td></tr>
+<tr class="separator:a5fabb46b2ebb2795d288ca6ed3cbd138 inherit pro_methods_classFillableSigningProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classFillableSigningProvider"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classFillableSigningProvider')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d2/de0/classFillableSigningProvider.html">FillableSigningProvider</a></td></tr>
+<tr class="memitem:ac36459aeb27507269a86c089ba2def90 inherit pro_attribs_classFillableSigningProvider"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d6b/sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#ac36459aeb27507269a86c089ba2def90">cs_KeyStore</a></td></tr>
+<tr class="separator:ac36459aeb27507269a86c089ba2def90 inherit pro_attribs_classFillableSigningProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> is an extension of a keystore, which also maintains a set of transactions and balances, and provides the ability to create new transactions. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a3108389720232fa2b7c8a5324abfba5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3108389720232fa2b7c8a5324abfba5b">&#9670;&nbsp;</a></span>CryptedKeyMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d7/d57/classCWallet.html#a3108389720232fa2b7c8a5324abfba5b">CWallet::CryptedKeyMap</a> =  std::map&lt;<a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a>, std::pair&lt;<a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a>, std::vector&lt;unsigned char&gt; &gt;&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0e21167a320a0ab8f15d0e11c6749a0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e21167a320a0ab8f15d0e11c6749a0e">&#9670;&nbsp;</a></span>MasterKeyMap</h2>
 
@@ -741,6 +776,50 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Used to keep track of spent outpoints, and detect and report conflicts (double-spends or mutated transactions where the mutant gets mined). </p>
+
+</div>
+</div>
+<a id="a2b05c3a7e25dccaf26505e7bc1f2c317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b05c3a7e25dccaf26505e7bc1f2c317">&#9670;&nbsp;</a></span>WatchKeyMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d7/d57/classCWallet.html#a2b05c3a7e25dccaf26505e7bc1f2c317">CWallet::WatchKeyMap</a> =  std::map&lt;<a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a>, <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8015d7af0d82b3dd217fcd437ce1d4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8015d7af0d82b3dd217fcd437ce1d4e">&#9670;&nbsp;</a></span>WatchOnlySet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d7/d57/classCWallet.html#ae8015d7af0d82b3dd217fcd437ce1d4e">CWallet::WatchOnlySet</a> =  std::set&lt;<a class="el" href="../../d1/da6/classCScript.html">CScript</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -839,6 +918,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ad5af31f28e1cdb12d10a6abd0b0b2bd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5af31f28e1cdb12d10a6abd0b0b2bd9">&#9670;&nbsp;</a></span>AddCryptedKeyInner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::AddCryptedKeyInner </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>vchPubKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; unsigned char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vchCryptedSecret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a42b1405934c6253eb7cea16fcb8e0780"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42b1405934c6253eb7cea16fcb8e0780">&#9670;&nbsp;</a></span>AddDestData()</h2>
 
@@ -915,6 +1030,42 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Add a <a class="el" href="../../d4/dce/structKeyOriginInfo.html">KeyOriginInfo</a> to the wallet </p>
+
+</div>
+</div>
+<a id="a307232ef9f3bf66dde17550595f3e718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a307232ef9f3bf66dde17550595f3e718">&#9670;&nbsp;</a></span>AddKeyPubKeyInner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::AddKeyPubKeyInner </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dc4/classCKey.html">CKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>pubkey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1098,6 +1249,34 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37dc6bb9765d8db1707c975fb3d6ca07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37dc6bb9765d8db1707c975fb3d6ca07">&#9670;&nbsp;</a></span>EncryptKeys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::EncryptKeys </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1f/crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;&#160;</td>
+          <td class="paramname"><em>vMasterKeyIn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>will encrypt previously unencrypted keys </p>
 
 </div>
 </div>
@@ -1315,6 +1494,44 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aa300f61a18b3d786149914ccfd833b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa300f61a18b3d786149914ccfd833b21">&#9670;&nbsp;</a></span>GetKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::GetKey </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/dc4/classCKey.html">CKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>keyOut</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d2/de0/classFillableSigningProvider.html#a2a732a7efd332e0e64ceb93d74c358fe">FillableSigningProvider</a>.</p>
+
+</div>
+</div>
 <a id="af6ce84a6e3fa9696fd85df59241f81c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6ce84a6e3fa9696fd85df59241f81c3">&#9670;&nbsp;</a></span>GetKeyBirthTimes()</h2>
 
@@ -1407,6 +1624,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a92bc932016ff0c01646bc955e44cd40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92bc932016ff0c01646bc955e44cd40e">&#9670;&nbsp;</a></span>GetKeys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt; <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &gt; CWallet::GetKeys </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d2/de0/classFillableSigningProvider.html#a7cd62ed5fc0dbce728609e7efd6ac8bc">FillableSigningProvider</a>.</p>
+
+</div>
+</div>
 <a id="a17d01ff78b26f803d22b6d7d17fc36ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17d01ff78b26f803d22b6d7d17fc36ad">&#9670;&nbsp;</a></span>GetLocation()</h2>
 
@@ -1458,6 +1702,44 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a563d6e9edfe932754e1bf0b5a4b562b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a563d6e9edfe932754e1bf0b5a4b562b7">&#9670;&nbsp;</a></span>GetPubKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::GetPubKey </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>vchPubKeyOut</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d2/de0/classFillableSigningProvider.html#a0867644fe9c23c1da1717a2d6cadcd9d">FillableSigningProvider</a>.</p>
+
+</div>
+</div>
 <a id="a3e37adcf1b2ad9fc02ae3e8da7c692c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e37adcf1b2ad9fc02ae3e8da7c692c9">&#9670;&nbsp;</a></span>GetVersion()</h2>
 
@@ -1482,6 +1764,36 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>get the current wallet format (the oldest client version guaranteed to understand this wallet) </p>
+
+</div>
+</div>
+<a id="aa11284c5646eb54a16a8a719718623db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa11284c5646eb54a16a8a719718623db">&#9670;&nbsp;</a></span>GetWatchPubKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::GetWatchPubKey </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>pubkey_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fetches a pubkey from mapWatchKeys if it exists there. </p>
 
 </div>
 </div>
@@ -1513,8 +1825,112 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a280034f2be9f4e81bed196686761973c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280034f2be9f4e81bed196686761973c">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[1/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1f/crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> vMasterKey CWallet::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#ac36459aeb27507269a86c089ba2def90">cs_KeyStore</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af24be22c999b065a99cbe0bd8b2f3ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af24be22c999b065a99cbe0bd8b2f3ecd">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[2/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d57/classCWallet.html#a3108389720232fa2b7c8a5324abfba5b">CryptedKeyMap</a> mapCryptedKeys CWallet::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#ac36459aeb27507269a86c089ba2def90">cs_KeyStore</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84af1a4d11919e01db4825d2f6ca0f23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84af1a4d11919e01db4825d2f6ca0f23">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[3/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d57/classCWallet.html#ae8015d7af0d82b3dd217fcd437ce1d4e">WatchOnlySet</a> setWatchOnly CWallet::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#ac36459aeb27507269a86c089ba2def90">cs_KeyStore</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69d7379466e25870b24163b85bcb02ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d7379466e25870b24163b85bcb02ed">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[4/20]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d57/classCWallet.html#a2b05c3a7e25dccaf26505e7bc1f2c317">WatchKeyMap</a> mapWatchKeys CWallet::GUARDED_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/de0/classFillableSigningProvider.html#ac36459aeb27507269a86c089ba2def90">cs_KeyStore</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a90383ef29b0a9c0d7e67fd33eb9038e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90383ef29b0a9c0d7e67fd33eb9038e5">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[1/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a90383ef29b0a9c0d7e67fd33eb9038e5">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[5/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1540,7 +1956,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a1456f6775023c7613f3e776635f4178b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1456f6775023c7613f3e776635f4178b">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[2/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1456f6775023c7613f3e776635f4178b">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[6/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1568,7 +1984,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ae80c47c26b7bb9cfb47a1e605d247001"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae80c47c26b7bb9cfb47a1e605d247001">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[3/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae80c47c26b7bb9cfb47a1e605d247001">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[7/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1596,7 +2012,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aa8b1fcb52787101f5b4c6508e0c8c582"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8b1fcb52787101f5b4c6508e0c8c582">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[4/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8b1fcb52787101f5b4c6508e0c8c582">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[8/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1622,7 +2038,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a323cf88ba6afd34e73e797783bbde43c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a323cf88ba6afd34e73e797783bbde43c">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[5/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a323cf88ba6afd34e73e797783bbde43c">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[9/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1648,7 +2064,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a2865a7e91e25c7c41346fa3cc8c9dd8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2865a7e91e25c7c41346fa3cc8c9dd8d">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[6/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2865a7e91e25c7c41346fa3cc8c9dd8d">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[10/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1674,7 +2090,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="af492f31bf6e30ae83c55697f447762ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af492f31bf6e30ae83c55697f447762ed">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[7/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af492f31bf6e30ae83c55697f447762ed">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[11/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1700,7 +2116,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aebf8e8aab1ba7bc3ee1812a172dca1f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebf8e8aab1ba7bc3ee1812a172dca1f9">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[8/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aebf8e8aab1ba7bc3ee1812a172dca1f9">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[12/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1726,7 +2142,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a75d0cdf6f1e1b65faa28deaf446fbce8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75d0cdf6f1e1b65faa28deaf446fbce8">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[9/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a75d0cdf6f1e1b65faa28deaf446fbce8">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[13/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1752,7 +2168,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a0e473f876758b0667150a7c7430e71c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e473f876758b0667150a7c7430e71c1">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[10/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e473f876758b0667150a7c7430e71c1">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[14/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1780,7 +2196,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a3845d16dc8114ce841be3f8d8628a692"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3845d16dc8114ce841be3f8d8628a692">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[11/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3845d16dc8114ce841be3f8d8628a692">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[15/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1798,7 +2214,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="acd7fa3caecee9c9c40e495bf5ad4b68e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd7fa3caecee9c9c40e495bf5ad4b68e">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[12/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acd7fa3caecee9c9c40e495bf5ad4b68e">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[16/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1816,7 +2232,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a324c8eb5c0dd2b3ece84a73728386236"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a324c8eb5c0dd2b3ece84a73728386236">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[13/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a324c8eb5c0dd2b3ece84a73728386236">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[17/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1834,7 +2250,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a96bd200ef60382b7ea0e5278186544c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96bd200ef60382b7ea0e5278186544c5">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[14/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a96bd200ef60382b7ea0e5278186544c5">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[18/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1860,7 +2276,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a027938758fbcf14b85396f3ed5f88576"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a027938758fbcf14b85396f3ed5f88576">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[15/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a027938758fbcf14b85396f3ed5f88576">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[19/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1878,7 +2294,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a1eb2590013da6f933861521169973817"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1eb2590013da6f933861521169973817">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[16/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eb2590013da6f933861521169973817">&#9670;&nbsp;</a></span>GUARDED_BY() <span class="overload">[20/20]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1913,6 +2329,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ac28aab658be7e6efb3364b2bc0df30df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac28aab658be7e6efb3364b2bc0df30df">&#9670;&nbsp;</a></span>HaveKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::HaveKey </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;&#160;</td>
+          <td class="paramname"><em>address</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d2/de0/classFillableSigningProvider.html#afce9a42034777061d6f26db514b0685f">FillableSigningProvider</a>.</p>
+
+</div>
+</div>
 <a id="a593a76cc02e230dafabc1bcf3051df4a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a593a76cc02e230dafabc1bcf3051df4a">&#9670;&nbsp;</a></span>IsAbortingRescan()</h2>
 
@@ -1934,6 +2378,48 @@ Additional Inherited Members</h2></td></tr>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add676e643140c93d394bc01bc96f5cd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add676e643140c93d394bc01bc96f5cd9">&#9670;&nbsp;</a></span>IsCrypted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::IsCrypted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2c3f07bfe360af297efdbf84c211dd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c3f07bfe360af297efdbf84c211dd6">&#9670;&nbsp;</a></span>IsLocked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::IsLocked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -2007,7 +2493,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Explicitly make the wallet learn the related scripts for outputs to the given key. This is purely to make the wallet file compatible with older software, as <a class="el" href="../../d5/dca/classCBasicKeyStore.html">CBasicKeyStore</a> automatically does this implicitly for all keys now. </p>
+<p>Explicitly make the wallet learn the related scripts for outputs to the given key. This is purely to make the wallet file compatible with older software, as <a class="el" href="../../d2/de0/classFillableSigningProvider.html">FillableSigningProvider</a> automatically does this implicitly for all keys now. </p>
 
 </div>
 </div>
@@ -2107,6 +2593,23 @@ Additional Inherited Members</h2></td></tr>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0404b6bc1cb804aadc69b9902b52282a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0404b6bc1cb804aadc69b9902b52282a">&#9670;&nbsp;</a></span>Lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::Lock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -2220,6 +2723,67 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Set whether this wallet broadcasts transactions. </p>
+
+</div>
+</div>
+<a id="a29994de20efc2765a20fd717f2942947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29994de20efc2765a20fd717f2942947">&#9670;&nbsp;</a></span>SetCrypted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::SetCrypted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3935971cd92f8dc6c32acb2c6aa3edb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3935971cd92f8dc6c32acb2c6aa3edb5">&#9670;&nbsp;</a></span>Unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::Unlock </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d1f/crypter_8h.html#a64709c9a3acc8f5694515789a183ad7b">CKeyingMaterial</a> &amp;&#160;</td>
+          <td class="paramname"><em>vMasterKeyIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>accept_no_keys</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2445,6 +3009,30 @@ template&lt;typename... Params&gt; </div>
 
 </div>
 </div>
+<a id="a3472513c3a21d76acd2696feba7582f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3472513c3a21d76acd2696feba7582f8">&#9670;&nbsp;</a></span>fDecryptionThoroughlyChecked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::fDecryptionThoroughlyChecked</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>keeps track of whether Unlock has run a thorough check before </p>
+
+</div>
+</div>
 <a id="ae1ad69160602f590832956e999a54714"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1ad69160602f590832956e999a54714">&#9670;&nbsp;</a></span>fScanningWallet</h2>
 
@@ -2464,6 +3052,29 @@ template&lt;typename... Params&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d4582a3c77599232e045c0ce8dd66a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d4582a3c77599232e045c0ce8dd66a5">&#9670;&nbsp;</a></span>fUseCrypto</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; CWallet::fUseCrypto</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>if fUseCrypto is true, mapKeys must be empty if fUseCrypto is false, vMasterKey must be empty </p>
 
 </div>
 </div>
@@ -2958,6 +3569,21 @@ template&lt;typename... Params&gt; </div>
 
 </div>
 </div>
+<a id="a31d5e60c856bbbabf0ce7ed7171623b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d5e60c856bbbabf0ce7ed7171623b7">&#9670;&nbsp;</a></span>NotifyStatusChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::signal&lt;void (<a class="el" href="../../d7/d57/classCWallet.html">CWallet</a>* wallet)&gt; CWallet::NotifyStatusChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Wallet status (encrypted, locked) changed. Note: Called without locks held. </p>
+
+</div>
+</div>
 <a id="acd26616ef558afbc5bc62d72603957fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd26616ef558afbc5bc62d72603957fc">&#9670;&nbsp;</a></span>NotifyTransactionChanged</h2>
 
@@ -3015,7 +3641,7 @@ template&lt;typename... Params&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Holds a timestamp at which point the wallet is scheduled (externally) to be relocked. Caller must arrange for actual relocking to occur via <a class="el" href="../../d8/d87/classCCryptoKeyStore.html#ab73ebcbfa6e0aaf271d0fff9369a6685">Lock()</a>. </p>
+<p>Holds a timestamp at which point the wallet is scheduled (externally) to be relocked. Caller must arrange for actual relocking to occur via <a class="el" href="../../d7/d57/classCWallet.html#a0404b6bc1cb804aadc69b9902b52282a">Lock()</a>. </p>
 
 </div>
 </div>

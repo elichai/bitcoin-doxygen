@@ -2,6 +2,7 @@ var searchData=
 [
   ['readme',['README',['../d0/d16/md_contrib_init_README.html',1,'']]],
   ['repository_20tools',['Repository Tools',['../d4/dcf/md_contrib_README.html',1,'']]],
+  ['reduce_20memory',['Reduce Memory',['../d3/d89/md_doc_reduce-memory.html',1,'']]],
   ['reduce_20traffic',['Reduce Traffic',['../d0/dbd/md_doc_reduce-traffic.html',1,'']]],
   ['release_2dnotes',['release-notes',['../df/db2/md_doc_release-notes.html',1,'']]],
   ['rpc_20changes',['RPC changes',['../d7/dbf/md_doc_release-notes-14802.html',1,'']]],

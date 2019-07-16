@@ -75,11 +75,12 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../db/d60/coins_8h_source.html">coins.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d8/d74/core__io_8h_source.html">core_io.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../dc/da1/key__io_8h_source.html">key_io.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d0/d82/keystore_8h_source.html">keystore.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d0/d30/policy_8h_source.html">policy/policy.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../dc/d1c/primitives_2transaction_8h_source.html">primitives/transaction.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../de/dd4/rpc_2protocol_8h_source.html">rpc/protocol.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d4/d43/request_8h_source.html">rpc/request.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d9/db6/rpc_2util_8h_source.html">rpc/util.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d3/dcd/sign_8h_source.html">script/sign.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../da/d68/signingprovider_8h_source.html">script/signingprovider.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d1/db1/tinyformat_8h_source.html">tinyformat.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../df/da8/univalue_8h_source.html">univalue.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d4/d8b/util_2rbf_8h_source.html">util/rbf.h</a>&gt;</code><br />
@@ -91,32 +92,10 @@ Functions</h2></td></tr>
 <tr class="separator:aee85a5d91a985f7e1bc1b4a124870ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa18bf1f4cd71863cd807845a220ad475"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/rawtransaction__util_8cpp.html#aa18bf1f4cd71863cd807845a220ad475">TxInErrorToJSON</a> (const <a class="el" href="../../d1/dc4/classCTxIn.html">CTxIn</a> &amp;txin, <a class="el" href="../../d7/d96/classUniValue.html">UniValue</a> &amp;vErrorsRet, const std::string &amp;strMessage)</td></tr>
 <tr class="separator:aa18bf1f4cd71863cd807845a220ad475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07e1b9a1fe57066be94da36bff9fd058"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d96/classUniValue.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/rawtransaction__util_8cpp.html#a07e1b9a1fe57066be94da36bff9fd058">SignTransaction</a> (<a class="el" href="../../d0/db2/structCMutableTransaction.html">CMutableTransaction</a> &amp;mtx, const <a class="el" href="../../d7/d96/classUniValue.html">UniValue</a> &amp;prevTxsUnival, <a class="el" href="../../d5/dca/classCBasicKeyStore.html">CBasicKeyStore</a> *keystore, std::map&lt; <a class="el" href="../../de/dce/classCOutPoint.html">COutPoint</a>, <a class="el" href="../../dc/d51/classCoin.html">Coin</a> &gt; &amp;coins, bool is_temp_keystore, const <a class="el" href="../../d7/d96/classUniValue.html">UniValue</a> &amp;hashType)</td></tr>
-<tr class="separator:a07e1b9a1fe57066be94da36bff9fd058"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89cb492ac5c243325d66d0cefb5d5d7e"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a>, <a class="el" href="../../d2/d86/classuint256.html">uint256</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/rawtransaction__util_8cpp.html#a89cb492ac5c243325d66d0cefb5d5d7e">GetKeyTweaks</a> (const <a class="el" href="../../d7/d96/classUniValue.html">UniValue</a> &amp;tweaks_arr)</td></tr>
-<tr class="separator:a89cb492ac5c243325d66d0cefb5d5d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9d336ae1fbde8ceaaf39c43dbb56a1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d96/classUniValue.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/rawtransaction__util_8cpp.html#af9d336ae1fbde8ceaaf39c43dbb56a1e">ArrayOrObjectToObject</a> (const <a class="el" href="../../d7/d96/classUniValue.html">UniValue</a> &amp;val)</td></tr>
-<tr class="separator:af9d336ae1fbde8ceaaf39c43dbb56a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a695568783beec966399bad88943db851"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d96/classUniValue.html">UniValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/rawtransaction__util_8cpp.html#a695568783beec966399bad88943db851">SignTransaction</a> (<a class="el" href="../../d0/db2/structCMutableTransaction.html">CMutableTransaction</a> &amp;mtx, const <a class="el" href="../../d7/d96/classUniValue.html">UniValue</a> &amp;prevTxsUnival, <a class="el" href="../../d2/de0/classFillableSigningProvider.html">FillableSigningProvider</a> *keystore, std::map&lt; <a class="el" href="../../de/dce/classCOutPoint.html">COutPoint</a>, <a class="el" href="../../dc/d51/classCoin.html">Coin</a> &gt; &amp;coins, bool is_temp_keystore, const <a class="el" href="../../d7/d96/classUniValue.html">UniValue</a> &amp;hashType)</td></tr>
+<tr class="separator:a695568783beec966399bad88943db851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af9d336ae1fbde8ceaaf39c43dbb56a1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9d336ae1fbde8ceaaf39c43dbb56a1e">&#9670;&nbsp;</a></span>ArrayOrObjectToObject()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d7/d96/classUniValue.html">UniValue</a> ArrayOrObjectToObject </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d7/d96/classUniValue.html">UniValue</a> &amp;&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aee85a5d91a985f7e1bc1b4a124870ab3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aee85a5d91a985f7e1bc1b4a124870ab3">&#9670;&nbsp;</a></span>ConstructTransaction()</h2>
 
@@ -158,26 +137,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a89cb492ac5c243325d66d0cefb5d5d7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89cb492ac5c243325d66d0cefb5d5d7e">&#9670;&nbsp;</a></span>GetKeyTweaks()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt;<a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a>, <a class="el" href="../../d2/d86/classuint256.html">uint256</a>&gt; GetKeyTweaks </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d7/d96/classUniValue.html">UniValue</a> &amp;&#160;</td>
-          <td class="paramname"><em>tweaks_arr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a07e1b9a1fe57066be94da36bff9fd058"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07e1b9a1fe57066be94da36bff9fd058">&#9670;&nbsp;</a></span>SignTransaction()</h2>
+<a id="a695568783beec966399bad88943db851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a695568783beec966399bad88943db851">&#9670;&nbsp;</a></span>SignTransaction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,7 +158,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/dca/classCBasicKeyStore.html">CBasicKeyStore</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/de0/classFillableSigningProvider.html">FillableSigningProvider</a> *&#160;</td>
           <td class="paramname"><em>keystore</em>, </td>
         </tr>
         <tr>

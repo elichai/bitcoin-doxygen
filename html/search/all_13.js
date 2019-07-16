@@ -209,7 +209,7 @@ var searchData=
   ['qt_5fstaticplugin',['QT_STATICPLUGIN',['../d3/dc3/bitcoin__config_8h.html#abd0e7058a83de474ab291deb37900537',1,'bitcoin_config.h']]],
   ['qtrpctimerbase',['QtRPCTimerBase',['../db/dc1/classQtRPCTimerBase.html',1,'QtRPCTimerBase'],['../db/dc1/classQtRPCTimerBase.html#a4a5f80aac40501daa1e2f44b9eb61c82',1,'QtRPCTimerBase::QtRPCTimerBase()']]],
   ['qtrpctimerinterface',['QtRPCTimerInterface',['../d6/df4/classQtRPCTimerInterface.html',1,'']]],
-  ['quarterround',['QUARTERROUND',['../dd/d99/crypto_2chacha20_8cpp.html#aae524f06f43cef9dde57fb1cecc75d4a',1,'QUARTERROUND():&#160;chacha20.cpp'],['../db/d1f/scalar__4x64__impl_8h.html#aae524f06f43cef9dde57fb1cecc75d4a',1,'QUARTERROUND():&#160;scalar_4x64_impl.h'],['../dc/db6/scalar__8x32__impl_8h.html#aae524f06f43cef9dde57fb1cecc75d4a',1,'QUARTERROUND():&#160;scalar_8x32_impl.h']]],
+  ['quarterround',['QUARTERROUND',['../dd/d99/crypto_2chacha20_8cpp.html#aae524f06f43cef9dde57fb1cecc75d4a',1,'chacha20.cpp']]],
   ['queryhashes',['queryHashes',['../db/d37/classCTxMemPool.html#a97d3050fd1c423e3b91042e48e3d306e',1,'CTxMemPool']]],
   ['questionfn',['QuestionFn',['../d5/df4/classinterfaces_1_1Node.html#a2e561ba520fd8397160d2e253ee9344e',1,'interfaces::Node']]],
   ['queue',['queue',['../d1/d02/classCCheckQueue.html#a378dfa046218f16efbb9ac6974346db5',1,'CCheckQueue::queue()'],['../d4/d0c/classWorkQueue.html#a9af5a572c89d167123b4e486c36c29b2',1,'WorkQueue::queue()']]],

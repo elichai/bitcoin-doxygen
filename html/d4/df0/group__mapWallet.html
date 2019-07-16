@@ -72,6 +72,8 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:gacb65e7716d90a3e44022b0f9fce577d2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gacb65e7716d90a3e44022b0f9fce577d2">GetAffectedKeys</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;spk, const <a class="el" href="../../d1/d80/classSigningProvider.html">SigningProvider</a> &amp;provider)</td></tr>
 <tr class="separator:gacb65e7716d90a3e44022b0f9fce577d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2065e9a77b9aa69a1a8d4edbab0f6d61"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga2065e9a77b9aa69a1a8d4edbab0f6d61">ExtractPubKey</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest, <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;pubKeyOut)</td></tr>
+<tr class="separator:ga2065e9a77b9aa69a1a8d4edbab0f6d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0fd4c6f23ea3ccac9050ef55ad5f90b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga0fd4c6f23ea3ccac9050ef55ad5f90b0">CalculateMaximumSignedTxSize</a> (const <a class="el" href="../../d8/dbe/classCTransaction.html">CTransaction</a> &amp;tx, const <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> *wallet, bool use_max_sig)</td></tr>
 <tr class="separator:ga0fd4c6f23ea3ccac9050ef55ad5f90b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga55c494ecfeaf5cdf44483c1eaa45b2fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga55c494ecfeaf5cdf44483c1eaa45b2fb">CalculateMaximumSignedTxSize</a> (const <a class="el" href="../../d8/dbe/classCTransaction.html">CTransaction</a> &amp;tx, const <a class="el" href="../../d7/d57/classCWallet.html">CWallet</a> *wallet, const std::vector&lt; <a class="el" href="../../d8/d1d/classCTxOut.html">CTxOut</a> &gt; &amp;txouts, bool use_max_sig)</td></tr>
@@ -92,9 +94,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2b0c518df362a1a765a241c1ca5c69a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga2b0c518df362a1a765a241c1ca5c69a0">CWallet::AddKeyPubKey</a> (const <a class="el" href="../../d0/dc4/classCKey.html">CKey</a> &amp;key, const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;pubkey) override <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="memdesc:ga2b0c518df362a1a765a241c1ca5c69a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a key to the store, and saves it to disk.  <a href="#ga2b0c518df362a1a765a241c1ca5c69a0">More...</a><br /></td></tr>
 <tr class="separator:ga2b0c518df362a1a765a241c1ca5c69a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9bd8ca47110186b31c258308d3bbd7c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga9bd8ca47110186b31c258308d3bbd7c2">CWallet::AddCryptedKey</a> (const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;vchPubKey, const std::vector&lt; unsigned char &gt; &amp;vchCryptedSecret) override</td></tr>
-<tr class="memdesc:ga9bd8ca47110186b31c258308d3bbd7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an encrypted key to the store, and saves it to disk.  <a href="#ga9bd8ca47110186b31c258308d3bbd7c2">More...</a><br /></td></tr>
-<tr class="separator:ga9bd8ca47110186b31c258308d3bbd7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e90096a903d49cd751f05fcdb7692ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga3e90096a903d49cd751f05fcdb7692ce">CWallet::AddCryptedKey</a> (const <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;vchPubKey, const std::vector&lt; unsigned char &gt; &amp;vchCryptedSecret)</td></tr>
+<tr class="memdesc:ga3e90096a903d49cd751f05fcdb7692ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an encrypted key to the store, and saves it to disk.  <a href="#ga3e90096a903d49cd751f05fcdb7692ce">More...</a><br /></td></tr>
+<tr class="separator:ga3e90096a903d49cd751f05fcdb7692ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaab39ed756609758c1297cf8bc30430e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gaab39ed756609758c1297cf8bc30430e7">CWallet::LoadKeyMetadata</a> (const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;keyID, const <a class="el" href="../../d4/dba/classCKeyMetadata.html">CKeyMetadata</a> &amp;metadata) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="memdesc:gaab39ed756609758c1297cf8bc30430e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load metadata (used by LoadWallet)  <a href="#gaab39ed756609758c1297cf8bc30430e7">More...</a><br /></td></tr>
 <tr class="separator:gaab39ed756609758c1297cf8bc30430e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,28 +111,35 @@ Functions</h2></td></tr>
 <tr class="memitem:gab7b95f29dbf960047aa0511713036871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gab7b95f29dbf960047aa0511713036871">CWallet::UpdateTimeFirstKey</a> (<a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> nCreateTime) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="separator:gab7b95f29dbf960047aa0511713036871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga15df27607f4dde9f262e0f030c9414b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga15df27607f4dde9f262e0f030c9414b5">CWallet::AddCScript</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;redeemScript) override</td></tr>
-<tr class="memdesc:ga15df27607f4dde9f262e0f030c9414b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Support for BIP 0013 : see <a href="https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki">https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki</a>.  <a href="#ga15df27607f4dde9f262e0f030c9414b5">More...</a><br /></td></tr>
 <tr class="separator:ga15df27607f4dde9f262e0f030c9414b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7642617c3e6c15d05f57a13bf9fde71a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga7642617c3e6c15d05f57a13bf9fde71a">CWallet::AddCScriptWithDB</a> (<a class="el" href="../../d3/de2/classWalletBatch.html">WalletBatch</a> &amp;batch, const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;script)</td></tr>
 <tr class="memdesc:ga7642617c3e6c15d05f57a13bf9fde71a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a script to the store and saves it to disk.  <a href="#ga7642617c3e6c15d05f57a13bf9fde71a">More...</a><br /></td></tr>
 <tr class="separator:ga7642617c3e6c15d05f57a13bf9fde71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadbf0abef9da8102f000d4afd5cec5bbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gadbf0abef9da8102f000d4afd5cec5bbc">CWallet::LoadCScript</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;redeemScript)</td></tr>
 <tr class="separator:gadbf0abef9da8102f000d4afd5cec5bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga601fde6dc17669ecab5c49d0a1941037"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga601fde6dc17669ecab5c49d0a1941037">CWallet::AddWatchOnlyInMem</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest)</td></tr>
+<tr class="separator:ga601fde6dc17669ecab5c49d0a1941037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6b285d8ecd80a42128ef460cdc08f864"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga6b285d8ecd80a42128ef460cdc08f864">CWallet::AddWatchOnlyWithDB</a> (<a class="el" href="../../d3/de2/classWalletBatch.html">WalletBatch</a> &amp;batch, const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="separator:ga6b285d8ecd80a42128ef460cdc08f864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga374cc906317f54b39ff25e0ef850ce54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga374cc906317f54b39ff25e0ef850ce54">CWallet::AddWatchOnlyWithDB</a> (<a class="el" href="../../d3/de2/classWalletBatch.html">WalletBatch</a> &amp;batch, const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest, <a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> create_time) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="memdesc:ga374cc906317f54b39ff25e0ef850ce54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a watch-only address to the store, and saves it to disk.  <a href="#ga374cc906317f54b39ff25e0ef850ce54">More...</a><br /></td></tr>
 <tr class="separator:ga374cc906317f54b39ff25e0ef850ce54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84e18fec1f19c9963fd810d076b71e82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga84e18fec1f19c9963fd810d076b71e82">CWallet::AddWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest) override <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
-<tr class="separator:ga84e18fec1f19c9963fd810d076b71e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f605a21def1140ec97b3b2fd6934a02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga8f605a21def1140ec97b3b2fd6934a02">CWallet::AddWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
+<tr class="separator:ga8f605a21def1140ec97b3b2fd6934a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf96e275eac457df2013e8ceb1810b703"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gaf96e275eac457df2013e8ceb1810b703">CWallet::AddWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest, <a class="el" href="../../df/dd8/stdint_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> nCreateTime) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
 <tr class="memdesc:gaf96e275eac457df2013e8ceb1810b703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a watch-only address to the store, and saves it to disk.  <a href="#gaf96e275eac457df2013e8ceb1810b703">More...</a><br /></td></tr>
 <tr class="separator:gaf96e275eac457df2013e8ceb1810b703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca3c3836aa8bf1e706951886ba77080c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gaca3c3836aa8bf1e706951886ba77080c">CWallet::RemoveWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest) override <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
-<tr class="separator:gaca3c3836aa8bf1e706951886ba77080c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab67eab7bca24140bdfe4eecf9bde59b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gab67eab7bca24140bdfe4eecf9bde59b0">CWallet::RemoveWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../d7/d57/classCWallet.html#a4e6eb889f7638ed9695fdc0731581428">cs_wallet</a>)</td></tr>
+<tr class="separator:gab67eab7bca24140bdfe4eecf9bde59b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad6580f1844fc639389e1c6a1e2787ee6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gad6580f1844fc639389e1c6a1e2787ee6">CWallet::LoadWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest)</td></tr>
 <tr class="memdesc:gad6580f1844fc639389e1c6a1e2787ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a watch-only address to the store, without saving it to disk (used by LoadWallet)  <a href="#gad6580f1844fc639389e1c6a1e2787ee6">More...</a><br /></td></tr>
 <tr class="separator:gad6580f1844fc639389e1c6a1e2787ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbf52cb8723ec541d9615aa0cd684c7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#gafbf52cb8723ec541d9615aa0cd684c7b">CWallet::HaveWatchOnly</a> (const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;dest) const</td></tr>
+<tr class="memdesc:gafbf52cb8723ec541d9615aa0cd684c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the watch-only script is in the wallet.  <a href="#gafbf52cb8723ec541d9615aa0cd684c7b">More...</a><br /></td></tr>
+<tr class="separator:gafbf52cb8723ec541d9615aa0cd684c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7fc2cf08373ccb79709007297cc1c87b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga7fc2cf08373ccb79709007297cc1c87b">CWallet::HaveWatchOnly</a> () const</td></tr>
+<tr class="memdesc:ga7fc2cf08373ccb79709007297cc1c87b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether there are any watch-only things in the wallet.  <a href="#ga7fc2cf08373ccb79709007297cc1c87b">More...</a><br /></td></tr>
+<tr class="separator:ga7fc2cf08373ccb79709007297cc1c87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4370ceeca17c1fc58c419e4cdc65b433"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga4370ceeca17c1fc58c419e4cdc65b433">CWallet::Unlock</a> (const <a class="el" href="../../d0/d7f/secure_8h.html#a396ed773a5ac24aec28c8f7dc413c7ac">SecureString</a> &amp;strWalletPassphrase, bool accept_no_keys=false)</td></tr>
 <tr class="separator:ga4370ceeca17c1fc58c419e4cdc65b433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4abcec3066e7c462f4564c159fc15031"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df0/group__mapWallet.html#ga4abcec3066e7c462f4564c159fc15031">CWallet::ChangeWalletPassphrase</a> (const <a class="el" href="../../d0/d7f/secure_8h.html#a396ed773a5ac24aec28c8f7dc413c7ac">SecureString</a> &amp;strOldWalletPassphrase, const <a class="el" href="../../d0/d7f/secure_8h.html#a396ed773a5ac24aec28c8f7dc413c7ac">SecureString</a> &amp;strNewWalletPassphrase)</td></tr>
@@ -335,14 +344,11 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9bd8ca47110186b31c258308d3bbd7c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9bd8ca47110186b31c258308d3bbd7c2">&#9670;&nbsp;</a></span>AddCryptedKey()</h2>
+<a id="ga3e90096a903d49cd751f05fcdb7692ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e90096a903d49cd751f05fcdb7692ce">&#9670;&nbsp;</a></span>AddCryptedKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool CWallet::AddCryptedKey </td>
@@ -362,16 +368,9 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Adds an encrypted key to the store, and saves it to disk. </p>
-
-<p>Reimplemented from <a class="el" href="../../d8/d87/classCCryptoKeyStore.html#a9f4d2df95008205b2b9784c5f0e8e12b">CCryptoKeyStore</a>.</p>
 
 </div>
 </div>
@@ -399,9 +398,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Support for BIP 0013 : see <a href="https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki">https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki</a>. </p>
-
-<p>Reimplemented from <a class="el" href="../../d5/dca/classCBasicKeyStore.html#a45baa35575b5818f6782266e0f4731e6">CBasicKeyStore</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d2/de0/classFillableSigningProvider.html#a2f0f015db508bd559e9bf3474c7825fe">FillableSigningProvider</a>.</p>
 
 </div>
 </div>
@@ -479,7 +476,7 @@ Functions</h2></td></tr>
 
 <p>Adds a key to the store, and saves it to disk. </p>
 
-<p>Reimplemented from <a class="el" href="../../d8/d87/classCCryptoKeyStore.html#a4a2d6d44d1c5e844cf0166d286f5eb18">CCryptoKeyStore</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d2/de0/classFillableSigningProvider.html#a0088022882d5d8040610d0d38db65332">FillableSigningProvider</a>.</p>
 
 </div>
 </div>
@@ -667,8 +664,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga84e18fec1f19c9963fd810d076b71e82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga84e18fec1f19c9963fd810d076b71e82">&#9670;&nbsp;</a></span>AddWatchOnly() <span class="overload">[1/2]</span></h2>
+<a id="ga8f605a21def1140ec97b3b2fd6934a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8f605a21def1140ec97b3b2fd6934a02">&#9670;&nbsp;</a></span>AddWatchOnly() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -686,13 +683,11 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Private version of AddWatchOnly method which does not accept a timestamp, and which will reset the wallet's nTimeFirstKey value to 1 if the watch key did not previously have a timestamp associated with it. Because this is an inherited virtual method, it is accessible despite being marked private, but it is marked private anyway to encourage use of the other AddWatchOnly which accepts a timestamp and sets nTimeFirstKey more intelligently for more efficient rescans. </p>
-
-<p>Reimplemented from <a class="el" href="../../d5/dca/classCBasicKeyStore.html#af5641504058ae079925af7d00e513a77">CBasicKeyStore</a>.</p>
 
 </div>
 </div>
@@ -723,6 +718,32 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adds a watch-only address to the store, and saves it to disk. </p>
+
+</div>
+</div>
+<a id="ga601fde6dc17669ecab5c49d0a1941037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga601fde6dc17669ecab5c49d0a1941037">&#9670;&nbsp;</a></span>AddWatchOnlyInMem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::AddWatchOnlyInMem </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;&#160;</td>
+          <td class="paramname"><em>dest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1237,6 +1258,42 @@ Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2065e9a77b9aa69a1a8d4edbab0f6d61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2065e9a77b9aa69a1a8d4edbab0f6d61">&#9670;&nbsp;</a></span>ExtractPubKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ExtractPubKey </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>pubKeyOut</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -1802,6 +1859,45 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if a given transaction has any of its outputs spent by another transaction in the wallet. </p>
+
+</div>
+</div>
+<a id="gafbf52cb8723ec541d9615aa0cd684c7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbf52cb8723ec541d9615aa0cd684c7b">&#9670;&nbsp;</a></span>HaveWatchOnly() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::HaveWatchOnly </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/da6/classCScript.html">CScript</a> &amp;&#160;</td>
+          <td class="paramname"><em>dest</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether the watch-only script is in the wallet. </p>
+
+</div>
+</div>
+<a id="ga7fc2cf08373ccb79709007297cc1c87b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7fc2cf08373ccb79709007297cc1c87b">&#9670;&nbsp;</a></span>HaveWatchOnly() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CWallet::HaveWatchOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether there are any watch-only things in the wallet. </p>
 
 </div>
 </div>
@@ -2564,14 +2660,11 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaca3c3836aa8bf1e706951886ba77080c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaca3c3836aa8bf1e706951886ba77080c">&#9670;&nbsp;</a></span>RemoveWatchOnly()</h2>
+<a id="gab67eab7bca24140bdfe4eecf9bde59b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab67eab7bca24140bdfe4eecf9bde59b0">&#9670;&nbsp;</a></span>RemoveWatchOnly()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool CWallet::RemoveWatchOnly </td>
@@ -2581,14 +2674,7 @@ Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="../../d5/dca/classCBasicKeyStore.html#a5032a8e882e119c454674d0dac5da19b">CBasicKeyStore</a>.</p>
 
 </div>
 </div>

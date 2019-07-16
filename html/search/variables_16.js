@@ -38,7 +38,6 @@ var searchData=
   ['witness_5futxo',['witness_utxo',['../db/da3/structPSBTInput.html#af8bfa83cd96c957d861306d7ed5e4352',1,'PSBTInput']]],
   ['witness_5fv0_5fkeyhash_5fsize',['WITNESS_V0_KEYHASH_SIZE',['../d3/d97/interpreter_8h.html#a14ee21c2a2f3a92932aa6adda0de72d8',1,'interpreter.h']]],
   ['witness_5fv0_5fscripthash_5fsize',['WITNESS_V0_SCRIPTHASH_SIZE',['../d3/d97/interpreter_8h.html#aa4c09ca017b3df8bdce4c9444537d71d',1,'interpreter.h']]],
-  ['witness_5fv1_5ftaproot_5fsize',['WITNESS_V1_TAPROOT_SIZE',['../d3/d97/interpreter_8h.html#ac1390cb0e5f75cfc4e314c4d55d6bb18',1,'interpreter.h']]],
   ['witnessscript',['witnessscript',['../dd/d7a/structImportData.html#a5a1d075875cfcdf4bb187e78357eba3f',1,'ImportData']]],
   ['wnaf',['wnaf',['../d4/d89/structbench__inv.html#a7260a51212f1337f81ae557b19a0ed84',1,'bench_inv']]],
   ['wnaf_5fna',['wnaf_na',['../d2/d31/structsecp256k1__strauss__point__state.html#ad9ef2f26c159c10ee51099c40a3aaa22',1,'secp256k1_strauss_point_state::wnaf_na()'],['../db/d74/structsecp256k1__pippenger__state.html#a1d85b4e6a712e4ee95832542f7d08af7',1,'secp256k1_pippenger_state::wnaf_na()']]],

@@ -73,7 +73,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../db/d99/secp256k1_2src_2util_8h_source.html">util.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/d98/num_8h_source.html">num.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/d5a/field_8h_source.html">field.h</a>&quot;</code><br />
 </div>
 <p><a href="../../d7/dfb/field__10x26__impl_8h_source.html">Go to the source code of this file.</a></p>
@@ -508,7 +507,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>[... a b c] is a shorthand for ... + a&lt;&lt;52 + b&lt;&lt;26 + c&lt;&lt;0 mod n. px is a shorthand for sum(a[i]*b[x-i], i=0..x). Note that [x 0 0 0 0 0 0 0 0 0 0] = [x*R1 x*R0].</p>
+<p>[... a b c] is a shorthand for ... + a&lt;&lt;52 + b&lt;&lt;26 + c&lt;&lt;0 mod n. for 0 &lt;= x &lt;= 9, px is a shorthand for sum(a[i]*b[x-i], i=0..x). for 9 &lt;= x &lt;= 18, px is a shorthand for sum(a[i]*b[x-i], i=(x-9)..9) Note that [x 0 0 0 0 0 0 0 0 0 0] = [x*R1 x*R0].</p>
 
 </div>
 </div>

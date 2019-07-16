@@ -1,6 +1,7 @@
 var searchData=
 [
   ['building_20bitcoin_20core_20with_20visual_20studio',['Building Bitcoin Core with Visual Studio',['../d4/d80/md_build_msvc_README.html',1,'']]],
+  ['bootstrappable_20bitcoin_20core_20builds',['Bootstrappable Bitcoin Core Builds',['../d0/d64/md_contrib_guix_README.html',1,'']]],
   ['benchmarking',['Benchmarking',['../d4/d53/md_doc_benchmarking.html',1,'']]],
   ['bips',['bips',['../d8/d0b/md_doc_bips.html',1,'']]],
   ['bitcoin_20core',['Bitcoin Core',['../d3/d2f/md_doc_README.html',1,'']]],

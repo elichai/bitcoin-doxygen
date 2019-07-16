@@ -67,6 +67,9 @@ $(function() {
 <li>m
 : <a class="el" href="df/dca/classindirectmap.html#a5e21218ffb1cbf8c3a7b2daab5741521">indirectmap&lt; K, T &gt;</a>
 </li>
+<li>m_aad_keystream_buffer
+: <a class="el" href="dd/d19/classChaCha20Poly1305AEAD.html#afd2ef10f896111ee321fa4378e0023c6">ChaCha20Poly1305AEAD</a>
+</li>
 <li>m_activity_thread
 : <a class="el" href="d8/d7d/classWalletController.html#a9d3f185eb79e8354b16dc3228f4755ea">WalletController</a>
 </li>
@@ -82,23 +85,8 @@ $(function() {
 <li>m_amounts
 : <a class="el" href="d8/d51/classCWalletTx.html#ac8135c529ec91e60579961d2413ff521">CWalletTx</a>
 </li>
-<li>m_amounts_spent_hash
-: <a class="el" href="d8/d17/structPrecomputedTransactionData.html#a7f33fa4ea39f1835c924181123d793f5">PrecomputedTransactionData</a>
-</li>
-<li>m_amounts_spent_ready
-: <a class="el" href="d8/d17/structPrecomputedTransactionData.html#a7ab9b07d5bea3f88305ea101daa649d1">PrecomputedTransactionData</a>
-</li>
 <li>m_ancestors
 : <a class="el" href="d5/db2/structOutputGroup.html#acf4aa0c9345ea3a08f77bc2eb42f1f78">OutputGroup</a>
-</li>
-<li>m_annex_hash
-: <a class="el" href="db/dfd/structScriptExecutionData.html#a3eada9946cb1257e7c950cc45fc5b7bb">ScriptExecutionData</a>
-</li>
-<li>m_annex_init
-: <a class="el" href="db/dfd/structScriptExecutionData.html#abc940056f9ddfc2232543fbdb360719f">ScriptExecutionData</a>
-</li>
-<li>m_annex_present
-: <a class="el" href="db/dfd/structScriptExecutionData.html#a8b54036b2313f72faa4c92e92965eacc">ScriptExecutionData</a>
 </li>
 <li>m_args
 : <a class="el" href="d5/d82/classRPCHelpMan.html#ab965e9b8470f49d9891fe785ca6a28e7">RPCHelpMan</a>
@@ -144,6 +132,12 @@ $(function() {
 <li>m_blockchain_size
 : <a class="el" href="d9/dd0/classIntro.html#a4ceb8ac3f0941a43d5c40118d88883e0">Intro</a>
 </li>
+<li>m_blockman
+: <a class="el" href="d3/d9b/classCChainState.html#acda2e6cf72ee2986e8cbed31045bac73">CChainState</a>
+</li>
+<li>m_blocks_unlinked
+: <a class="el" href="d6/d9c/classBlockManager.html#aeefcdf3e848895712b5011410918b65b">BlockManager</a>
+</li>
 <li>m_buffer
 : <a class="el" href="d5/d3e/classBitStreamReader.html#a1cc9fea88b5bcc8668bd41be0a695d85">BitStreamReader&lt; IStream &gt;</a>
 , <a class="el" href="d3/d1e/classBitStreamWriter.html#a174f4112d719f80c5c165567474101e8">BitStreamWriter&lt; OStream &gt;</a>
@@ -154,6 +148,9 @@ $(function() {
 <li>m_cached
 : <a class="el" href="d1/d7d/structCachableAmount.html#ab33c88bf68efe552b62a77675f771d61">CachableAmount</a>
 </li>
+<li>m_cached_aad_seqnr
+: <a class="el" href="dd/d19/classChaCha20Poly1305AEAD.html#a54d86368bf15e8e2f2fcdffe242f59ef">ChaCha20Poly1305AEAD</a>
+</li>
 <li>m_cached_balances
 : <a class="el" href="de/d7e/classWalletModel.html#ab20ea66f8fcf98224d1848ae20a8d1d1">WalletModel</a>
 </li>
@@ -162,6 +159,12 @@ $(function() {
 </li>
 <li>m_categories
 : <a class="el" href="db/dee/classBCLog_1_1Logger.html#a4d411d8ee52332a51cf9ef4ec3882e6c">BCLog::Logger</a>
+</li>
+<li>m_chacha_header
+: <a class="el" href="dd/d19/classChaCha20Poly1305AEAD.html#a3adf72ea79a58710f732cd43b14bf6fd">ChaCha20Poly1305AEAD</a>
+</li>
+<li>m_chacha_main
+: <a class="el" href="dd/d19/classChaCha20Poly1305AEAD.html#a9dbe3ce7f481820da6d7dfb8aaea575d">ChaCha20Poly1305AEAD</a>
 </li>
 <li>m_chain
 : <a class="el" href="d3/d9b/classCChainState.html#ad460a678a49106417e68b5c416afd371">CChainState</a>
@@ -192,9 +195,6 @@ $(function() {
 </li>
 <li>m_close_wallet_action
 : <a class="el" href="dc/db0/classBitcoinGUI.html#aa904ea040bd906e9189ca1f2c51547b9">BitcoinGUI</a>
-</li>
-<li>m_codeseparator_pos
-: <a class="el" href="db/dfd/structScriptExecutionData.html#a40642c8eb5465f9809920b7b3bd6c02d">ScriptExecutionData</a>
 </li>
 <li>m_command
 : <a class="el" href="df/dc1/classinterfaces_1_1anonymous__namespace_02chain_8cpp_03_1_1RpcHandlerImpl.html#acbe10a062d675c467ff8c7ae262f39d3">interfaces::anonymous_namespace{chain.cpp}::RpcHandlerImpl</a>
@@ -290,6 +290,9 @@ $(function() {
 : <a class="el" href="d6/dab/structRPCArg.html#a68e8a9b8b96b6543a07cc88dfe904812">RPCArg</a>
 , <a class="el" href="d5/d82/classRPCHelpMan.html#a513d669cd81141c6585096cfc783d2c4">RPCHelpMan</a>
 </li>
+<li>m_dest
+: <a class="el" href="d8/da2/classinterfaces_1_1anonymous__namespace_02wallet_8cpp_03_1_1PendingWalletTxImpl.html#af7a24978ae12c62e6e6cd441b3eebad0">interfaces::anonymous_namespace{wallet.cpp}::PendingWalletTxImpl</a>
+</li>
 <li>m_destination
 : <a class="el" href="d2/d22/classanonymous__namespace_02descriptor_8cpp_03_1_1AddressDescriptor.html#a22ce7a3738fb395049fdef99c13b8175">anonymous_namespace{descriptor.cpp}::AddressDescriptor</a>
 </li>
@@ -319,7 +322,7 @@ $(function() {
 : <a class="el" href="d3/d3d/classGCSFilter.html#a1ea79b49b82825e5baed2f43a21b3765">GCSFilter</a>
 </li>
 <li>m_failed_blocks
-: <a class="el" href="d3/d9b/classCChainState.html#a52c29388d6805442893089beaf96c4a7">CChainState</a>
+: <a class="el" href="d6/d9c/classBlockManager.html#a225bfa76e7e892fa9b215b724aea6227">BlockManager</a>
 </li>
 <li>m_fallback
 : <a class="el" href="d6/dab/structRPCArg.html#a34b4f800f08152e546e7680c58d61815">RPCArg</a>
@@ -474,9 +477,6 @@ $(function() {
 <li>m_k1
 : <a class="el" href="d5/dbf/classByteVectorHash.html#a4398c4941fc4b69d44da77b8f200dbd7">ByteVectorHash</a>
 </li>
-<li>m_key
-: <a class="el" href="d8/da2/classinterfaces_1_1anonymous__namespace_02wallet_8cpp_03_1_1PendingWalletTxImpl.html#a6b6d9c41ec80c6b2f07fea1ce39179be">interfaces::anonymous_namespace{wallet.cpp}::PendingWalletTxImpl</a>
-</li>
 <li>m_last_block_announcement
 : <a class="el" href="da/d0e/structanonymous__namespace_02net__processing_8cpp_03_1_1CNodeState.html#a6e4440217bfe29dd461c2b0ac55bb760">anonymous_namespace{net_processing.cpp}::CNodeState</a>
 </li>
@@ -630,9 +630,6 @@ $(function() {
 <li>m_outputs
 : <a class="el" href="d5/db2/structOutputGroup.html#a0d821fc0c787b897f891ef28fab08201">OutputGroup</a>
 </li>
-<li>m_outputs_hash
-: <a class="el" href="d8/d17/structPrecomputedTransactionData.html#ae869740d3cf0ab03cf390ae6ba3037cb">PrecomputedTransactionData</a>
-</li>
 <li>m_P
 : <a class="el" href="d0/daa/structGCSFilter_1_1Params.html#aa9dc8d6b84d774e44bbd58734c47d986">GCSFilter::Params</a>
 </li>
@@ -671,9 +668,6 @@ $(function() {
 </li>
 <li>m_prefix
 : <a class="el" href="d9/d2e/classFlatFileSeq.html#af4ba3511b629b346a9c326dcfbdbf7e5">FlatFileSeq</a>
-</li>
-<li>m_prevouts_hash
-: <a class="el" href="d8/d17/structPrecomputedTransactionData.html#a6566c3d8383ea9f2fa1c6938e6f47d4b">PrecomputedTransactionData</a>
 </li>
 <li>m_print_to_console
 : <a class="el" href="db/dee/classBCLog_1_1Logger.html#ae1dadd086970b7fd0c8cf0fe274778dc">BCLog::Logger</a>
@@ -743,9 +737,6 @@ $(function() {
 <li>m_script_arg
 : <a class="el" href="d7/d51/classanonymous__namespace_02descriptor_8cpp_03_1_1DescriptorImpl.html#a4b5ee2558153b2dbc65f4dc6142cc514">anonymous_namespace{descriptor.cpp}::DescriptorImpl</a>
 </li>
-<li>m_scriptcode
-: <a class="el" href="db/dfd/structScriptExecutionData.html#af0a158fb2fb3b677650ea8138e27b0cd">ScriptExecutionData</a>
-</li>
 <li>m_search_string
 : <a class="el" href="d6/d54/classTransactionFilterProxy.html#a3505848404e589e2f3942620d8d442a2">TransactionFilterProxy</a>
 </li>
@@ -754,9 +745,6 @@ $(function() {
 </li>
 <li>m_sent_getheaders
 : <a class="el" href="d4/dff/structanonymous__namespace_02net__processing_8cpp_03_1_1CNodeState_1_1ChainSyncTimeoutState.html#aba1a728a51ed57351290f43a097be4fe">anonymous_namespace{net_processing.cpp}::CNodeState::ChainSyncTimeoutState</a>
-</li>
-<li>m_sequences_hash
-: <a class="el" href="d8/d17/structPrecomputedTransactionData.html#a097bedbbd0c6cb0df85f3965e6ee737f">PrecomputedTransactionData</a>
 </li>
 <li>m_signal_bip125_rbf
 : <a class="el" href="de/da6/classCCoinControl.html#a8d6d16f398fd009ddf0ea648238896af">CCoinControl</a>
@@ -779,9 +767,6 @@ $(function() {
 <li>m_spend_zero_conf_change
 : <a class="el" href="d7/d57/classCWallet.html#ad98181505a53c379d7ca4a09463f42d3">CWallet</a>
 </li>
-<li>m_spent_outputs
-: <a class="el" href="d8/d17/structPrecomputedTransactionData.html#af0827dbc684dd1021844b52a659d1aca">PrecomputedTransactionData</a>
-</li>
 <li>m_stale_tip_check_time
 : <a class="el" href="d8/d60/classPeerLogicValidation.html#a20db0a2ffae94ecbcfe2e39017ac7ef9">PeerLogicValidation</a>
 </li>
@@ -793,12 +778,6 @@ $(function() {
 </li>
 <li>m_synced
 : <a class="el" href="d5/da6/classBaseIndex.html#a509c38ca3ecb22e97eb47e05ee17a5d0">BaseIndex</a>
-</li>
-<li>m_tapleaf_hash
-: <a class="el" href="db/dfd/structScriptExecutionData.html#a372f6c32c210c4a66a3067f9499c0620">ScriptExecutionData</a>
-</li>
-<li>m_tapleaf_hash_init
-: <a class="el" href="db/dfd/structScriptExecutionData.html#ad984235b2b74dc1e475f72a28ec65a46">ScriptExecutionData</a>
 </li>
 <li>m_thread_sync
 : <a class="el" href="d5/da6/classBaseIndex.html#a81d15998e5551fbee2ead102fa44436d">BaseIndex</a>
@@ -911,12 +890,6 @@ $(function() {
 <li>m_witness_hash
 : <a class="el" href="d8/dbe/classCTransaction.html#afb367cb5175a9f8b7f9312068c58920d">CTransaction</a>
 </li>
-<li>m_witness_weight
-: <a class="el" href="db/dfd/structScriptExecutionData.html#ab6e39a16ca9a1f0de6abd6808b798fa1">ScriptExecutionData</a>
-</li>
-<li>m_witness_weight_init
-: <a class="el" href="db/dfd/structScriptExecutionData.html#ae4c7a2818c2eec48c9130a4d8cf54b9b">ScriptExecutionData</a>
-</li>
 <li>m_work_header
 : <a class="el" href="d4/dff/structanonymous__namespace_02net__processing_8cpp_03_1_1CNodeState_1_1ChainSyncTimeoutState.html#aada06fa17c17553ea77779daba55d802">anonymous_namespace{net_processing.cpp}::CNodeState::ChainSyncTimeoutState</a>
 </li>
@@ -1011,9 +984,6 @@ $(function() {
 </li>
 <li>MapArgs
 : <a class="el" href="d1/d66/classArgsManagerHelper.html#a457eca17feca84ce927365acdb426dc2">ArgsManagerHelper</a>
-</li>
-<li>mapBlocksUnlinked
-: <a class="el" href="d3/d9b/classCChainState.html#a318040c11336b79eddc71e1d3b176f2a">CChainState</a>
 </li>
 <li>mapCheckpoints
 : <a class="el" href="d3/d7c/structCCheckpointData.html#abcfae688d3fadabb8c675776227d3ba8">CCheckpointData</a>
@@ -1305,7 +1275,7 @@ $(function() {
 : <a class="el" href="dc/dd0/classClientModel.html#af4020eeb814e60f8d4c9f4f8429ef38d">ClientModel</a>
 </li>
 <li>MemTable()
-: <a class="el" href="d7/d6e/classleveldb_1_1MemTable.html#a23add92a4a6e5d1521f3b6695dba5c2d">leveldb::MemTable</a>
+: <a class="el" href="d7/d6e/classleveldb_1_1MemTable.html#affbcb1af721f7f96cb944e6bef88480a">leveldb::MemTable</a>
 </li>
 <li>memtable_
 : <a class="el" href="d1/dee/classleveldb_1_1MemTableConstructor.html#aee8e2d856ed9333890cce216b425edb8">leveldb::MemTableConstructor</a>
@@ -1321,7 +1291,7 @@ $(function() {
 </li>
 <li>MemTableIterator
 : <a class="el" href="d7/d6e/classleveldb_1_1MemTable.html#ad6cb602bccb9af617c8cb348ae693d4a">leveldb::MemTable</a>
-, <a class="el" href="d2/d99/classleveldb_1_1MemTableIterator.html#a7b539ae73a0d99580fdf1eb30f8c0181">leveldb::MemTableIterator</a>
+, <a class="el" href="d2/d99/classleveldb_1_1MemTableIterator.html#a3cf243a6e8166d55ce87081f69a5ecd7">leveldb::MemTableIterator</a>
 </li>
 <li>menu
 : <a class="el" href="d2/daf/classUnitDisplayStatusBarControl.html#a0652e8e34f177bf9e3cee0f234ab861c">UnitDisplayStatusBarControl</a>
@@ -1342,11 +1312,11 @@ $(function() {
 , <a class="el" href="df/d08/structPSBTOutput.html#a4afe6c7fe9003fb601ea476f6ad9d75c">PSBTOutput</a>
 </li>
 <li>MergeFrom()
-: <a class="el" href="d1/d05/classpayments_1_1Output.html#a4105a31565866ddc28c11ba78204caf2">payments::Output</a>
-, <a class="el" href="d1/d7e/classpayments_1_1Payment.html#add8835f7e95ca2804b395b98fbea2e80">payments::Payment</a>
+: <a class="el" href="d1/d05/classpayments_1_1Output.html#af202416ff7c832a97ada570047e7e7cf">payments::Output</a>
+, <a class="el" href="d1/d7e/classpayments_1_1Payment.html#ad84b7fda92f245a8b90b9cbc7b81ed67">payments::Payment</a>
 , <a class="el" href="d4/d27/classpayments_1_1PaymentACK.html#a2ecc8a3689adf9291b7f08f544e71be8">payments::PaymentACK</a>
 , <a class="el" href="df/d65/classpayments_1_1PaymentDetails.html#a4eeba6a02bd9b15645f0447ff211a2c2">payments::PaymentDetails</a>
-, <a class="el" href="d1/dfc/classpayments_1_1PaymentRequest.html#aa3006ffcb96066401b8f08509b43705a">payments::PaymentRequest</a>
+, <a class="el" href="d1/dfc/classpayments_1_1PaymentRequest.html#a8be69c1b0e111e8c772670ce2dbf16eb">payments::PaymentRequest</a>
 , <a class="el" href="de/dcd/classpayments_1_1X509Certificates.html#ae0283bbcdbf0a2cc76dd6f2d74a822ae">payments::X509Certificates</a>
 </li>
 <li>MergePartialFromCodedStream()
@@ -1531,28 +1501,28 @@ $(function() {
 <li>ModalOverlay()
 : <a class="el" href="d3/dd4/classModalOverlay.html#a82cf62a8aa061864f8ab95318fe52ad2">ModalOverlay</a>
 </li>
-<li>mode
-: <a class="el" href="d0/d64/classAddressBookPage.html#ae0cc2ca898609bd2aaa6794758663149">AddressBookPage</a>
-</li>
 <li>Mode
 : <a class="el" href="d0/d64/classAddressBookPage.html#a0a8f8e590dc6f18e829fde039f984464">AddressBookPage</a>
 </li>
 <li>mode
-: <a class="el" href="d3/d66/classAskPassphraseDialog.html#ab70b0831dff864e4d11a609659e1a01b">AskPassphraseDialog</a>
+: <a class="el" href="d0/d64/classAddressBookPage.html#ae0cc2ca898609bd2aaa6794758663149">AddressBookPage</a>
 </li>
 <li>Mode
 : <a class="el" href="d3/d66/classAskPassphraseDialog.html#a96abf4d3c36c1ef9e268fb546ae76538">AskPassphraseDialog</a>
 </li>
 <li>mode
-: <a class="el" href="d4/d71/classCValidationState.html#a9d16568fc700a1295e3f7b243ef185f1">CValidationState</a>
+: <a class="el" href="d3/d66/classAskPassphraseDialog.html#ab70b0831dff864e4d11a609659e1a01b">AskPassphraseDialog</a>
+, <a class="el" href="d4/d71/classCValidationState.html#a9d16568fc700a1295e3f7b243ef185f1">CValidationState</a>
 , <a class="el" href="d2/d80/classEditAddressDialog.html#a4f3deb0494f961e4a3a34fb904be0b9a">EditAddressDialog</a>
 </li>
 <li>Mode
 : <a class="el" href="d2/d80/classEditAddressDialog.html#a456fdd27ee1c150824241ded7bb4de3a">EditAddressDialog</a>
-, <a class="el" href="d4/d22/classNotificator.html#aaa6bef35e7e183f0ac23e046dc3ea73e">Notificator</a>
 </li>
 <li>mode
 : <a class="el" href="d4/d22/classNotificator.html#a8557df337c4dcb3bde2ca2019a834837">Notificator</a>
+</li>
+<li>Mode
+: <a class="el" href="d4/d22/classNotificator.html#aaa6bef35e7e183f0ac23e046dc3ea73e">Notificator</a>
 </li>
 <li>MODE_ERROR
 : <a class="el" href="d4/d71/classCValidationState.html#ab736e95a8d13a9425fe0b79c9e3b6be5ab0400d1ba2df7b278e53d7a8b2db6eb4">CValidationState</a>
@@ -1620,9 +1590,6 @@ $(function() {
 , <a class="el" href="d3/def/structbench__sign.html#ac1576b2f95c6ac715c417083dbafb308">bench_sign</a>
 , <a class="el" href="de/d24/structbenchmark__verify__t.html#a5941066c834af80d568078780c2d69d7">benchmark_verify_t</a>
 </li>
-<li>msg32
-: <a class="el" href="d3/d7d/structsecp256k1__schnorrsig__verify__ecmult__context.html#a6565934a9ec8837c43a73e6db74eb68c">secp256k1_schnorrsig_verify_ecmult_context</a>
-</li>
 <li>MSG_ERROR
 : <a class="el" href="d6/d95/classCClientUIInterface.html#a568cf07ecac3fac224d63b42a32e8bc1a0551e67c07eb6a81edf6e43fed89759f">CClientUIInterface</a>
 </li>
@@ -1634,9 +1601,6 @@ $(function() {
 </li>
 <li>MSG_WARNING
 : <a class="el" href="d6/d95/classCClientUIInterface.html#a568cf07ecac3fac224d63b42a32e8bc1a72b206c5d6304b4e2257281a5ca551eb">CClientUIInterface</a>
-</li>
-<li>msgs
-: <a class="el" href="da/d6b/structbench__schnorrsig__data.html#a1c0342b43ad9169305b308b78714b6df">bench_schnorrsig_data</a>
 </li>
 <li>mu
 : <a class="el" href="d5/d8a/structleveldb_1_1anonymous__namespace_02db__bench_8cc_03_1_1SharedState.html#ada314e8ff48e6409acfcdd06ad7ae905">leveldb::anonymous_namespace{db_bench.cc}::SharedState</a>
@@ -1661,7 +1625,7 @@ $(function() {
 : <a class="el" href="de/d99/classCThreadInterrupt.html#a65145006bac376cd1657e002515f75dc">CThreadInterrupt</a>
 </li>
 <li>mutable_certificate()
-: <a class="el" href="de/dcd/classpayments_1_1X509Certificates.html#a3652b7c34fb37044e37a4d79849512c8">payments::X509Certificates</a>
+: <a class="el" href="de/dcd/classpayments_1_1X509Certificates.html#a29995ac05fc99098416f46b88de8442c">payments::X509Certificates</a>
 </li>
 <li>mutable_memo()
 : <a class="el" href="d1/d7e/classpayments_1_1Payment.html#ab99b55ec51980fb9f1f3f18064eda20e">payments::Payment</a>
@@ -1676,7 +1640,7 @@ $(function() {
 : <a class="el" href="df/d65/classpayments_1_1PaymentDetails.html#a576789855cbbec21bef52b1cfd660434">payments::PaymentDetails</a>
 </li>
 <li>mutable_outputs()
-: <a class="el" href="df/d65/classpayments_1_1PaymentDetails.html#a08390cf27cc6e6881f49343ee7109afd">payments::PaymentDetails</a>
+: <a class="el" href="df/d65/classpayments_1_1PaymentDetails.html#a1eeff2a4b7a0994fa88a300bbff5fc18">payments::PaymentDetails</a>
 </li>
 <li>mutable_payment()
 : <a class="el" href="d4/d27/classpayments_1_1PaymentACK.html#a0f32c0844112662398ae08d2ea4f03c4">payments::PaymentACK</a>
@@ -1703,7 +1667,7 @@ $(function() {
 : <a class="el" href="d1/dfc/classpayments_1_1PaymentRequest.html#a48e626694a658e4245b09ec6670c772f">payments::PaymentRequest</a>
 </li>
 <li>mutable_transactions()
-: <a class="el" href="d1/d7e/classpayments_1_1Payment.html#a4dae0a9e61a49f22446d23870b4d5813">payments::Payment</a>
+: <a class="el" href="d1/d7e/classpayments_1_1Payment.html#a7ac253e3d7fa9dba06b0b18914e67497">payments::Payment</a>
 </li>
 <li>mutable_unknown_fields()
 : <a class="el" href="d1/d05/classpayments_1_1Output.html#ab5e90ad6055443c257021a7eac1b30ec">payments::Output</a>

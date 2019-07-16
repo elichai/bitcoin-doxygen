@@ -9,6 +9,8 @@ var searchData=
   ['ccoins_5fcaching_2ecpp',['ccoins_caching.cpp',['../d6/dd7/ccoins__caching_8cpp.html',1,'']]],
   ['chacha20_2ecpp',['chacha20.cpp',['../d1/d76/bench_2chacha20_8cpp.html',1,'(Global Namespace)'],['../dd/d99/crypto_2chacha20_8cpp.html',1,'(Global Namespace)']]],
   ['chacha20_2eh',['chacha20.h',['../d9/d84/chacha20_8h.html',1,'']]],
+  ['chacha_5fpoly_5faead_2ecpp',['chacha_poly_aead.cpp',['../d6/d9e/bench_2chacha__poly__aead_8cpp.html',1,'(Global Namespace)'],['../dd/df7/crypto_2chacha__poly__aead_8cpp.html',1,'(Global Namespace)']]],
+  ['chacha_5fpoly_5faead_2eh',['chacha_poly_aead.h',['../d9/db8/chacha__poly__aead_8h.html',1,'']]],
   ['chain_2ecpp',['chain.cpp',['../db/d11/chain_8cpp.html',1,'(Global Namespace)'],['../df/d28/interfaces_2chain_8cpp.html',1,'(Global Namespace)']]],
   ['chain_2eh',['chain.h',['../db/d0d/chain_8h.html',1,'(Global Namespace)'],['../d8/d76/interfaces_2chain_8h.html',1,'(Global Namespace)']]],
   ['chainparams_2ecpp',['chainparams.cpp',['../df/dbf/chainparams_8cpp.html',1,'']]],

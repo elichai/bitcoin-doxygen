@@ -13,7 +13,6 @@ var searchData=
   ['defined',['DEFINED',['../d1/d75/versionbits_8h.html#ae7f620361ae33b80687a42adb26fd7a4ad95be57411fe22c8d2c9e829b2a0cf85',1,'versionbits.h']]],
   ['deployment_5fcsv',['DEPLOYMENT_CSV',['../d8/d27/namespaceConsensus.html#ac6c2c4d710cea840f692c6312ec91f69a47f6c9d4a3f84b9013be6af299f406df',1,'Consensus']]],
   ['deployment_5fsegwit',['DEPLOYMENT_SEGWIT',['../d8/d27/namespaceConsensus.html#ac6c2c4d710cea840f692c6312ec91f69a4b7b139731fdc8663ecfda0e0740b10b',1,'Consensus']]],
-  ['deployment_5ftaproot',['DEPLOYMENT_TAPROOT',['../d8/d27/namespaceConsensus.html#ac6c2c4d710cea840f692c6312ec91f69a2787d2ebd1db50e81c1a259bf66f8a3f',1,'Consensus']]],
   ['deployment_5ftestdummy',['DEPLOYMENT_TESTDUMMY',['../d8/d27/namespaceConsensus.html#ac6c2c4d710cea840f692c6312ec91f69a571117cba5772815d476b324792f1e70',1,'Consensus']]],
   ['dirty',['DIRTY',['../d1/dbc/structCCoinsCacheEntry.html#a1d5ac74da0f6ff5ab056e47ce79753c7ac8cbd1b21d937e8618f9fecdf2c7223e',1,'CCoinsCacheEntry']]],
   ['disconnect_5ffailed',['DISCONNECT_FAILED',['../db/d38/validation_8h.html#aeaef80b01ee5387f474a63ed23c9cc50a4b6c24922aff8a510f83333397b4c9b3',1,'validation.h']]],

@@ -76,10 +76,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3703bd0134dfe07b5ea2398ebe69089d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d38/validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a> <a class="el" href="../../dd/d7d/validation_8cpp.html#aeccc8c1b7fffcca5d6c0d8486cc9b48b">mapBlockIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a3703bd0134dfe07b5ea2398ebe69089d">GUARDED_BY</a> (<a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
-<tr class="separator:a3703bd0134dfe07b5ea2398ebe69089d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25df87c65c89c79a4061f28c09599856"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a25df87c65c89c79a4061f28c09599856">LoadBlockIndex</a> (const <a class="el" href="../../da/d55/structConsensus_1_1Params.html">Consensus::Params</a> &amp;consensus_params, <a class="el" href="../../d6/d80/classCBlockTreeDB.html">CBlockTreeDB</a> &amp;blocktree) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
-<tr class="separator:a25df87c65c89c79a4061f28c09599856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abad1b7b56af0a04f4a40c496769c2049"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#abad1b7b56af0a04f4a40c496769c2049">CChainState</a> (<a class="el" href="../../d6/d9c/classBlockManager.html">BlockManager</a> &amp;blockman)</td></tr>
+<tr class="separator:abad1b7b56af0a04f4a40c496769c2049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd9fea6ee67de000164699736195dd2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#acd9fea6ee67de000164699736195dd2e">FlushStateToDisk</a> (const <a class="el" href="../../df/d9b/classCChainParams.html">CChainParams</a> &amp;chainparams, <a class="el" href="../../d4/d71/classCValidationState.html">CValidationState</a> &amp;state, <a class="el" href="../../db/d38/validation_8h.html#ae2877520fcc46d869b4f5e9768227e25">FlushStateMode</a> mode, int nManualPruneHeight=0)</td></tr>
 <tr class="separator:acd9fea6ee67de000164699736195dd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae779736948817631aa6fee5d5d1377a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#ae779736948817631aa6fee5d5d1377a8">ForceFlushStateToDisk</a> ()</td></tr>
@@ -89,8 +87,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a62c8d4028eff1c760111280f977ad0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada8c69693e2a23c13cf7bbc568435bef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#ada8c69693e2a23c13cf7bbc568435bef">ActivateBestChain</a> (<a class="el" href="../../d4/d71/classCValidationState.html">CValidationState</a> &amp;state, const <a class="el" href="../../df/d9b/classCChainParams.html">CChainParams</a> &amp;chainparams, std::shared_ptr&lt; const <a class="el" href="../../d1/d28/classCBlock.html">CBlock</a> &gt; pblock) <a class="el" href="../../db/d6d/threadsafety_8h.html#a6bb97382864d0bd2cd4dd5191bb03f6c">LOCKS_EXCLUDED</a>(<a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="separator:ada8c69693e2a23c13cf7bbc568435bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab70c11d94a3f6e5cae415521437ef627"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#ab70c11d94a3f6e5cae415521437ef627">AcceptBlockHeader</a> (const <a class="el" href="../../d2/d93/classCBlockHeader.html">CBlockHeader</a> &amp;block, <a class="el" href="../../d4/d71/classCValidationState.html">CValidationState</a> &amp;state, const <a class="el" href="../../df/d9b/classCChainParams.html">CChainParams</a> &amp;chainparams, <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> **ppindex) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
-<tr class="separator:ab70c11d94a3f6e5cae415521437ef627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a5e98600ce5a2b8ed3087972d1ee5a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a2a5e98600ce5a2b8ed3087972d1ee5a3">AcceptBlock</a> (const std::shared_ptr&lt; const <a class="el" href="../../d1/d28/classCBlock.html">CBlock</a> &gt; &amp;pblock, <a class="el" href="../../d4/d71/classCValidationState.html">CValidationState</a> &amp;state, const <a class="el" href="../../df/d9b/classCChainParams.html">CChainParams</a> &amp;chainparams, <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> **ppindex, bool fRequested, const <a class="el" href="../../dd/d75/structFlatFilePos.html">FlatFilePos</a> *dbp, bool *fNewBlock) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="separator:a2a5e98600ce5a2b8ed3087972d1ee5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84c2802e12d40109c2189bfa8a5e0e8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d38/validation_8h.html#aeaef80b01ee5387f474a63ed23c9cc50">DisconnectResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a84c2802e12d40109c2189bfa8a5e0e8f">DisconnectBlock</a> (const <a class="el" href="../../d1/d28/classCBlock.html">CBlock</a> &amp;block, const <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *pindex, <a class="el" href="../../d4/d49/classCCoinsViewCache.html">CCoinsViewCache</a> &amp;view)</td></tr>
@@ -117,15 +113,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a807d9f23f63726267a1c62bf9c9eecef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa0ff1ebd8453000020efa9055d7896e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#aaa0ff1ebd8453000020efa9055d7896e">IsInitialBlockDownload</a> () const</td></tr>
 <tr class="separator:aaa0ff1ebd8453000020efa9055d7896e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48cfb3ace8393f98f940b02876377f97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a48cfb3ace8393f98f940b02876377f97">CheckBlockIndex</a> (const <a class="el" href="../../da/d55/structConsensus_1_1Params.html">Consensus::Params</a> &amp;consensusParams)</td></tr>
+<tr class="separator:a48cfb3ace8393f98f940b02876377f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ad460a678a49106417e68b5c416afd371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dba/classCChain.html">CChain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#ad460a678a49106417e68b5c416afd371">m_chain</a></td></tr>
 <tr class="separator:ad460a678a49106417e68b5c416afd371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a318040c11336b79eddc71e1d3b176f2a"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *, <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a318040c11336b79eddc71e1d3b176f2a">mapBlocksUnlinked</a></td></tr>
-<tr class="separator:a318040c11336b79eddc71e1d3b176f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0ae491f2e6b031587a5ad35fdafe546"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#ae0ae491f2e6b031587a5ad35fdafe546">pindexBestInvalid</a> = nullptr</td></tr>
-<tr class="separator:ae0ae491f2e6b031587a5ad35fdafe546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528c14be4a2a7c6837a2d099b2ad7ef7"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *, <a class="el" href="../../df/dd8/structCBlockIndexWorkComparator.html">CBlockIndexWorkComparator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a528c14be4a2a7c6837a2d099b2ad7ef7">setBlockIndexCandidates</a></td></tr>
+<tr class="separator:a528c14be4a2a7c6837a2d099b2ad7ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c81c37ef6c30da848aaedc73da0bbe3"><td class="memItemLeft" align="right" valign="top">bool ::<a class="el" href="../../db/d38/validation_8h.html#abc71256f703e47c9254093e32ed2994c">mempool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a8c81c37ef6c30da848aaedc73da0bbe3">cs</a></td></tr>
 <tr class="separator:a8c81c37ef6c30da848aaedc73da0bbe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -135,12 +131,6 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a960fd0265f72c15e7c2890d69ddcabb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a920fab1b33e2f20bb0ccbe912b149c38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a920fab1b33e2f20bb0ccbe912b149c38">ConnectTip</a> (<a class="el" href="../../d4/d71/classCValidationState.html">CValidationState</a> &amp;state, const <a class="el" href="../../df/d9b/classCChainParams.html">CChainParams</a> &amp;chainparams, <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *pindexNew, const std::shared_ptr&lt; const <a class="el" href="../../d1/d28/classCBlock.html">CBlock</a> &gt; &amp;pblock, <a class="el" href="../../d0/de0/classConnectTrace.html">ConnectTrace</a> &amp;connectTrace, <a class="el" href="../../d0/d31/structDisconnectedBlockTransactions.html">DisconnectedBlockTransactions</a> &amp;disconnectpool) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a></td></tr>
 <tr class="separator:a920fab1b33e2f20bb0ccbe912b149c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75381aa4f08cbb957a2158dd852602a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a75381aa4f08cbb957a2158dd852602a8">AddToBlockIndex</a> (const <a class="el" href="../../d2/d93/classCBlockHeader.html">CBlockHeader</a> &amp;block) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
-<tr class="separator:a75381aa4f08cbb957a2158dd852602a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab23edc8172cd1b029dbec82bafacd33e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#ab23edc8172cd1b029dbec82bafacd33e">InsertBlockIndex</a> (const <a class="el" href="../../d2/d86/classuint256.html">uint256</a> &amp;hash) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
-<tr class="separator:ab23edc8172cd1b029dbec82bafacd33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48cfb3ace8393f98f940b02876377f97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a48cfb3ace8393f98f940b02876377f97">CheckBlockIndex</a> (const <a class="el" href="../../da/d55/structConsensus_1_1Params.html">Consensus::Params</a> &amp;consensusParams)</td></tr>
-<tr class="separator:a48cfb3ace8393f98f940b02876377f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece188b05b5cfe3d67f35992a6fa7d77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#aece188b05b5cfe3d67f35992a6fa7d77">InvalidBlockFound</a> (<a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *pindex, const <a class="el" href="../../d4/d71/classCValidationState.html">CValidationState</a> &amp;state) <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="separator:aece188b05b5cfe3d67f35992a6fa7d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5b50c7b3a7604d312946431e7c91bb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#af5b50c7b3a7604d312946431e7c91bb5">FindMostWorkChain</a> () <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
@@ -155,8 +145,6 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a528c14be4a2a7c6837a2d099b2ad7ef7"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *, <a class="el" href="../../df/dd8/structCBlockIndexWorkComparator.html">CBlockIndexWorkComparator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a528c14be4a2a7c6837a2d099b2ad7ef7">setBlockIndexCandidates</a></td></tr>
-<tr class="separator:a528c14be4a2a7c6837a2d099b2ad7ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9e45b0fb23eacbbc2c0675f429d5c3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d6b/sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#ad9e45b0fb23eacbbc2c0675f429d5c3b">cs_nBlockSequenceId</a></td></tr>
 <tr class="separator:ad9e45b0fb23eacbbc2c0675f429d5c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04c18ee587d1d516d12a193235eeb1cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a04c18ee587d1d516d12a193235eeb1cd">nBlockSequenceId</a> = 1</td></tr>
@@ -165,18 +153,45 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aaf4846ebb330ea7ad36adb058ba2b859"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11b2d82dd158e9e50136417c0e672947"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/de4/classarith__uint256.html">arith_uint256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a11b2d82dd158e9e50136417c0e672947">nLastPreciousChainwork</a> = 0</td></tr>
 <tr class="separator:a11b2d82dd158e9e50136417c0e672947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52c29388d6805442893089beaf96c4a7"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a52c29388d6805442893089beaf96c4a7">m_failed_blocks</a></td></tr>
-<tr class="separator:a52c29388d6805442893089beaf96c4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7de325123fd907fea8398fde92e5a6b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d6b/sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a7de325123fd907fea8398fde92e5a6b1">m_cs_chainstate</a></td></tr>
 <tr class="separator:a7de325123fd907fea8398fde92e5a6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e3b18d6c0a7e3f1a5fbf752c3a8c09a"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#a0e3b18d6c0a7e3f1a5fbf752c3a8c09a">m_cached_finished_ibd</a> {false}</td></tr>
 <tr class="separator:a0e3b18d6c0a7e3f1a5fbf752c3a8c09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda2e6cf72ee2986e8cbed31045bac73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d9c/classBlockManager.html">BlockManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html#acda2e6cf72ee2986e8cbed31045bac73">m_blockman</a></td></tr>
+<tr class="separator:acda2e6cf72ee2986e8cbed31045bac73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="../../d3/d9b/classCChainState.html">CChainState</a> stores and provides an API to update our local knowledge of the current best chain and header tree.</p>
-<p>It generally provides access to the current block tree, as well as functions to provide new data, which it will appropriately validate and incorporate in its state as necessary.</p>
-<p>Eventually, the API here is targeted at being exposed externally as a consumable libconsensus library, so any functions added must only call other class member functions, pure functions in other parts of the consensus library, callbacks via the validation interface, or read/write-to-disk functions (eventually this will also be via callbacks). </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p><a class="el" href="../../d3/d9b/classCChainState.html">CChainState</a> stores and provides an API to update our local knowledge of the current best chain.</p>
+<p>Eventually, the API here is targeted at being exposed externally as a consumable libconsensus library, so any functions added must only call other class member functions, pure functions in other parts of the consensus library, callbacks via the validation interface, or read/write-to-disk functions (eventually this will also be via callbacks).</p>
+<p>Anything that is contingent on the current tip of the chain is stored here, whereas block information and metadata independent of the current tip is kept in <code>BlockMetadataManager</code>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="abad1b7b56af0a04f4a40c496769c2049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abad1b7b56af0a04f4a40c496769c2049">&#9670;&nbsp;</a></span>CChainState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CChainState::CChainState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d9c/classBlockManager.html">BlockManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>blockman</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2a5e98600ce5a2b8ed3087972d1ee5a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a5e98600ce5a2b8ed3087972d1ee5a3">&#9670;&nbsp;</a></span>AcceptBlock()</h2>
 
@@ -233,47 +248,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Store block on disk. If dbp is non-nullptr, the file is known to already reside on disk </p>
-
-</div>
-</div>
-<a id="ab70c11d94a3f6e5cae415521437ef627"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab70c11d94a3f6e5cae415521437ef627">&#9670;&nbsp;</a></span>AcceptBlockHeader()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CChainState::AcceptBlockHeader </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d2/d93/classCBlockHeader.html">CBlockHeader</a> &amp;&#160;</td>
-          <td class="paramname"><em>block</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/d71/classCValidationState.html">CValidationState</a> &amp;&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../df/d9b/classCChainParams.html">CChainParams</a> &amp;&#160;</td>
-          <td class="paramname"><em>chainparams</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> **&#160;</td>
-          <td class="paramname"><em>ppindex</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If a block header hasn't already been seen, call CheckBlockHeader on it, ensure that it doesn't descend from an invalid block, and then add it to mapBlockIndex. </p>
 
 </div>
 </div>
@@ -374,40 +348,11 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a75381aa4f08cbb957a2158dd852602a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75381aa4f08cbb957a2158dd852602a8">&#9670;&nbsp;</a></span>AddToBlockIndex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> * CChainState::AddToBlockIndex </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d2/d93/classCBlockHeader.html">CBlockHeader</a> &amp;&#160;</td>
-          <td class="paramname"><em>block</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a48cfb3ace8393f98f940b02876377f97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48cfb3ace8393f98f940b02876377f97">&#9670;&nbsp;</a></span>CheckBlockIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void CChainState::CheckBlockIndex </td>
@@ -417,11 +362,6 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Make various assertions about the state of the block index.</p>
 <p>By default this only executes fully when using the Regtest chain; see: fCheckBlockIndex. </p>
@@ -730,51 +670,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3703bd0134dfe07b5ea2398ebe69089d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3703bd0134dfe07b5ea2398ebe69089d">&#9670;&nbsp;</a></span>GUARDED_BY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/d38/validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a> <a class="el" href="../../dd/d7d/validation_8cpp.html#aeccc8c1b7fffcca5d6c0d8486cc9b48b">mapBlockIndex</a> CChainState::GUARDED_BY </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab23edc8172cd1b029dbec82bafacd33e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab23edc8172cd1b029dbec82bafacd33e">&#9670;&nbsp;</a></span>InsertBlockIndex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> * CChainState::InsertBlockIndex </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d2/d86/classuint256.html">uint256</a> &amp;&#160;</td>
-          <td class="paramname"><em>hash</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create a new block index entry for a given block hash </p>
-
-</div>
-</div>
 <a id="ab0b63957193449bfc696e9a4221ab764"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab0b63957193449bfc696e9a4221ab764">&#9670;&nbsp;</a></span>InvalidateBlock()</h2>
 
@@ -860,34 +755,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Check whether we are doing an initial block download (synchronizing from disk or network) </p>
-
-</div>
-</div>
-<a id="a25df87c65c89c79a4061f28c09599856"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25df87c65c89c79a4061f28c09599856">&#9670;&nbsp;</a></span>LoadBlockIndex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CChainState::LoadBlockIndex </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/d55/structConsensus_1_1Params.html">Consensus::Params</a> &amp;&#160;</td>
-          <td class="paramname"><em>consensus_params</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d6/d80/classCBlockTreeDB.html">CBlockTreeDB</a> &amp;&#160;</td>
-          <td class="paramname"><em>blocktree</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -1190,6 +1057,29 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="acda2e6cf72ee2986e8cbed31045bac73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda2e6cf72ee2986e8cbed31045bac73">&#9670;&nbsp;</a></span>m_blockman</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d9c/classBlockManager.html">BlockManager</a>&amp; CChainState::m_blockman</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reference to a <a class="el" href="../../d6/d9c/classBlockManager.html">BlockManager</a> instance which itself is shared across all <a class="el" href="../../d3/d9b/classCChainState.html">CChainState</a> instances. Keeping a local reference allows us to test more easily as opposed to referencing a global. </p>
+
+</div>
+</div>
 <a id="a0e3b18d6c0a7e3f1a5fbf752c3a8c09a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e3b18d6c0a7e3f1a5fbf752c3a8c09a">&#9670;&nbsp;</a></span>m_cached_finished_ibd</h2>
 
@@ -1249,45 +1139,6 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>the ChainState CriticalSection A lock that must be held when modifying this ChainState - held in <a class="el" href="../../d3/d9b/classCChainState.html#ada8c69693e2a23c13cf7bbc568435bef">ActivateBestChain()</a> </p>
-
-</div>
-</div>
-<a id="a52c29388d6805442893089beaf96c4a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52c29388d6805442893089beaf96c4a7">&#9670;&nbsp;</a></span>m_failed_blocks</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::set&lt;<a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a>*&gt; CChainState::m_failed_blocks</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>In order to efficiently track invalidity of headers, we keep the set of blocks which we tried to connect and found to be invalid here (ie which were set to BLOCK_FAILED_VALID since the last restart). We can then walk this set and check if a new header is a descendant of something in this set, preventing us from having to walk mapBlockIndex when we try to connect a bad block and fail.</p>
-<p>While this is more complicated than marking everything which descends from an invalid block as invalid at the time we discover it to be invalid, doing so would require walking all of mapBlockIndex to find all descendants. Since this case should be very rare, keeping track of all BLOCK_FAILED_VALID blocks in a set should be just fine and work just as well.</p>
-<p>Because we already walk mapBlockIndex in height-order at startup, we go ahead and mark descendants of invalid blocks as FAILED_CHILD at that time, instead of putting things in this set. </p>
-
-</div>
-</div>
-<a id="a318040c11336b79eddc71e1d3b176f2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a318040c11336b79eddc71e1d3b176f2a">&#9670;&nbsp;</a></span>mapBlocksUnlinked</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::multimap&lt;<a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a>*, <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a>*&gt; CChainState::mapBlocksUnlinked</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -1360,38 +1211,16 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae0ae491f2e6b031587a5ad35fdafe546"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0ae491f2e6b031587a5ad35fdafe546">&#9670;&nbsp;</a></span>pindexBestInvalid</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a>* CChainState::pindexBestInvalid = nullptr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a528c14be4a2a7c6837a2d099b2ad7ef7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a528c14be4a2a7c6837a2d099b2ad7ef7">&#9670;&nbsp;</a></span>setBlockIndexCandidates</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::set&lt;<a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a>*, <a class="el" href="../../df/dd8/structCBlockIndexWorkComparator.html">CBlockIndexWorkComparator</a>&gt; CChainState::setBlockIndexCandidates</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>The set of all <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> entries with BLOCK_VALID_TRANSACTIONS (for itself and all ancestors) and as good as our current tip or better. Entries may be failed, though, and pruning nodes may be missing the data for the block. </p>
 

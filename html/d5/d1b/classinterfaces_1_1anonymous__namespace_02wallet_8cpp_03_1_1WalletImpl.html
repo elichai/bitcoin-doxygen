@@ -114,8 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5bb11030b3351726761b95d50ee8ec33"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1b/classinterfaces_1_1anonymous__namespace_02wallet_8cpp_03_1_1WalletImpl.html#a5bb11030b3351726761b95d50ee8ec33">getWalletName</a> () override</td></tr>
 <tr class="memdesc:a5bb11030b3351726761b95d50ee8ec33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get wallet name.  <a href="#a5bb11030b3351726761b95d50ee8ec33">More...</a><br /></td></tr>
 <tr class="separator:a5bb11030b3351726761b95d50ee8ec33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b63b093da03878244e095001f94ac1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1b/classinterfaces_1_1anonymous__namespace_02wallet_8cpp_03_1_1WalletImpl.html#a2b63b093da03878244e095001f94ac1a">getKeyFromPool</a> (bool internal, <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;pub_key) override</td></tr>
-<tr class="separator:a2b63b093da03878244e095001f94ac1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf36097647fcee6ce76b17c35ec0b496"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1b/classinterfaces_1_1anonymous__namespace_02wallet_8cpp_03_1_1WalletImpl.html#acf36097647fcee6ce76b17c35ec0b496">getNewDestination</a> (const <a class="el" href="../../db/db6/outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a> type, const std::string label, <a class="el" href="../../df/d9b/standard_8h.html#ae7e198080de1ddaee514c99e22d65a76">CTxDestination</a> &amp;dest) override</td></tr>
+<tr class="separator:acf36097647fcee6ce76b17c35ec0b496"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cffc3b3e5fdafb4523141af60b83038"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1b/classinterfaces_1_1anonymous__namespace_02wallet_8cpp_03_1_1WalletImpl.html#a9cffc3b3e5fdafb4523141af60b83038">getPubKey</a> (const <a class="el" href="../../da/db7/classCKeyID.html">CKeyID</a> &amp;address, <a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;pub_key) override</td></tr>
 <tr class="memdesc:a9cffc3b3e5fdafb4523141af60b83038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get public key.  <a href="#a9cffc3b3e5fdafb4523141af60b83038">More...</a><br /></td></tr>
 <tr class="separator:a9cffc3b3e5fdafb4523141af60b83038"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1236,44 +1236,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2b63b093da03878244e095001f94ac1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b63b093da03878244e095001f94ac1a">&#9670;&nbsp;</a></span>getKeyFromPool()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool interfaces::anonymous_namespace{wallet.cpp}::WalletImpl::getKeyFromPool </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>internal</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../df/dd8/classCPubKey.html">CPubKey</a> &amp;&#160;</td>
-          <td class="paramname"><em>pub_key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="../../d9/d15/classinterfaces_1_1Wallet.html#aa7c627f0b33ecfaee4005c83aba97ec0">interfaces::Wallet</a>.</p>
-
-</div>
-</div>
 <a id="ad50e08d1a2edcd174a525553dc4507cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad50e08d1a2edcd174a525553dc4507cf">&#9670;&nbsp;</a></span>getMinimumFee()</h2>
 
@@ -1323,6 +1285,50 @@ Additional Inherited Members</h2></td></tr>
 <p>Get minimum fee. </p>
 
 <p>Implements <a class="el" href="../../d9/d15/classinterfaces_1_1Wallet.html#ab36fb9f57fd5eae3f0125d4a8ac051b7">interfaces::Wallet</a>.</p>
+
+</div>
+</div>
+<a id="acf36097647fcee6ce76b17c35ec0b496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf36097647fcee6ce76b17c35ec0b496">&#9670;&nbsp;</a></span>getNewDestination()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool interfaces::anonymous_namespace{wallet.cpp}::WalletImpl::getNewDestination </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/db6/outputtype_8h.html#a4e0517338e6c4a31a2addafc06d4f3a3">OutputType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d9b/standard_8h.html#ae7e198080de1ddaee514c99e22d65a76">CTxDestination</a> &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d9/d15/classinterfaces_1_1Wallet.html#a0ac29d328e9f91ac2299484d2abdc8f7">interfaces::Wallet</a>.</p>
 
 </div>
 </div>

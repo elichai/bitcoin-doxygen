@@ -97,10 +97,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adc52ec4918224db224a4a6f6310c128e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5b3fc9b1d8ddd2e38f2dd231a544ac9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classWalletController.html#ac5b3fc9b1d8ddd2e38f2dd231a544ac9">~WalletController</a> ()</td></tr>
 <tr class="separator:ac5b3fc9b1d8ddd2e38f2dd231a544ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a916b0efeebe021dc198381014c0bbf63"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../de/d7e/classWalletModel.html">WalletModel</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classWalletController.html#a916b0efeebe021dc198381014c0bbf63">getWallets</a> () const</td></tr>
-<tr class="separator:a916b0efeebe021dc198381014c0bbf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab36fc4b189b8f9f7d34556aab297fe76"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classWalletController.html#ab36fc4b189b8f9f7d34556aab297fe76">getWalletsAvailableToOpen</a> () const</td></tr>
-<tr class="separator:ab36fc4b189b8f9f7d34556aab297fe76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df7747c7eef69e3ce57dd2d3b728326"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../de/d7e/classWalletModel.html">WalletModel</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classWalletController.html#a5df7747c7eef69e3ce57dd2d3b728326">getOpenWallets</a> () const</td></tr>
+<tr class="memdesc:a5df7747c7eef69e3ce57dd2d3b728326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns wallet models currently open.  <a href="#a5df7747c7eef69e3ce57dd2d3b728326">More...</a><br /></td></tr>
+<tr class="separator:a5df7747c7eef69e3ce57dd2d3b728326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ee1a4c7936a2f1a04b8c209b24ab08"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classWalletController.html#a52ee1a4c7936a2f1a04b8c209b24ab08">listWalletDir</a> () const</td></tr>
+<tr class="separator:a52ee1a4c7936a2f1a04b8c209b24ab08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa54f3d9814018d73292595509b9752e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d39/classOpenWalletActivity.html">OpenWalletActivity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classWalletController.html#aa54f3d9814018d73292595509b9752e1">openWallet</a> (const std::string &amp;<a class="el" href="../../d8/d04/rest_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, QWidget *parent=nullptr)</td></tr>
 <tr class="separator:aa54f3d9814018d73292595509b9752e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9958e172f70e66b0939e4bdc75a6d7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7d/classWalletController.html#ac9958e172f70e66b0939e4bdc75a6d7f">closeWallet</a> (<a class="el" href="../../de/d7e/classWalletModel.html">WalletModel</a> *wallet_model, QWidget *parent=nullptr)</td></tr>
@@ -297,6 +298,25 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a5df7747c7eef69e3ce57dd2d3b728326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5df7747c7eef69e3ce57dd2d3b728326">&#9670;&nbsp;</a></span>getOpenWallets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="../../de/d7e/classWalletModel.html">WalletModel</a> * &gt; WalletController::getOpenWallets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns wallet models currently open. </p>
+
+</div>
+</div>
 <a id="a1ba679d7e78123360937667f0fc6adca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ba679d7e78123360937667f0fc6adca">&#9670;&nbsp;</a></span>getOrCreateWallet()</h2>
 
@@ -323,37 +343,21 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a916b0efeebe021dc198381014c0bbf63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a916b0efeebe021dc198381014c0bbf63">&#9670;&nbsp;</a></span>getWallets()</h2>
+<a id="a52ee1a4c7936a2f1a04b8c209b24ab08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52ee1a4c7936a2f1a04b8c209b24ab08">&#9670;&nbsp;</a></span>listWalletDir()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="../../de/d7e/classWalletModel.html">WalletModel</a> * &gt; WalletController::getWallets </td>
+          <td class="memname">std::map&lt; std::string, bool &gt; WalletController::listWalletDir </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab36fc4b189b8f9f7d34556aab297fe76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab36fc4b189b8f9f7d34556aab297fe76">&#9670;&nbsp;</a></span>getWalletsAvailableToOpen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; std::string &gt; WalletController::getWalletsAvailableToOpen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Returns all wallet names in the wallet dir mapped to whether the wallet is loaded. </p>
 
 </div>
 </div>

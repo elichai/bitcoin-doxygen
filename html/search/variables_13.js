@@ -25,7 +25,6 @@ var searchData=
   ['tabwallet',['tabWallet',['../da/dca/classUi__OptionsDialog.html#aa15fc1d87138ced51f065b00db695f9a',1,'Ui_OptionsDialog']]],
   ['tabwidget',['tabWidget',['../d0/dff/classUi__RPCConsole.html#aca40af00f61f42ef7fce024fc2252f67',1,'Ui_RPCConsole::tabWidget()'],['../da/dca/classUi__OptionsDialog.html#a77a9d3769eb2e51c6df96768680ad3b1',1,'Ui_OptionsDialog::tabWidget()'],['../d2/d2d/classUi__SignVerifyMessageDialog.html#ac5d4e0bb30d5db2ff7a22a212215d7ce',1,'Ui_SignVerifyMessageDialog::tabWidget()']]],
   ['tabwindow',['tabWindow',['../da/dca/classUi__OptionsDialog.html#a1b902f35b78a17f4f0ae121760ad4b2c',1,'Ui_OptionsDialog']]],
-  ['taproot_5fscript',['taproot_script',['../db/da3/structPSBTInput.html#abcb0c4e95cb7f01a27a702d3bc40bd04',1,'PSBTInput']]],
   ['target',['target',['../d3/df6/classTorController.html#ae082deff33f6f1db7e51825113c1adab',1,'TorController']]],
   ['target_5f',['target_',['../d2/d96/classleveldb_1_1TestWritableFile.html#aa95ac1af749ada2429e6c560189d57da',1,'leveldb::TestWritableFile::target_()'],['../dc/d09/classleveldb_1_1EnvWrapper.html#aa5f60f55ace84b8c311ba543025dbcdc',1,'leveldb::EnvWrapper::target_()']]],
   ['taskqueue',['taskQueue',['../d3/dc1/classCScheduler.html#a206a499765bd27e5aaff4c4ba2255f91',1,'CScheduler']]],

@@ -154,6 +154,8 @@ Functions</h2></td></tr>
 <tr class="separator:a30436c6f8e34f6f70217dafd009f1815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96ebd8ae8166b2e0890ea557c95d378a"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#a96ebd8ae8166b2e0890ea557c95d378a">fReindex</a> (false)</td></tr>
 <tr class="separator:a96ebd8ae8166b2e0890ea557c95d378a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9b2d3b31edbd48ce62f4e2a73cc04c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#a9d9b2d3b31edbd48ce62f4e2a73cc04c">LookupBlockIndex</a> (const <a class="el" href="../../d2/d86/classuint256.html">uint256</a> &amp;hash)</td></tr>
+<tr class="separator:a9d9b2d3b31edbd48ce62f4e2a73cc04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af43d57aa8b46a53839777e8b670c9d66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#af43d57aa8b46a53839777e8b670c9d66">FindForkInGlobalIndex</a> (const <a class="el" href="../../d8/dba/classCChain.html">CChain</a> &amp;chain, const <a class="el" href="../../d6/d41/structCBlockLocator.html">CBlockLocator</a> &amp;locator)</td></tr>
 <tr class="separator:af43d57aa8b46a53839777e8b670c9d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b3cf36109d96522d4aabe9449e42a3a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#a7b3cf36109d96522d4aabe9449e42a3a">FindFilesToPruneManual</a> (std::set&lt; int &gt; &amp;setFilesToPrune, int nManualPruneHeight)</td></tr>
@@ -214,6 +216,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa4e2a74e2657df25ab4709c57eb00fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e7cb06e156ad8400b9214479e946187"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d2f/amount_8h.html#a4eaf3a5239714d8c45b851527f7cb564">CAmount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#a3e7cb06e156ad8400b9214479e946187">GetBlockSubsidy</a> (int <a class="el" href="../../db/d2f/mempool__eviction_8cpp.html#a2e4c6b811457a16b7033af6741cfb1db">nHeight</a>, const <a class="el" href="../../da/d55/structConsensus_1_1Params.html">Consensus::Params</a> &amp;consensusParams)</td></tr>
 <tr class="separator:a3e7cb06e156ad8400b9214479e946187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf86dc06ef3a672eecdeae18db26c7fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d38/validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#acf86dc06ef3a672eecdeae18db26c7fb">BlockIndex</a> ()</td></tr>
+<tr class="separator:acf86dc06ef3a672eecdeae18db26c7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d6ce6d55bb4a2aceef2131aef536548"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#a2d6ce6d55bb4a2aceef2131aef536548">AlertNotify</a> (const std::string &amp;strMessage)</td></tr>
 <tr class="separator:a2d6ce6d55bb4a2aceef2131aef536548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09937fb0e08e467a7a4ad791102908dc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#a09937fb0e08e467a7a4ad791102908dc">CheckForkWarningConditions</a> () <a class="el" href="../../db/d6d/threadsafety_8h.html#a0e2e86b0f11d9778240b0a0b263047b1">EXCLUSIVE_LOCKS_REQUIRED</a>(<a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
@@ -348,12 +352,12 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a9686543a90a0c95aa41f33ed6f40ea1b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d9b/classCChainState.html">CChainState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#a9686543a90a0c95aa41f33ed6f40ea1b">g_chainstate</a></td></tr>
-<tr class="separator:a9686543a90a0c95aa41f33ed6f40ea1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ffb072c651dd2b3d08e1e599cfdb8aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d9c/classBlockManager.html">BlockManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/namespaceanonymous__namespace_02validation_8cpp_03.html#a3ffb072c651dd2b3d08e1e599cfdb8aa">anonymous_namespace{validation.cpp}::g_blockman</a></td></tr>
+<tr class="separator:a3ffb072c651dd2b3d08e1e599cfdb8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f391edd4b6718dfd1d3af126fda246"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d9b/classCChainState.html">CChainState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#a98f391edd4b6718dfd1d3af126fda246">g_chainstate</a> (g_blockman)</td></tr>
+<tr class="separator:a98f391edd4b6718dfd1d3af126fda246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab88a4b9173207cf250ece7820db1f36d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d6b/sync_8h.html#a5d71768bc9626b7482055d56d4e2c533">RecursiveMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#ab88a4b9173207cf250ece7820db1f36d">cs_main</a></td></tr>
 <tr class="separator:ab88a4b9173207cf250ece7820db1f36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeccc8c1b7fffcca5d6c0d8486cc9b48b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d38/validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#aeccc8c1b7fffcca5d6c0d8486cc9b48b">mapBlockIndex</a> = ::<a class="el" href="../../db/d38/validation_8h.html#a786c4a7e5e455b2fe27d2fdaa02e6a1d">ChainstateActive</a>().mapBlockIndex</td></tr>
-<tr class="separator:aeccc8c1b7fffcca5d6c0d8486cc9b48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfbdea59afc1824d0d1c1ff10f17fd53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#acfbdea59afc1824d0d1c1ff10f17fd53">pindexBestHeader</a> = nullptr</td></tr>
 <tr class="separator:acfbdea59afc1824d0d1c1ff10f17fd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eac72ec736df33431343671e4defc14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d6b/sync_8h.html#a9c9c99acb9d093cae8cc54aeef3248f9">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#a8eac72ec736df33431343671e4defc14">g_best_block_mutex</a></td></tr>
@@ -390,10 +394,8 @@ Variables</h2></td></tr>
 <tr class="separator:ac30ceb3802946c9ea0130be889fb4bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ed86cbbedb72d8fcec0524f2792ada8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/da6/classCScript.html">CScript</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7d/validation_8cpp.html#a5ed86cbbedb72d8fcec0524f2792ada8">COINBASE_FLAGS</a></td></tr>
 <tr class="separator:a5ed86cbbedb72d8fcec0524f2792ada8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4d55381352baf1985ecb0c64b016d6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/namespaceanonymous__namespace_02validation_8cpp_03.html#ad4d55381352baf1985ecb0c64b016d6d">anonymous_namespace{validation.cpp}::pindexBestInvalid</a> = ::<a class="el" href="../../db/d38/validation_8h.html#a786c4a7e5e455b2fe27d2fdaa02e6a1d">ChainstateActive</a>().pindexBestInvalid</td></tr>
-<tr class="separator:ad4d55381352baf1985ecb0c64b016d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeeb1a7cf8cf79b48aea827557360a30"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *, <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/namespaceanonymous__namespace_02validation_8cpp_03.html#aeeeb1a7cf8cf79b48aea827557360a30">anonymous_namespace{validation.cpp}::mapBlocksUnlinked</a> = ::<a class="el" href="../../db/d38/validation_8h.html#a786c4a7e5e455b2fe27d2fdaa02e6a1d">ChainstateActive</a>().mapBlocksUnlinked</td></tr>
-<tr class="separator:aeeeb1a7cf8cf79b48aea827557360a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b7a1a8372149c53e7ea79638f3b396"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/namespaceanonymous__namespace_02validation_8cpp_03.html#a82b7a1a8372149c53e7ea79638f3b396">anonymous_namespace{validation.cpp}::pindexBestInvalid</a> = nullptr</td></tr>
+<tr class="separator:a82b7a1a8372149c53e7ea79638f3b396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5968b23b996e7bf293658ba93499781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d6b/sync_8h.html#a8019a4144dc54f3a305830f7abd2dbc1">CCriticalSection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/namespaceanonymous__namespace_02validation_8cpp_03.html#ab5968b23b996e7bf293658ba93499781">anonymous_namespace{validation.cpp}::cs_LastBlockFile</a></td></tr>
 <tr class="separator:ab5968b23b996e7bf293658ba93499781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e03f911ff68f36a30d26395b00d50e9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d0/d0b/classCBlockFileInfo.html">CBlockFileInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/namespaceanonymous__namespace_02validation_8cpp_03.html#a0e03f911ff68f36a30d26395b00d50e9">anonymous_namespace{validation.cpp}::vinfoBlockFile</a></td></tr>
@@ -990,6 +992,24 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf86dc06ef3a672eecdeae18db26c7fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf86dc06ef3a672eecdeae18db26c7fb">&#9670;&nbsp;</a></span>BlockIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d38/validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a>&amp; BlockIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the global block index map. </dd></dl>
 
 </div>
 </div>
@@ -2612,6 +2632,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a9d9b2d3b31edbd48ce62f4e2a73cc04c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d9b2d3b31edbd48ce62f4e2a73cc04c">&#9670;&nbsp;</a></span>LookupBlockIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a>* LookupBlockIndex </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d86/classuint256.html">uint256</a> &amp;&#160;</td>
+          <td class="paramname"><em>hash</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7babcad47cd459b074c22bd34c9c669c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7babcad47cd459b074c22bd34c9c669c">&#9670;&nbsp;</a></span>NotifyHeaderTip()</h2>
 
@@ -3827,7 +3865,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    <a class="code" href="../../d2/d83/net__processing_8cpp.html#a37e6419b0b18c99c5296b5a18c19e954">AssertLockHeld</a>(<a class="code" href="../../dd/d7d/validation_8cpp.html#ab88a4b9173207cf250ece7820db1f36d">cs_main</a>)</div><div class="ttc" id="validation_8cpp_html_ab88a4b9173207cf250ece7820db1f36d"><div class="ttname"><a href="../../dd/d7d/validation_8cpp.html#ab88a4b9173207cf250ece7820db1f36d">cs_main</a></div><div class="ttdeci">RecursiveMutex cs_main</div><div class="ttdef"><b>Definition:</b> validation.cpp:96</div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    <a class="code" href="../../d2/d83/net__processing_8cpp.html#a37e6419b0b18c99c5296b5a18c19e954">AssertLockHeld</a>(<a class="code" href="../../dd/d7d/validation_8cpp.html#ab88a4b9173207cf250ece7820db1f36d">cs_main</a>)</div><div class="ttc" id="validation_8cpp_html_ab88a4b9173207cf250ece7820db1f36d"><div class="ttname"><a href="../../dd/d7d/validation_8cpp.html#ab88a4b9173207cf250ece7820db1f36d">cs_main</a></div><div class="ttdeci">RecursiveMutex cs_main</div><div class="ttdef"><b>Definition:</b> validation.cpp:100</div></div>
 <div class="ttc" id="net__processing_8cpp_html_a37e6419b0b18c99c5296b5a18c19e954"><div class="ttname"><a href="../../d2/d83/net__processing_8cpp.html#a37e6419b0b18c99c5296b5a18c19e954">AssertLockHeld</a></div><div class="ttdeci">AssertLockHeld(g_cs_orphans)</div></div>
 </div><!-- fragment -->
 </div>
@@ -3977,8 +4015,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9686543a90a0c95aa41f33ed6f40ea1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9686543a90a0c95aa41f33ed6f40ea1b">&#9670;&nbsp;</a></span>g_chainstate</h2>
+<a id="a98f391edd4b6718dfd1d3af126fda246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f391edd4b6718dfd1d3af126fda246">&#9670;&nbsp;</a></span>g_chainstate</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3987,7 +4025,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d9b/classCChainState.html">CChainState</a> g_chainstate</td>
+          <td class="memname"><a class="el" href="../../d3/d9b/classCChainState.html">CChainState</a> g_chainstate(g_blockman)</td>
         </tr>
       </table>
   </td>
@@ -4044,20 +4082,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">auto it = disconnectpool.queuedTx.get&lt;<a class="el" href="../../da/df6/structinsertion__order.html">insertion_order</a>&gt;().rbegin()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aeccc8c1b7fffcca5d6c0d8486cc9b48b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeccc8c1b7fffcca5d6c0d8486cc9b48b">&#9670;&nbsp;</a></span>mapBlockIndex</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/d38/validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a>&amp; mapBlockIndex = ::<a class="el" href="../../db/d38/validation_8h.html#a786c4a7e5e455b2fe27d2fdaa02e6a1d">ChainstateActive</a>().mapBlockIndex</td>
         </tr>
       </table>
 </div><div class="memdoc">

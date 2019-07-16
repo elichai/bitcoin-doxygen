@@ -17,7 +17,7 @@ var searchData=
   ['testrand_5fimpl_2eh',['testrand_impl.h',['../d9/d04/testrand__impl_8h.html',1,'']]],
   ['tests_2ec',['tests.c',['../d5/d7f/tests_8c.html',1,'']]],
   ['tests_5fexhaustive_2ec',['tests_exhaustive.c',['../dd/d70/tests__exhaustive_8c.html',1,'']]],
-  ['tests_5fimpl_2eh',['tests_impl.h',['../d5/d65/ecdh_2tests__impl_8h.html',1,'(Global Namespace)'],['../d3/d71/recovery_2tests__impl_8h.html',1,'(Global Namespace)'],['../d6/d29/schnorrsig_2tests__impl_8h.html',1,'(Global Namespace)']]],
+  ['tests_5fimpl_2eh',['tests_impl.h',['../d5/d65/ecdh_2tests__impl_8h.html',1,'(Global Namespace)'],['../d3/d71/recovery_2tests__impl_8h.html',1,'(Global Namespace)']]],
   ['testutil_2ecc',['testutil.cc',['../d7/d65/testutil_8cc.html',1,'']]],
   ['testutil_2eh',['testutil.h',['../da/de4/testutil_8h.html',1,'']]],
   ['thread_5fannotations_2eh',['thread_annotations.h',['../de/d89/thread__annotations_8h.html',1,'']]],

@@ -199,7 +199,7 @@ $(function() {
 <h2>Locking/mutex usage notes </h2>
 <p>The code is multi-threaded, and uses mutexes and the <code>LOCK</code> and <code>TRY_LOCK</code> macros to protect data structures.</p>
 <p>Deadlocks due to inconsistent lock ordering (thread 1 locks <code>cs_main</code> and then <code>cs_wallet</code>, while thread 2 locks them in the opposite order: result, deadlock as each waits for the other to release its lock) are a problem. Compile with <code>-DDEBUG_LOCKORDER</code> (or use <code>--enable-debug</code>) to get lock order inconsistencies reported in the debug.log file.</p>
-<p>Re-architecting the core code so there are better-defined interfaces between the various components is a goal, with any necessary locking done by the components (e.g. see the self-contained <code><a class="el" href="../../d5/dca/classCBasicKeyStore.html">CBasicKeyStore</a></code> class and its <code>cs_KeyStore</code> lock for example).</p>
+<p>Re-architecting the core code so there are better-defined interfaces between the various components is a goal, with any necessary locking done by the components (e.g. see the self-contained <code><a class="el" href="../../d2/de0/classFillableSigningProvider.html">FillableSigningProvider</a></code> class and its <code>cs_KeyStore</code> lock for example).</p>
 <h2>Threads </h2>
 <ul>
 <li>ThreadScriptCheck : Verifies block scripts.</li>

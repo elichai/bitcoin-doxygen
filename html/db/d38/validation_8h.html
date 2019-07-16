@@ -108,6 +108,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dd8/structCBlockIndexWorkComparator.html">CBlockIndexWorkComparator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/classBlockManager.html">BlockManager</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classCChainState.html">CChainState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -132,8 +134,6 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7eb425469e9f152f7efad4b710fa26c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d38/validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a> &amp;<a class="el" href="../../dd/d7d/validation_8cpp.html#aeccc8c1b7fffcca5d6c0d8486cc9b48b">mapBlockIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d38/validation_8h.html#a7eb425469e9f152f7efad4b710fa26c2">GUARDED_BY</a> (<a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
-<tr class="separator:a7eb425469e9f152f7efad4b710fa26c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32c6dfc4ade001f117ac3fac3da9d123"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d38/validation_8h.html#a32c6dfc4ade001f117ac3fac3da9d123">ProcessNewBlock</a> (const <a class="el" href="../../df/d9b/classCChainParams.html">CChainParams</a> &amp;chainparams, const std::shared_ptr&lt; const <a class="el" href="../../d1/d28/classCBlock.html">CBlock</a> &gt; pblock, bool fForceProcessing, bool *fNewBlock) <a class="el" href="../../db/d6d/threadsafety_8h.html#a6bb97382864d0bd2cd4dd5191bb03f6c">LOCKS_EXCLUDED</a>(<a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
 <tr class="separator:a32c6dfc4ade001f117ac3fac3da9d123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad959cc64d22660f1f561798040bb1f6a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d38/validation_8h.html#ad959cc64d22660f1f561798040bb1f6a">ProcessNewBlockHeaders</a> (const std::vector&lt; <a class="el" href="../../d2/d93/classCBlockHeader.html">CBlockHeader</a> &gt; &amp;block, <a class="el" href="../../d4/d71/classCValidationState.html">CValidationState</a> &amp;state, const <a class="el" href="../../df/d9b/classCChainParams.html">CChainParams</a> &amp;chainparams, const <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> **ppindex=nullptr, <a class="el" href="../../d2/d93/classCBlockHeader.html">CBlockHeader</a> *first_invalid=nullptr) <a class="el" href="../../db/d6d/threadsafety_8h.html#a6bb97382864d0bd2cd4dd5191bb03f6c">LOCKS_EXCLUDED</a>(<a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>)</td></tr>
@@ -228,6 +228,8 @@ Functions</h2></td></tr>
 <tr class="separator:a786c4a7e5e455b2fe27d2fdaa02e6a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bdc4b2134378a3525f6aefb937967b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dba/classCChain.html">CChain</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d38/validation_8h.html#a7bdc4b2134378a3525f6aefb937967b0">ChainActive</a> ()</td></tr>
 <tr class="separator:a7bdc4b2134378a3525f6aefb937967b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf86dc06ef3a672eecdeae18db26c7fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d38/validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d38/validation_8h.html#acf86dc06ef3a672eecdeae18db26c7fb">BlockIndex</a> ()</td></tr>
+<tr class="separator:acf86dc06ef3a672eecdeae18db26c7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada1eab9ccd84d9a98f598eba9bd35330"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d38/validation_8h.html#ada1eab9ccd84d9a98f598eba9bd35330">GetSpendHeight</a> (const <a class="el" href="../../d4/d49/classCCoinsViewCache.html">CCoinsViewCache</a> &amp;inputs)</td></tr>
 <tr class="separator:ada1eab9ccd84d9a98f598eba9bd35330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0657e7220e2c33df7a210032ca61b7fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d38/validation_8h.html#a0657e7220e2c33df7a210032ca61b7fe">ComputeBlockVersion</a> (const <a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a> *pindexPrev, const <a class="el" href="../../da/d55/structConsensus_1_1Params.html">Consensus::Params</a> &amp;params)</td></tr>
@@ -548,6 +550,24 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Find the best known block, and make it the tip of the block chain</p>
 <p>May not be called with cs_main held. May not be called in a validationinterface callback. </p>
+
+</div>
+</div>
+<a id="acf86dc06ef3a672eecdeae18db26c7fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf86dc06ef3a672eecdeae18db26c7fb">&#9670;&nbsp;</a></span>BlockIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d38/validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a>&amp; BlockIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the global block index map. </dd></dl>
 
 </div>
 </div>
@@ -978,24 +998,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7eb425469e9f152f7efad4b710fa26c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7eb425469e9f152f7efad4b710fa26c2">&#9670;&nbsp;</a></span>GUARDED_BY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/d38/validation_8h.html#a6b962fe256607627c8140021ae7a23e1">BlockMap</a>&amp; <a class="el" href="../../dd/d7d/validation_8cpp.html#aeccc8c1b7fffcca5d6c0d8486cc9b48b">mapBlockIndex</a> GUARDED_BY </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d35/validationinterface_8h.html#a1ed8285f0fe3c6799c53265ce72552c8">cs_main</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a38412dd688f31cbca0f6d28a9adc0310"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38412dd688f31cbca0f6d28a9adc0310">&#9670;&nbsp;</a></span>GuessVerificationProgress()</h2>
 
@@ -1281,9 +1283,6 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../d8/df0/classCBlockIndex.html">CBlockIndex</a>* LookupBlockIndex </td>
@@ -1293,11 +1292,6 @@ Variables</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
